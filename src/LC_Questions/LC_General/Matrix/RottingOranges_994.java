@@ -1,6 +1,6 @@
-package LC_Questions.LC_General;
+package LC_Questions.LC_General.Matrix;
 
-public class lc_994 {
+public class RottingOranges_994 {
 
     public static void main(String[] args) {
         int min = 2;

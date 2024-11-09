@@ -1,4 +1,4 @@
-package LC_Questions.LC_others;
+package LC_Questions.LC_General.backTracking;
 
 import java.util.ArrayList;
 import java.util.List;

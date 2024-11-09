@@ -1,6 +1,6 @@
-package LC_Questions.LC_General;
+package LC_Questions.LC_General.Arrays;
 
-public class lc_857 {
+public class MinimumCostToHireKWorkers_857 {
     public static int minEatingSpeed(int[] piles, int h) {
         int s = 1;
         int total;

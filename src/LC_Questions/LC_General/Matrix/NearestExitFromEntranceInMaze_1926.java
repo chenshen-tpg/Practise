@@ -1,9 +1,9 @@
-package LC_Questions.LC_General;
+package LC_Questions.LC_General.Matrix;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class lc_1926 {
+public class NearestExitFromEntranceInMaze_1926 {
     public static void main(String[] args) {
         String [][] maze = {{"+","+","+"},{".",".","."},{"+","+","+"}};
         int [] entrance = {1,0};

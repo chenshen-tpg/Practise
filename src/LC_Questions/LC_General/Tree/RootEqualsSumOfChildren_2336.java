@@ -1,10 +1,10 @@
-package LC_Questions.LC_General;
+package LC_Questions.LC_General.Tree;
 
 import java.util.HashSet;
 import java.util.PriorityQueue;
 import java.util.Set;
 
-public class lc_2336 {
+public class RootEqualsSumOfChildren_2336 {
 
 
     static Set<Integer> add = new HashSet<>();

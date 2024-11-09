@@ -1,9 +1,9 @@
-package LC_Questions.LC_General;
+package LC_Questions.LC_General.LinkedList;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class lc_1466 {
+public class ReorderRoutesToMakeAllPathsLeadToTheCityZero_1466 {
     public static void main(String[] args) {
         int n = 6;
         int [][] connections = {{0,1},{1,3},{2,3},{4,0},{4,5}};

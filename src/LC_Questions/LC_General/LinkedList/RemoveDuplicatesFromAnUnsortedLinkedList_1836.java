@@ -1,8 +1,8 @@
-package LC_Questions.LC_General;
+package LC_Questions.LC_General.LinkedList;
 
 import java.util.HashMap;
 
-public class lc_1836 {
+public class RemoveDuplicatesFromAnUnsortedLinkedList_1836 {
     public class ListNode {
       int val;
       ListNode next;

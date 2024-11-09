@@ -1,6 +1,6 @@
-package LC_Questions.LC_others;
+package LC_Questions.LC_General.TwoPointers;
 
-public class test {
+public class NextPermutation_31 {
     public static void main(String[] args) {
         int [] test = {1,2,3};
         nextPermutation(test);

@@ -1,4 +1,4 @@
-package LC_Questions.LC_General;
+package LC_Questions.LC_General.DFS;
 
 public class island {
     public static void main(String[] args) {
