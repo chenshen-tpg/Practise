@@ -4,6 +4,55 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class SurrondedRegions_130 {
+    public static void main(String[] args) {
+        SurrondedRegions_130 s = new SurrondedRegions_130();
+        char[][] board = {
+                {'X', 'X', 'X', 'X'},
+                {'X', 'O', 'O', 'X'},
+                {'X', 'X', 'O', 'X'},
+                {'X', 'O', 'X', 'X'}
+        };
+        s.sur(board);
+        for (char[] row : board) {
+            for (char c : row) {
+                System.out.print(c + " ");
+            }
+            System.out.println();
+        }
+    }
+    public void sur(char[][] board) {
+        if (board.length < 3 || board[0].length < 3) return;
+        int m = board.length;
+        int n = board[0].length;
+        for (int i = 0; i < m; i++) {
+            // first and last row
+            if (board[i][0] == 'O') helper(board, i, 0);
+            if (board[i][n - 1] == 'O') helper(board, i, n - 1);
+        }
+        // first and last column
+        for (int j = 1; j < n - 1; j++) {
+            if (board[0][j] == 'O') helper(board, 0, j);
+            if (board[m - 1][j] == 'O') helper(board, m - 1, j);
+        }
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (board[i][j] == 'O') board[i][j] = 'X';
+                if (board[i][j] == '*') board[i][j] = 'O';
+            }
+        }
+    }
+    private void helper(char[][] board, int r, int c) {
+        if (r < 0 || c < 0 || r >= board.length || c >= board[0].length || board[r][c] != 'O') return;
+        board[r][c] = '*';
+        helper(board, r + 1, c);
+        helper(board, r - 1, c);
+        helper(board, r, c + 1);
+        helper(board, r, c - 1);
+    }
+
+
+
+
     class Pair<U, V> {
         public U first;
         public V second;
