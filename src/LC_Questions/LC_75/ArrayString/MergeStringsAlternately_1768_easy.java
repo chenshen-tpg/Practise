@@ -1,10 +1,10 @@
 package LC_Questions.LC_75.ArrayString;
 
-public class MergeStringsAlternately_1768 {
+public class MergeStringsAlternately_1768_easy {
     public static void main(String[] args) {
         String word1 = "abc";
         String word2 = "pqr";
-        MergeStringsAlternately_1768 m = new MergeStringsAlternately_1768();
+        MergeStringsAlternately_1768_easy m = new MergeStringsAlternately_1768_easy();
         System.out.println(m.mergeAlternately(word1, word2));
     }
 

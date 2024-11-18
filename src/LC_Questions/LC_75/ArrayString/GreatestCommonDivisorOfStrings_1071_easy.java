@@ -1,6 +1,6 @@
 package LC_Questions.LC_75.ArrayString;
 
-public class GreatestCommonDivisorOfStrings_1071 {
+public class GreatestCommonDivisorOfStrings_1071_easy {
     public int gcd(int x, int y) {
         if (y == 0) {
             return x;

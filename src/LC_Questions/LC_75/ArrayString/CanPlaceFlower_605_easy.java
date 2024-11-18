@@ -1,10 +1,10 @@
 package LC_Questions.LC_75.ArrayString;
 
-public class CanPlaceFlower_605 {
+public class CanPlaceFlower_605_easy {
     public static void main(String[] args) {
         int[] f = {1,0,0,0,1};
         int n = 2;
-        CanPlaceFlower_605 c = new CanPlaceFlower_605();
+        CanPlaceFlower_605_easy c = new CanPlaceFlower_605_easy();
         System.out.println(c.canPlaceFlowersCorrect(f, n));
     }
     public boolean canPlaceFlowersCorrect(int[] f, int n) {
