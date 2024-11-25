@@ -14,7 +14,7 @@ package LC_Questions.LC_150.BinarySearch;
  * }
  */
 
-public class Searcha2DMatrix_74 {
+public class Searcha2DMatrix_74_med {
 
 
     public boolean searchMatrix1(int[][] matrix, int target) {
