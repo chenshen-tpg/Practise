@@ -4,9 +4,10 @@ public class StringCompression_443_med_review {
     public static void main(String[] args) {
         StringCompression_443_med_review sc = new StringCompression_443_med_review();
         char[] chars = new char[]{'a', 'a', 'b', 'b', 'c', 'c', 'c'};
-        System.out.println(sc.compress(chars));
+//        System.out.println(sc.compress(chars));
+        System.out.println(sc.test(chars));
     }
-
+    // for loop might need to - 1 to avoid out of bound
     public int compress(char[] chars) {
         int l = 0;
         int r = chars.length;
@@ -26,5 +27,24 @@ public class StringCompression_443_med_review {
         }
         return res;
     }
+    public static int test (char[] chars) {
+        int ans = 0;
+        for (int i = 0; i < chars.length; i++) {
+            int c = 1;
+            while (c + i < chars.length && chars[i] == chars[i + c]) {
+                c++;
+            }
+            chars[ans++] = chars[i];
+            if (c > 1) {
+                for (char ch : Integer.toString(c).toCharArray()) {
+                    chars[ans++] = ch;
+                }
+            }
+            i += c - 1;
+        }
+        return ans;
+    }
+
+
 
 }

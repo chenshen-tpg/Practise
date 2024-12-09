@@ -29,11 +29,11 @@ public class MergeStringsAlternately_1768_easy {
         int len2 = word2.length();
         StringBuilder result = new StringBuilder();
         int i = 0, j = 0;
-        while(i<len1 || j < len2) {
-            if (i<len1) {
+        while(i < len1 || j < len2) {
+            if (i < len1) {
                 result.append(word1.charAt(i++));
             }
-            if (j<len2) {
+            if (j < len2) {
                 result.append(word2.charAt(j++));
             }
         }
