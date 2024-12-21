@@ -18,8 +18,8 @@ public class Triangle_120_Med {
         for (int row = 1; row < t.size(); row++) {
             for (int col = 0; col <= row; col++) {
                 int s = Integer.MAX_VALUE;
-                if (col > 0) s = t.get(row-1).get(col-1);
-                if (col < row) s = Math.min(s,t.get(row-1).get(col));
+                if (col > 0) s = t.get(row - 1).get(col - 1);
+                if (col < row) s = Math.min(s, t.get(row - 1).get(col));
                 int path = s + t.get(row).get(col);
                 t.get(row).set(col, path);
             }
