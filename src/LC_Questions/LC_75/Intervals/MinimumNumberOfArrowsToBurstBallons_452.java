@@ -4,6 +4,11 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 public class MinimumNumberOfArrowsToBurstBallons_452 {
+    public static void main(String[] args) {
+        MinimumNumberOfArrowsToBurstBallons_452 solution = new MinimumNumberOfArrowsToBurstBallons_452();
+        int[][] points = {{1, 3}, {2, 4}, {5, 6}, {7, 8}};
+        System.out.println(solution.findMinArrowShots(points));
+    }
 
     public int findMinArrowShots(int[][] points) {
         Arrays.sort(points, new Comparator<int[]>() {
