@@ -7,7 +7,6 @@ public class JumpGame_55 {
     }
     public static boolean canJump(int[] nums) {
         int distance = nums[0];
-
         while (distance < nums.length) {
             distance += nums[distance];
             if (distance == nums.length) {
