@@ -1,4 +1,4 @@
-package LC_Questions.LC_75.TwoPointers;
+package LC_Questions.ClassicQ;
 
 public class ContainerWithMostWater_11 {
     public static void main(String[] args) {

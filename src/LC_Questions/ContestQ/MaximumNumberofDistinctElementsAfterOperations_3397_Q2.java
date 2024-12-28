@@ -11,6 +11,7 @@ public class MaximumNumberofDistinctElementsAfterOperations_3397_Q2 {
         MaximumNumberofDistinctElementsAfterOperations_3397_Q2 obj = new MaximumNumberofDistinctElementsAfterOperations_3397_Q2();
         System.out.println(obj.maxDistinctElements(nums, k));
     }
+
     public int maxDistinctElements(int[] nums, int k) {
         int ans = 0;
         Arrays.sort(nums);

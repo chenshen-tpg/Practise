@@ -6,10 +6,10 @@ import java.util.HashMap;
 public class MaxNumberOfKSUMParis_1679 {
     public static void main(String[] args) {
         MaxNumberOfKSUMParis_1679 mn = new MaxNumberOfKSUMParis_1679();
-        System.out.println(mn.maxOperations(new int[]{4,4,1,3,1,3,2,2,5,5,1,5,2,1,2,3,5,4}, 2));
+        System.out.println(mn.maxOperationsTwoPointers(new int[]{4,4,1,3,1,3,2,2,5,5,1,5,2,1,2,3,5,4}, 2));
     }
 
-    private int maxOperations(int[] ints, int i) {
+    private int maxOperationsTwoPointers(int[] ints, int i) {
         Arrays.sort(ints);
         int l = 0, r = ints.length - 1;
         int count = 0;
