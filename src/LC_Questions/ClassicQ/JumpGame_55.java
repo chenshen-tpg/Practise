@@ -1,4 +1,4 @@
-package LC_Questions.LC_150.Array;
+package LC_Questions.ClassicQ;
 
 public class JumpGame_55 {
     public static void main(String[] args) {
