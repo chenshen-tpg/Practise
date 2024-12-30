@@ -7,14 +7,20 @@ public class JumpGameII_55 {
 
     }
     public static int jump(int[] nums) {
-        int count = 0, cur = 0, max = 0;
+        if (nums.length < 2) return 0;
+        int jumps = 0;
+        int currentEnd = 0;
+        int farthest = 0;
         for (int i = 0; i < nums.length - 1; i++) {
-            max = Math.max(max, nums[i] + i);
-            if (i == cur) {
-                count++;
-                cur = max;
+            farthest = Math.max(farthest, i + nums[i]);
+            if (i == currentEnd) {
+                jumps++;
+                currentEnd = farthest;
+                if (currentEnd >= nums.length - 1) {
+                    break;
+                }
             }
         }
-        return count;
+        return jumps;
     }
 }
