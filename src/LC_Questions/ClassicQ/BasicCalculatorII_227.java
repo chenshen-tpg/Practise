@@ -1,4 +1,4 @@
-package LC_Questions.AtlanssianQ;
+package LC_Questions.ClassicQ;
 
 import java.util.Stack;
 
