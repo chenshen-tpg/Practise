@@ -1,5 +1,7 @@
 package LC_Questions.WholePackage.Array;
 
+import java.util.Arrays;
+
 public class MergeSortedArray_88 {
     public static void main(String[] args) {
         int [] nums1 = {1,2,3,0,0,0};
@@ -9,9 +11,14 @@ public class MergeSortedArray_88 {
         merge1(nums1,m,nums2,n);
 
     }
+    public void merge_Sort(int[] nums1, int m, int[] nums2, int n) {
+        for (int i = 0; i < n; i++) {
+            nums1[i + m] = nums2[i];
+        }
+        Arrays.sort(nums1);
+    }
 
     public static void merge(int[] nums1, int m, int[] nums2, int n) {
-        // Make a copy of the first m elements of nums1.
         int[] nums1Copy = new int[m];
         for (int i = 0; i < m; i++) {
             nums1Copy[i] = nums1[i];

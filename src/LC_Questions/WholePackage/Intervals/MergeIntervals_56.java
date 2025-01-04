@@ -1,5 +1,6 @@
 package LC_Questions.WholePackage.Intervals;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -18,9 +19,28 @@ public class MergeIntervals_56 {
     public static void main(String[] args) {
         MergeIntervals_56 mi = new MergeIntervals_56();
         int[][] intervals = new int[][]{{1,3},{2,6},{8,10},{15,18}};
-        mi.merge1(intervals);
+        mi.merge_LinkedListVersion(intervals);
+        Arrays.asList(1,2);
+        LinkedList<int []> res = new LinkedList<>();
+        Arrays.sort(intervals, (a,b) -> (a[0] - b[0]));
+
     }
-    public int[][] merge1(int[][] intervals) {
+
+    public int[][] merge_ListVersion(int[][] intervals) {
+        Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
+        List<int[]> m = new ArrayList<>();
+        for (int[] interval : intervals) {
+            if (m.isEmpty() || m.get(m.size() - 1)[1] < interval[0]) {
+                m.add(interval);
+            } else {
+                m.get(m.size() - 1)[1] = Math.max(m.get(m.size() - 1)[1], interval[1]);
+            }
+        }
+        return m.toArray(new int[m.size()][]);
+    }
+
+
+    public int[][] merge_LinkedListVersion(int[][] intervals) {
         Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
         LinkedList<int[]> m = new LinkedList<>();
         for (int[] interval : intervals) {
@@ -32,6 +52,9 @@ public class MergeIntervals_56 {
         }
         return m.toArray(new int[m.size()][]);
     }
+
+
+
     private int[] mergeNodes(List<int[]> nodes) {
         int minStart = nodes.get(0)[0];
         for (int[] node : nodes) {
@@ -45,6 +68,8 @@ public class MergeIntervals_56 {
 
         return new int[] { minStart, maxEnd };
     }
+
+
     private void markComponentDFS(int[] start, int compNumber) {
         Stack<int[]> stack = new Stack<>();
         stack.add(start);

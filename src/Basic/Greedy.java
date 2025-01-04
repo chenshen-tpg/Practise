@@ -5,7 +5,6 @@ import java.util.Comparator;
 
 public class Greedy {
 
-        // Activity class to store start and end times
         static class Activity {
             int start, end;
             Activity(int start, int end) {
@@ -14,24 +13,17 @@ public class Greedy {
             }
         }
 
-        // Function to perform activity selection
         public static int maxActivities(Activity[] activities) {
-            // Sort activities based on their end times
             Arrays.sort(activities, Comparator.comparingInt(a -> a.end));
-
-            // The first activity always gets selected
             int count = 1;
             int lastEndTime = activities[0].end;
-
-            // Iterate through the rest of the activities
             for (int i = 1; i < activities.length; i++) {
-                // If the start time of the current activity is greater than or equal to the end time of the last selected activity
                 if (activities[i].start >= lastEndTime) {
-                    count++; // Select the activity
-                    lastEndTime = activities[i].end; // Update the end time of the last selected activity
+                    count++;
+                    lastEndTime = activities[i].end;
                 }
             }
-            return count; // Return the maximum number of activities
+            return count;
         }
 
         public static void main(String[] args) {
