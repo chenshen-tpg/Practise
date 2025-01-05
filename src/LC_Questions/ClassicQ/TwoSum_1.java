@@ -1,4 +1,4 @@
-package LC_Questions.WholePackage.Array;
+package LC_Questions.ClassicQ;
 
 import java.util.HashMap;
 
