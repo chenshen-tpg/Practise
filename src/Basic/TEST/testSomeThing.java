@@ -1,4 +1,4 @@
-package Basic;
+package Basic.TEST;
 
 public class testSomeThing {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Crawler;
+package Basic.Crawler;
 
 import java.io.IOException;
 import java.net.URI;

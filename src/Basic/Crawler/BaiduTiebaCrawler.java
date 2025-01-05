@@ -1,4 +1,4 @@
-package Crawler;
+package Basic.Crawler;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
