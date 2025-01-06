@@ -1,13 +1,13 @@
 package LC_Questions.ContestQ;
 
-public class LongestProductEquivalentSubarray {
+public class longestProductEquivalentSubarray_3411_Q1 {
 
     public static void main(String[] args) {
         int[] nums = {2, 3, 4, 6, 12};
-        System.out.println(longestProductEquivalentSubarray(nums)); // Output: 3
+        System.out.println(longestProductEquivalentSubarray_3411_Q1(nums)); // Output: 3
     }
 
-    public static int longestProductEquivalentSubarray(int[] nums) {
+    public static int longestProductEquivalentSubarray_3411_Q1(int[] nums) {
         int maxLength = 0;
         int n = nums.length;
 

@@ -2,9 +2,11 @@ package LC_Questions.ContestQ;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.Map;
+import java.util.Stack;
 
-public class FindMirrorScoreOfAString {
+public class FindMirrorScoreOfAString_3412_Q2 {
     public static void main(String[] args) {
         String s = "zadavyayobbgqsexaabk";
 
@@ -110,5 +112,45 @@ public class FindMirrorScoreOfAString {
                 lastSeen.put(current, i);
             }
             return score;
+    }
+    public long calculateScore_LinkedList(String s) {
+        LinkedList<Integer>[] seen = new LinkedList[26];
+        for (int i = 0; i < 26; ++i) {
+            seen[i] = new LinkedList<>();
+        }
+        long res = 0;
+        for (int i = 0; i < s.length(); ++i) {
+            int a = s.charAt(i) - 'a';
+            if (seen[25 - a].isEmpty()) {
+                seen[a].add(i);
+            } else {
+                int j = seen[25 - a].pollLast();
+                res += i - j;
+            }
+        }
+        return res;
+    }
+    public long calculateScore_HashMap(String s) {
+        int n = s.length();
+        long score = 0;
+
+        Map<Integer, Stack<Integer>> map=new HashMap<>();
+        for(int i=0; i<26; i++){
+            map.put(i, new Stack<>());
+        }
+
+        for(int i=0; i<n; i++){
+            int chIdx=s.charAt(i)-'a';
+            int mrIdx=25-chIdx;  //Mirror Character INT
+
+            if(!map.get(mrIdx).isEmpty()){
+                score+=i-map.get(mrIdx).pop();
+            }
+            else{
+                map.get(chIdx).push(i);
+            }
+        }
+
+        return score;
     }
 }
