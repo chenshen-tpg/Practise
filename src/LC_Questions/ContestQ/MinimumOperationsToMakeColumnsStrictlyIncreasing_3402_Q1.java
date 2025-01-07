@@ -24,14 +24,6 @@ public class MinimumOperationsToMakeColumnsStrictlyIncreasing_3402_Q1 {
         System.out.println(ans);
     }
 
-
-
-
-
-
-
-
-
     static int minimumOperations(int[][] grid) {
         int ans = 0;
         for(int c = 0; c < grid[0].length; ++c){

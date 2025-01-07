@@ -1,4 +1,4 @@
-package LC_Questions.WholePackage.BackTracking;
+package LC_Questions.ClassicQ;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -17,7 +17,7 @@ public class CombinationSum_39 {
         this.backtrack(target, comb, 0, candidates, results);
         return results;
     }
-    public void backtrack(int remain,  LinkedList<Integer> comb, int start, int[] candidates, List<List<Integer>> results) {
+    public void backtrack(int remain, LinkedList<Integer> comb, int start, int[] candidates, List<List<Integer>> results) {
         if (remain == 0) {
             results.add(new ArrayList<Integer>(comb));
             return;

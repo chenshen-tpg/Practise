@@ -6,8 +6,6 @@ public class BasicCalculatorII_227 {
     public static void main(String[] args) {
         BasicCalculatorII_227 calculator = new BasicCalculatorII_227();
         System.out.println(calculator.helper("3+2*2")); // Output: 7
-//        System.out.println(calculator.helper(" 3/2 ")); // Output: 1
-//        System.out.println(calculator.helper(" 3+5 / 2 ")); // Output: 5
     }
     private int helper(String s) {
         Stack<Integer> st = new Stack<>();

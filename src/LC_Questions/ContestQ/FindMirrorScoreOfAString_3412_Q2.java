@@ -140,11 +140,11 @@ public class FindMirrorScoreOfAString_3412_Q2 {
         }
 
         for(int i=0; i<n; i++){
-            int chIdx=s.charAt(i)-'a';
-            int mrIdx=25-chIdx;  //Mirror Character INT
+            int chIdx = s.charAt(i)-'a';
+            int mrIdx=25 - chIdx;  //Mirror Character INT
 
             if(!map.get(mrIdx).isEmpty()){
-                score+=i-map.get(mrIdx).pop();
+                score += i-map.get(mrIdx).pop();
             }
             else{
                 map.get(chIdx).push(i);

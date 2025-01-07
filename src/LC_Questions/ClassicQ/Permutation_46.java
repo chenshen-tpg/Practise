@@ -1,4 +1,4 @@
-package LC_Questions.WholePackage.BackTracking;
+package LC_Questions.ClassicQ;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,23 +8,26 @@ public class Permutation_46 {
         Permutation_46 p = new Permutation_46();
         System.out.println(p.permute(new int[]{1,2,3}));
     }
+
+
+
+
     public List<List<Integer>> permute(int[] nums) {
-        List<List<Integer>> result = new ArrayList<>();
-        helper(nums, new ArrayList<>(), result);
-        return result;
+        List<List<Integer>> res = new ArrayList<>();
+        helper(nums, new ArrayList<>(), res);
+        return res;
     }
 
-    public void helper(int[] nums, List<Integer> temp, List<List<Integer>> result) {
-        int len = nums.length;
-        if (temp.size() == len) {
-            result.add(new ArrayList<>(temp));
+    public void helper(int[] nums, List<Integer> temp, List<List<Integer>> res) {
+        if (temp.size() == nums.length) {
+            res.add(new ArrayList<>(temp));
             return;
         }
         for (int i = 0; i < nums.length; i++) {
             if (temp.contains(nums[i])) continue;
             temp.add(nums[i]);
-            helper(nums, temp, result);
-//            temp.remove(temp.size() - 1);
+            helper(nums, temp, res);
+            temp.remove(temp.size() - 1);
         }
     }
 
