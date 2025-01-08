@@ -1,4 +1,4 @@
-package LC_Questions.DailyChanllenges;
+package LC_Questions.DailyChanllenges.CountPrefixAndSuffixPairsI_3042;
 
 public class CountPrefixAndSuffixPairsI_3042 {
     public static void main(String[] args) {
