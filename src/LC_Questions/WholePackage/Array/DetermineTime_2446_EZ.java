@@ -13,13 +13,11 @@ public class DetermineTime_2446_EZ {
     public boolean haveConflict(String[] event1, String[] event2) {
         return (event1[1].compareTo(event2[0]) >= 0) && (event1[0].compareTo(event2[1]) <= 0);
     }
-
     public static boolean compare (String [] s1, String[] s2) {
         int timeF = Integer.valueOf(s1[1].replace(":",""));
         int timeS = Integer.valueOf(s2[0].replace(":",""));
         return timeF > timeS;
     }
-
     public static boolean compare2 (String [] s1, String[] s2) {
         String timeString = "02:00";
         LocalTime time1 = LocalTime.parse(timeString, DateTimeFormatter.ofPattern("HH:mm"));

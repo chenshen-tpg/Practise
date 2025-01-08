@@ -23,7 +23,6 @@ public class FindThePowerOfKSizeSubarrays_3255 {
         }
         return results;
     }
-
     private boolean isConsecutiveAndSorted(int[] nums, int start, int k) {
         for (int i = start; i < start + k - 1; i++) {
             if (nums[i] + 1 != nums[i + 1]) {
@@ -32,7 +31,6 @@ public class FindThePowerOfKSizeSubarrays_3255 {
         }
         return true;
     }
-
     public int[] resultsArray1(int[] nums, int k) {
         int [] ans = new int [nums.length-k+1];
         int maxans = 0;

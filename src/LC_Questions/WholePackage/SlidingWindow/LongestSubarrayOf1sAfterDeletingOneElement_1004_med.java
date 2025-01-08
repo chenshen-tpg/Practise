@@ -2,7 +2,12 @@ package LC_Questions.WholePackage.SlidingWindow;
 
 
 public class LongestSubarrayOf1sAfterDeletingOneElement_1004_med {
-
+    public static void main(String[] args) {
+        LongestSubarrayOf1sAfterDeletingOneElement_1004_med l = new LongestSubarrayOf1sAfterDeletingOneElement_1004_med();
+        int [] nums = {1,1,0,0,0,1,1,1,0,1};
+        int k = 2;
+        System.out.println(l.longestOnesMySolutionTEL(nums, k));
+    }
     public int longestSubarray(int[] nums) {
         int index = 0, count = 0, ans = 0;
         for (int i = 0; i < nums.length; i++) {
@@ -39,10 +44,5 @@ public class LongestSubarrayOf1sAfterDeletingOneElement_1004_med {
         return max;
     }
 
-    public static void main(String[] args) {
-        LongestSubarrayOf1sAfterDeletingOneElement_1004_med l = new LongestSubarrayOf1sAfterDeletingOneElement_1004_med();
-        int [] nums = {1,1,0,0,0,1,1,1,0,1};
-        int k = 2;
-        System.out.println(l.longestOnesMySolutionTEL(nums, k));
-    }
+
 }

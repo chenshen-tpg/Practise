@@ -13,7 +13,6 @@ public class GreatestCommonDivisorOfStrings_1071_easy {
         if (!(str1 + str2).equals(str2 + str1)) {
             return "";
         }
-        
         int gcdLength = gcd(str1.length(), str2.length());
         return str1.substring(0, gcdLength);
     }

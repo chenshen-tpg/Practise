@@ -22,8 +22,6 @@ public class NextPermutation_31 {
         }
         reverse(nums, i + 1);
     }
-
-
     public static void reverse (int [] nums, int s) {
         int i = s, j = nums.length - 1;
         while (i < j) {

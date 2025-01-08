@@ -9,9 +9,6 @@ public class Permutation_46 {
         System.out.println(p.permute(new int[]{1,2,3}));
     }
 
-
-
-
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
         helper(nums, new ArrayList<>(), res);

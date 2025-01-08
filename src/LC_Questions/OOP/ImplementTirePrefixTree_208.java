@@ -1,10 +1,11 @@
-package LC_Questions.WholePackage.Trie;
+package LC_Questions.OOP;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ImplementTirePrefixTree_208 {
     static class Trie1 {
+
         List<String> list;
         public Trie1() {
             list=new ArrayList<String>();

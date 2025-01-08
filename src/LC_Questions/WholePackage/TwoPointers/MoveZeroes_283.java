@@ -21,7 +21,6 @@ public class MoveZeroes_283 {
             ints[k++] = 0;
         }
     }
-
     private void moveZeroes1(int [] ints) {
         if (ints.length == 1) return;
         for (int i = 0; i < ints.length; i++) {
@@ -36,7 +35,6 @@ public class MoveZeroes_283 {
             }
         }
     }
-
     private void moveZeroes(int[] ints) {
         int left = 0;
         for(int i = 0; i < ints.length; i++) {
