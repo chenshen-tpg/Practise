@@ -19,13 +19,14 @@ public class MaxiumumSwap_670 {
                 sIndex = maxDig;
             }
         }
-        if (fIndex != -1 && sIndex !=-1) {
+        if (fIndex != -1 && sIndex != -1) {
             char temp = numStr[fIndex];
             numStr[fIndex] = numStr[sIndex];
             numStr[sIndex] = temp;
         }
         return Integer.parseInt(new String(numStr));
     }
+
     public int maximumSwap(int num) {
         int res = num;
         int diff = 0;
@@ -45,7 +46,6 @@ public class MaxiumumSwap_670 {
         }
         return res + diff;
     }
-
     public static int method_Wrong (int num) {
         PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) ->b - a);
         String str = Integer.toString(num);

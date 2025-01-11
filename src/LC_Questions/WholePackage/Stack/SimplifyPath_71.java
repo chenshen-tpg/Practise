@@ -24,8 +24,8 @@ public class SimplifyPath_71 {
             }
         }
         StringBuilder sb = new StringBuilder();
-        // we can use loop to iterate stack rather than pop them up
-        // there is no pop all as well.
+        // TIPs: we can use loop to iterate stack rather than pop them up
+        // There is no pop all as well.
         for (String s:stack) {
             sb.append("/");
             sb.append(s);

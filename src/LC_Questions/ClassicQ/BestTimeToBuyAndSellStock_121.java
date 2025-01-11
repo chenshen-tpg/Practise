@@ -16,7 +16,6 @@ public class BestTimeToBuyAndSellStock_121 {
         }
         return ans;
     }
-
     public static int helperOne (int [] list) {
         int ans = 0, min = Integer.MAX_VALUE;
         for (int i = 0; i < list.length; i++) {
