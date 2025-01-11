@@ -1,16 +1,50 @@
 package LC_Questions.ContestQ;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
 import java.util.Stack;
 
 public class FindMirrorScoreOfAString_3412_Q2 {
     public static void main(String[] args) {
-        String s = "zadavyayobbgqsexaabk";
+        String s = "aczzx";
 
-        System.out.println(findMirrorScoreSS(s));
+        System.out.println(calculateScore_Upvote1(s));
+    }
+    public static long calculateScore_Upvote1(String s) {
+        LinkedList<Integer>[] seen = new LinkedList[26];
+        for (int i = 0; i < 26; ++i) {
+            seen[i] = new LinkedList<>();
+        }
+        long res = 0;
+        for (int i = 0; i < s.length(); ++i) {
+            int a = s.charAt(i) - 'a';
+            if (seen[25 - a].isEmpty()) {
+                seen[a].add(i);
+            } else {
+                int j = seen[25 - a].pollLast();
+                res += i - j;
+            }
+        }
+        return res;
+    }
+    long calculateScore_Upvoted2(String s) {
+        long ans = 0;
+        Map<Integer, List<Integer>> mp = new HashMap<>();
+        for (int i = 0; i < s.length(); ++i){
+            int cur = s.charAt(i) - 'a';
+            int mirror = 25 - cur;
+            if (mp.containsKey(mirror) && mp.get(mirror).size() > 0){
+                ans += (long)i - (long)mp.get(mirror).get(mp.get(mirror).size() - 1);
+                mp.get(mirror).remove(mp.get(mirror).size() - 1);
+            } else {
+                mp.computeIfAbsent(cur, key -> new ArrayList<>()).add(i);
+            }
+        }
+        return ans;
     }
 
     public long calculateScore(String s) {
