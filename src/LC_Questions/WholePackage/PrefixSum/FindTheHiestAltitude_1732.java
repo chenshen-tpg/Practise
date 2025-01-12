@@ -2,10 +2,18 @@ package LC_Questions.WholePackage.PrefixSum;
 
 public class FindTheHiestAltitude_1732 {
     public static void main(String[] args) {
-        int[] gain = new int[]{-5, 1, 5, 0, -7};
-        System.out.println(largestAltitude(gain));
+        int [] gain = new int[]{-5, 1, 5, 0, -7};
+        System.out.println(method(gain));
     }
-
+    public static int method (int [] gain) {
+        int temp = 0;
+        int res = 0;
+        for (int i = 0; i < gain.length; i++) {
+            temp += gain[i];
+            res = Math.max(res, temp);
+        }
+        return res;
+    }
     private static int largestAltitude(int[] gain) {
         int [] memo = new int [gain.length];
         int tem = 0;
