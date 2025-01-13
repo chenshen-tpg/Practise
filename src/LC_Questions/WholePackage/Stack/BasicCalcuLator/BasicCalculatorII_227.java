@@ -1,4 +1,4 @@
-package LC_Questions.ClassicQ;
+package LC_Questions.WholePackage.Stack.BasicCalcuLator;
 
 import java.util.Stack;
 
