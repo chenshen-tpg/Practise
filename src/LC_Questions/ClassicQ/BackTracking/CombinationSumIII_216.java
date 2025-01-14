@@ -1,4 +1,4 @@
-package LC_Questions.ClassicQ;
+package LC_Questions.ClassicQ.BackTracking;
 
 import java.util.ArrayList;
 import java.util.List;
