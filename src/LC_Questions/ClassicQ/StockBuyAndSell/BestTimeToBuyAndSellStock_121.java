@@ -1,4 +1,4 @@
-package LC_Questions.ClassicQ;
+package LC_Questions.ClassicQ.StockBuyAndSell;
 
 public class BestTimeToBuyAndSellStock_121 {
     public static void main(String[] args) {

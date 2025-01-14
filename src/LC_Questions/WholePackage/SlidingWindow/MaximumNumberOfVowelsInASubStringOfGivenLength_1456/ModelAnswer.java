@@ -1,6 +1,6 @@
-package LC_Questions.WholePackage.SlidingWindow;
+package LC_Questions.WholePackage.SlidingWindow.MaximumNumberOfVowelsInASubStringOfGivenLength_1456;
 
-public class MaximumNumberOfVowelsInASubstringOfGivenLength_1456 {
+public class ModelAnswer {
     public static void main(String[] args) {
         String s = "abciiidef";
         int k = 3;

@@ -1,9 +1,9 @@
-package LC_Questions.WholePackage.Array;
+package LC_Questions.WholePackage.Array.ReverseVowelsOfAString;
 
 public class ReverseVowelsInaString_345_easy {
     public static void main(String[] args) {
         ReverseVowelsInaString_345_easy rv = new ReverseVowelsInaString_345_easy();
-        System.out.println(rv.reverseVowels("hello"));
+        System.out.println(rv.method("IceCreAm"));
     }
     boolean isVowel(char c) {
         return c == 'a' || c == 'i' || c == 'e' || c == 'o' || c == 'u'
@@ -20,7 +20,7 @@ public class ReverseVowelsInaString_345_easy {
         }
         char[] sChar = s.toCharArray();
         int i = 0, j = s.length()-1;
-        while(i<j){
+        while(i < j){
             while (i < j && !isVowel(sChar[i])) {
                 i++;
             }
@@ -33,5 +33,23 @@ public class ReverseVowelsInaString_345_easy {
             j--;
         }
         return new String(sChar);
+    }
+    public static String method (String s) {
+        int left = 0, right = s.length() - 1;
+        char [] res = s.toCharArray();
+        while (left < right) {
+            while (left < right && !"aeiou".contains(Character.toLowerCase(s.charAt(left))+"")) {
+                left++;
+            }
+            while (left < right && !"aeiou".contains(Character.toLowerCase(s.charAt(right))+"")) {
+                right--;
+            }
+            char temp = res[left];
+            res[left] = res[right];
+            res[right] = temp;
+            left++;
+            right--;
+        }
+        return new String(res);
     }
 }

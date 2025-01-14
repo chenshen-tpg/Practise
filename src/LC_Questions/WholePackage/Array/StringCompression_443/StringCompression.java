@@ -1,13 +1,32 @@
-package LC_Questions.WholePackage.Array;
+package LC_Questions.WholePackage.Array.StringCompression_443;
 
-public class StringCompression_443_med_review {
+import java.util.HashMap;
+
+public class StringCompression {
     public static void main(String[] args) {
-        StringCompression_443_med_review sc = new StringCompression_443_med_review();
+        StringCompression sc = new StringCompression();
         char[] chars = new char[]{'a', 'a', 'b', 'b', 'c', 'c', 'c'};
-//        System.out.println(sc.compress(chars));
-        System.out.println(sc.test(chars));
+//        char[] chars = new char[]{'a'};
+        System.out.println(sc.compress(chars));
     }
-    // for loop might need to - 1 to avoid out of bound
+    //"a","2","b","2","c","3"
+
+    public static int HashMapForTheResult (char[] s) {
+        HashMap<Character,Integer> hm = new HashMap<>();
+        for (char ss:s){
+            hm.put(ss, hm.getOrDefault(ss, 0) + 1);
+        }
+        StringBuilder sb = new StringBuilder();
+        for (char ss:hm.keySet()) {
+            if (hm.get(ss) > 1) {
+                sb.append(ss);
+                sb.append(hm.get(ss));
+            } else {
+                sb.append(ss);
+            }
+        }
+        return sb.length();
+    }
     public int compress(char[] chars) {
         int l = 0;
         int r = chars.length;
@@ -36,7 +55,7 @@ public class StringCompression_443_med_review {
             }
             chars[ans++] = chars[i];
             if (c > 1) {
-                for (char ch : Integer.toString(c).toCharArray()) {
+                for (char ch : String.valueOf(c).toCharArray()) {
                     chars[ans++] = ch;
                 }
             }
