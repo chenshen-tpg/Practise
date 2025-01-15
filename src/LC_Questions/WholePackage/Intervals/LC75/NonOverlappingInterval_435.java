@@ -8,9 +8,6 @@ public class NonOverlappingInterval_435 {
         NonOverlappingInterval_435 solution = new NonOverlappingInterval_435();
         int[][] intervals = {{1, 2}, {3, 4}, {5, 6}};
 //        solution.eraseOverlapIntervals(intervals);
-
-
-
     }
 
 
