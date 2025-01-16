@@ -6,11 +6,14 @@ import java.util.Stack;
 
 public class OneStackVersion {
     public static void main(String[] args) {
-
+        String s = "3[a]2[bc]"; //"aaabcbc"
+        String s1 = "13[a2[c]]"; //"accaccacc"
+        String s2 = "2[abc]3[cd]ef"; //abcabccdcdcdef
+        System.out.println(decodeString(s));
     }
 
 
-    public String decodeString(String s) {
+    public static String decodeString(String s) {
         Stack<Character> stack = new Stack<>();
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == ']') {
