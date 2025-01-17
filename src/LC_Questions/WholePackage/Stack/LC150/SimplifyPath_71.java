@@ -1,4 +1,4 @@
-package LC_Questions.WholePackage.Stack;
+package LC_Questions.WholePackage.Stack.LC150;
 
 import java.util.Stack;
 

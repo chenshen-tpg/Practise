@@ -1,9 +1,8 @@
-package LC_Questions.WholePackage.Stack;
+package LC_Questions.WholePackage.Stack.LC150.BasicCalculator_224;
 
 import java.util.Stack;
 
 public class BasicCalculator_224 {
-    int idx;
 
     public static void main(String[] args) {
         String s = "1-(  2-4   -2)";
@@ -38,64 +37,9 @@ public class BasicCalculator_224 {
                 operand = 0;
             }
         }
-        return result +(sign*operand);
-    }
-    public int recursiveSolution(String s) {
-        idx = 0; // Initialization should be here
-        return calc(s);
+        return result +(sign * operand);
     }
 
-    private int calc(String s) {
-        int res = 0, num = 0, sign = 1;
-        while (idx < s.length()) {
-            char c = s.charAt(idx++);
-            if (c >= '0' && c <= '9') num = num * 10 + c - '0';
-            else if (c == '(') num = calc(s);
-            else if (c == ')') return res + sign * num;
-            else if (c == '+' || c == '-') {
-                res += sign * num;
-                num = 0;
-                sign = c == '-' ? -1 : 1;
-            }
-        }
-        return res + sign * num; // last number is not processed yet
-    }
-    public static int mostVotedSolution (String s) {
-        int ans = 0;
-        int num = 0;
-        int sign = 1;
-        Stack<Integer> stack = new Stack<>();
-        for (int i = 0; i < s.length(); i++) {
-            char c = s.charAt(i);
-            if (Character.isDigit(c)) {
-                num = num * 10 +(c - '0');
-            }
-            else if (c == '+') {
-                ans += sign * num;
-                num = 0;
-                sign = 1;
-            }
-            else if (c == '-') {
-                ans += sign * num;
-                num = 0;
-                sign = -1;
-            }
-            else if (c == '(') {
-                stack.push(ans);
-                stack.push(sign);
-                sign = 1;
-                ans = 0;
-            }
-            else if (c == ')') {
-                ans += sign * num;
-                num = 0;
-                ans *= stack.pop();
-                ans += stack.pop();
-            }
-        }
-        if(num != 0) ans += sign * num;
-        return ans;
-    }
 
 
     public static boolean isOperator(char c) {
