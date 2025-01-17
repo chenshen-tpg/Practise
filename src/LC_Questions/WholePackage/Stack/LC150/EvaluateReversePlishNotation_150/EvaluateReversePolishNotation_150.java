@@ -1,4 +1,4 @@
-package LC_Questions.WholePackage.Stack.LC150;
+package LC_Questions.WholePackage.Stack.LC150.EvaluateReversePlishNotation_150;
 
 import java.util.Stack;
 
@@ -11,7 +11,6 @@ public class EvaluateReversePolishNotation_150 {
 
     public static int evaluate(String[] tokens) {
         Stack<Integer> stack = new Stack<>();
-
         for (String token:tokens) {
             if(!"+-*/".contains(token)) {
                 stack.push(Integer.valueOf(token));

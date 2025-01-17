@@ -1,4 +1,4 @@
-package LC_Questions.WholePackage.SlidingWindow;
+package LC_Questions.WholePackage.SlidingWindow.SubStringWithAllWords_30;
 
 import java.util.ArrayList;
 import java.util.HashMap;
