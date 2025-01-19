@@ -1,4 +1,4 @@
-package LC_Questions.WholePackage.Trie;
+package LC_Questions.WholePackage.Trie.LC75;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package LC_Questions.WholePackage.SlidingWindow;
+package LC_Questions.WholePackage.SlidingWindow.Others;
 
 public class FindThePowerOfKSizeSubarrays_3255 {
     public static void main(String[] args) {

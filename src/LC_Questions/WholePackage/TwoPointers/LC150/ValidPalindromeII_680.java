@@ -1,4 +1,4 @@
-package LC_Questions.WholePackage.TwoPointers;
+package LC_Questions.WholePackage.TwoPointers.LC150;
 
 public class ValidPalindromeII_680 {
     public static void main(String[] args) {

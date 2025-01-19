@@ -1,4 +1,4 @@
-package LC_Questions.WholePackage.TwoPointers.LC75;
+package LC_Questions.WholePackage.TwoPointers.LC75.IsSubsequence_392;
 
 public class IsSubsequence_392 {
     public static void main(String[] args) {

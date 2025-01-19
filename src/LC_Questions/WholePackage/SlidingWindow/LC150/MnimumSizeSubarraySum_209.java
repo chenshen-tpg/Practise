@@ -1,4 +1,4 @@
-package LC_Questions.WholePackage.SlidingWindow;
+package LC_Questions.WholePackage.SlidingWindow.LC150;
 
 public class MnimumSizeSubarraySum_209 {
     public static void main(String[] args) {

@@ -2,7 +2,7 @@ package LC_Questions.WholePackage.Queue.LC100.SlidingWindowMaximum_329;
 
 import java.util.LinkedList;
 
-public class SlidingWindowMaximum_239 {
+public class MeTrying {
     public static void main(String[] args) {
 //        int [] num = {1,3,-1,-3,5,3,6,7};
         int k = 3;

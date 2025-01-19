@@ -1,4 +1,4 @@
-package LC_Questions.ClassicQ.Sum;
+package LC_Questions.WholePackage.TwoPointers.LC150;
 
 import java.util.HashMap;
 

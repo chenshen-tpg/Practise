@@ -1,4 +1,4 @@
-package LC_Questions.WholePackage.TwoPointers;
+package LC_Questions.WholePackage.TwoPointers.Others;
 
 import java.util.HashMap;
 import java.util.Map;

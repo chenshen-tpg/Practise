@@ -1,4 +1,4 @@
-package LC_Questions.ClassicQ.Sum;
+package LC_Questions.WholePackage.TwoPointers.Others;
 
 import java.util.ArrayList;
 import java.util.Arrays;

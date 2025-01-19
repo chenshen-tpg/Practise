@@ -1,15 +1,15 @@
-package LC_Questions.WholePackage.Trie;
+package LC_Questions.WholePackage.Trie.LC150;
 
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
-public class DesignAddandSearchWordsDataStructure_211_MED {
+public class DesignAddandSearchWordsDataStructure_211 {
     HashMap<Integer, Set<String>> hm;
 
 
     public static void main(String[] args) {
-        DesignAddandSearchWordsDataStructure_211_MED w = new DesignAddandSearchWordsDataStructure_211_MED();
+        DesignAddandSearchWordsDataStructure_211 w = new DesignAddandSearchWordsDataStructure_211();
         w.WordDictionary();
         w.addWord("bad");
         w.addWord("dad");

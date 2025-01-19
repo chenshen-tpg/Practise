@@ -1,4 +1,4 @@
-package LC_Questions.WholePackage.TwoPointers.LC75;
+package LC_Questions.WholePackage.TwoPointers.LC75.MoveZeros;
 
 public class MoveZeroes_283 {
     public static void main(String[] args) {

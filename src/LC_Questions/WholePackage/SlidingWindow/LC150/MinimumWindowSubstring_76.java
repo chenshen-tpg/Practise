@@ -1,4 +1,4 @@
-package LC_Questions.WholePackage.SlidingWindow;
+package LC_Questions.WholePackage.SlidingWindow.LC150;
 
 import java.util.HashMap;
 import java.util.Map;
