@@ -1,4 +1,4 @@
-package LC_Questions.ContestQ;
+package LC_Questions.ContestQ.Q1;
 
 public class MinimumOperationsToMakeColumnsStrictlyIncreasing_3402_Q1 {
     public static void main(String[] args) {

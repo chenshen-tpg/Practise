@@ -3,7 +3,7 @@ package LC_Questions.WholePackage.Graph.LC75.RottingOrganges_994;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class BFS {
+public class QueueBFS {
 
 
     public static void main(String[] args) {

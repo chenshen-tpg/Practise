@@ -1,7 +1,11 @@
 package LC_Questions.WholePackage.Graph.LC75.RottingOrganges_994;
 
 public class DFS {
+    public static void main(String[] args) {
+
+    }
     class Solution {
+
         public int orangesRotting(int[][] grid) {
             int min = 2;
             for (int i = 0; i < grid.length; i++) {

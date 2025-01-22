@@ -1,4 +1,4 @@
-package LC_Questions.ContestQ;
+package LC_Questions.ContestQ.Q1;
 
 public class longestProductEquivalentSubarray_3411_Q1 {
 

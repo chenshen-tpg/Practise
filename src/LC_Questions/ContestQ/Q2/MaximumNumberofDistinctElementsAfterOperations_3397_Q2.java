@@ -1,4 +1,4 @@
-package LC_Questions.ContestQ;
+package LC_Questions.ContestQ.Q2;
 
 import java.util.Arrays;
 import java.util.HashSet;

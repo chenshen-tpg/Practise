@@ -1,6 +1,6 @@
 package LC_Questions.WholePackage.TwoPointers.LC75.IsSubsequence_392;
 
-public class MySolution {
+public class Practise {
     public static void main(String[] args) {
         String s = "aaaaaa";
         String t = "bbaaaa";
