@@ -2,10 +2,10 @@ package LC_Questions.DailyChanllenges.FirstCompletelyPaintedRoworColumn_2661;
 
 import java.util.HashMap;
 
-public class HighestUpvotedAns {
+public class Prefix {
 
     public static void main(String[] args) {
-        HighestUpvotedAns h = new HighestUpvotedAns();
+        Prefix h = new Prefix();
         int[] arr2 = {2, 8, 7, 4, 1, 3, 5, 6, 9};
         int[][] mat2 = {
                 {3, 2, 5},
