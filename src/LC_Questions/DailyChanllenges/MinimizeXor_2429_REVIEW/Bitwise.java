@@ -1,4 +1,4 @@
-package LC_Questions.DailyChanllenges.MinimizeXor_2429;
+package LC_Questions.DailyChanllenges.MinimizeXor_2429_REVIEW;
 
 public class Bitwise {
     public static void main(String[] args) {
