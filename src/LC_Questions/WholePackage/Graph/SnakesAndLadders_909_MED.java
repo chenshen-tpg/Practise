@@ -1,34 +1,15 @@
 package LC_Questions.WholePackage.Graph;
 
 
+import Lib.Pair;
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class SnakesAndLadders_909_MED {
-    public class Pair<K, V> {
 
-        private final K element0;
-        private final V element1;
-
-        public <K, V> Pair<K, V> createPair(K element0, V element1) {
-            return new Pair<K, V>(element0, element1);
-        }
-
-        public Pair(K element0, V element1) {
-            this.element0 = element0;
-            this.element1 = element1;
-        }
-
-        public K getElement0() {
-            return element0;
-        }
-
-        public V getElement1() {
-            return element1;
-        }
-    }
 
     public static void main(String[] args) {
         SnakesAndLadders_909_MED s = new SnakesAndLadders_909_MED();
@@ -56,7 +37,7 @@ public class SnakesAndLadders_909_MED {
         while (!q.isEmpty()) {
             int cur = q.remove();
             for (int next = cur + 1; next <= Math.min(cur + 6, n * n); next++) {
-                int row = cells[next].getElement0(), column = cells[next].getElement1();
+                int row = cells[next].getKey(), column = cells[next].getValue();
                 int dest = board[row][column] != -1 ? board[row][column] : next;
                 if (dist[dest] == -1) {
                     dist[dest] = dist[cur] + 1;

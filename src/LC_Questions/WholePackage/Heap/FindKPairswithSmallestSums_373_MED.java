@@ -1,5 +1,7 @@
 package LC_Questions.WholePackage.Heap;
 
+import Lib.Pair;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -7,29 +9,7 @@ import java.util.PriorityQueue;
 import java.util.Set;
 
 public class FindKPairswithSmallestSums_373_MED {
-    public class Pair<K, V> {
 
-        private final K element0;
-        private final V element1;
-
-        public <K, V> Pair<K, V> createPair(K element0, V element1) {
-            return new Pair<K, V>(element0, element1);
-        }
-
-        public Pair(K element0, V element1) {
-            this.element0 = element0;
-            this.element1 = element1;
-        }
-
-        public K getElement0() {
-            return element0;
-        }
-
-        public V getElement1() {
-            return element1;
-        }
-
-    }
     public static void main(String[] args) {
         FindKPairswithSmallestSums_373_MED f = new FindKPairswithSmallestSums_373_MED();
         List<List<Integer>> res = f.kSmallestPairs(new int[]{1,7,11}, new int[]{2,4,6}, 3);

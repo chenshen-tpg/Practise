@@ -1,5 +1,7 @@
 package LC_Questions.WholePackage.Graph;
 
+import Lib.Pair;
+
 import java.util.LinkedList;
 import java.util.List;
 
@@ -53,15 +55,7 @@ public class SurrondedRegions_130 {
 
 
 
-    class Pair<U, V> {
-        public U first;
-        public V second;
 
-        public Pair(U first, V second) {
-            this.first = first;
-            this.second = second;
-        }
-    }
     Integer ROWS = 0;
     Integer COLS = 0;
     public void solve(char[][] board) {
@@ -81,7 +75,7 @@ public class SurrondedRegions_130 {
             borders.add(new Pair(this.ROWS - 1, c));
         }
         for (Pair<Integer, Integer> pair : borders) {
-            this.DFS(board, pair.first, pair.second);
+            this.DFS(board, pair.getKey(), pair.getValue());
         }
         for (int r = 0; r < this.ROWS; ++r) {
             for (int c = 0; c < this.COLS; ++c) {
@@ -103,7 +97,7 @@ public class SurrondedRegions_130 {
         queue.offer(new Pair<>(r, c));
         while (!queue.isEmpty()) {
             Pair<Integer, Integer> pair = queue.pollFirst();
-            int row = pair.first, col = pair.second;
+            int row = pair.getKey(), col = pair.getValue();
             if (board[row][col] != 'O') continue;
             board[row][col] = 'E';
             if (col < this.COLS - 1) queue.offer(new Pair<>(row, col + 1));

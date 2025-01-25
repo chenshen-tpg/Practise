@@ -1,17 +1,12 @@
 package LC_Questions.WholePackage.MonotonicStack.LC75.OnlineStockSpan_901;
 
+import Lib.Pair;
+
 import java.util.ArrayList;
 import java.util.Stack;
 
 public class OnlineStockSpan_Stack_Pair {
-    class Pair {
-        int price;
-        int index;
-        Pair(Integer price , Integer index){
-            this.price = price;
-            this.index = index;
-        }
-    }
+
     Stack<Pair> stack2 = new Stack<>();
     ArrayList<Integer> al = new ArrayList<>();
     public static void main(String[] args) {
@@ -42,8 +37,8 @@ public class OnlineStockSpan_Stack_Pair {
     }
     public int next(int price) {
         int ans = 1;
-        while (!stack2.isEmpty() && stack2.peek().price <= price) {
-            ans += stack2.pop().index;
+        while (!stack2.isEmpty() && ((int) stack2.peek().getKey() <= price)) {
+            ans += (int) stack2.pop().getValue();
         }
         stack2.push(new Pair(price, ans));
         return ans;
