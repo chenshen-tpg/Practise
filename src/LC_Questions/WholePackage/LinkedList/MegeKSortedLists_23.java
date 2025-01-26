@@ -1,5 +1,7 @@
 package LC_Questions.WholePackage.LinkedList;
 
+import Lib.ListNode;
+
 import java.util.Comparator;
 import java.util.PriorityQueue;
 

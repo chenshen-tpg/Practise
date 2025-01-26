@@ -1,5 +1,8 @@
 package LC_Questions.WholePackage.Tree.Others;
 
+import Lib.Pair;
+import Lib.TreeNode;
+
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -10,48 +13,15 @@ import java.util.Map;
 import java.util.Queue;
 
 public class BinaryTreeVerticalOrderTraversal_314 {
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode() {}
-        TreeNode(int val) { this.val = val; }
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
-    public class Pair<K, V> {
 
-        private final K element0;
-        private final V element1;
-
-        public <K, V> Pair<K, V> createPair(K element0, V element1) {
-            return new Pair<K, V>(element0, element1);
-        }
-
-        public Pair(K element0, V element1) {
-            this.element0 = element0;
-            this.element1 = element1;
-        }
-
-        public K getKey() {
-            return element0;
-        }
-
-        public V getValue() {
-            return element1;
-        }
-    }
 
     public static void main(String[] args) {
         BinaryTreeVerticalOrderTraversal_314 bt = new BinaryTreeVerticalOrderTraversal_314();
-        TreeNode root = bt.new TreeNode(3);
-        TreeNode n1 = bt.new TreeNode(9);
-        TreeNode n2 = bt.new TreeNode(20);
-        TreeNode n3 = bt.new TreeNode(15);
-        TreeNode n4 = bt.new TreeNode(7);
+        TreeNode root = new TreeNode(3);
+        TreeNode n1 = new TreeNode(9);
+        TreeNode n2 = new TreeNode(20);
+        TreeNode n3 = new TreeNode(15);
+        TreeNode n4 = new TreeNode(7);
         root.left = n1;
         root.right = n2;
         n2.left = n3;

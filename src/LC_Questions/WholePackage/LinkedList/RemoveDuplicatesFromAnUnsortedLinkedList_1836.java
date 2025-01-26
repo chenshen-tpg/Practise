@@ -1,19 +1,15 @@
 package LC_Questions.WholePackage.LinkedList;
 
+import Lib.ListNode;
+
 import java.util.HashMap;
 
 public class RemoveDuplicatesFromAnUnsortedLinkedList_1836 {
-    public class ListNode {
-      int val;
-      ListNode next;
-      ListNode() {}
-      ListNode(int val) { this.val = val; }
-      ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-  }
+
     public static void main(String[] args) {
 
     }
-    public  ListNode method(){
+    public ListNode method(){
         ListNode dummy = new ListNode(-1, new ListNode());
         ListNode h = new ListNode(), cur = dummy.next, pre = dummy;
         HashMap<Integer, Integer> hm = new HashMap<>();

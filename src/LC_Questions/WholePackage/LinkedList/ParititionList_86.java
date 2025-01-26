@@ -1,5 +1,7 @@
 package LC_Questions.WholePackage.LinkedList;
 
+import Lib.ListNode;
+
 public class ParititionList_86 {
     public static void main(String[] args) {
         ListNode head = new ListNode(1);
