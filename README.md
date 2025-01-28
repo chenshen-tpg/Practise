@@ -1,1 +1,25 @@
-Pracise purpose
+Project is aimed for CRASH the interview for Big FAANG-level companies
+
+(SYSTEM DESIGN INCLUDED - interview level)
+URL SHORTENER/TICKETMASTER/LEETCODE/UBER/DROPBOX
+FB POST SEARCH/WEB CRAWLER/TINDER/AD CLICK AGGREGATOR
+FB LIVE COMMENTS/FB NEWS FEED/GOPUFF/TOP-K YOUTUBE VIDEOS/WHATSAPP
+YOUTUBE /YELP /STRAVA /DISTRIBUTED JOB SCHEDULER /GOOGLE DOCS
+ONLINE AUCTION /ROBINHOOD /DISTRIBUTED CACHE
+
+(TECH INCLUDED - interview level:
+REDIS/ELASTICSEARCH/KAFKA/API GATEWAY/CASSANDRA/DYNAMODB/POSTGRESQL/REAL-TIME UPDATES/
+NUMBERS TO KNOW.
+
+
+QUESTIONS COLLECTION - interview level)  
+TOP interview 75
+TOP interview 150
+Highest Vote 100
+Premium Question 100
+SQL50
+AdvanceSQL 50
+Daily challenges  (Starting 2025)
+Contest Questions (WeekByWeek)
+
+All questions will include official solution/ My solution/ highest voted

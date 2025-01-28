@@ -1,6 +1,7 @@
 package LC_Questions.CollectionAll.SlidingWindow.LC75.MaximumNumberOfVowelsInASubStringOfGivenLength_1456;
 
 public class CalculateFirstK_TheRestAfter {
+
     public static void main(String[] args) {
         String s = "a";
         int k = 1;
