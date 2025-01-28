@@ -4,9 +4,7 @@ import Lib.TreeNode;
 
 public class BooleanLeftRight {
     int len = 0;
-    public static void main(String[] args) {
 
-    }
     public int helper (TreeNode node) {
         dfs(node, false, 0);
         return len;
@@ -21,5 +19,8 @@ public class BooleanLeftRight {
             dfs(node.left, false, 1);
             dfs(node.right, true, steps++);
         }
+    }
+    public static void main(String[] args) {
+
     }
 }

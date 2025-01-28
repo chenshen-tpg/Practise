@@ -7,11 +7,11 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-public class AverageofLevelsinBinaryTree_637 {
+public class BFS {
 
 
     public static void main(String[] args) {
-        AverageofLevelsinBinaryTree_637 al = new AverageofLevelsinBinaryTree_637();
+        BFS al = new BFS();
         TreeNode root = new TreeNode(3);
         TreeNode n1 = new TreeNode(9);
         TreeNode n2 = new TreeNode(20);

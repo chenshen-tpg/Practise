@@ -6,6 +6,25 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Wrong_SaveNodesDFS {
+
+    // wrong because we need to keep counting all the node in the director
+    // Instead of having the one node.
+    public int goodNodes(TreeNode root) {
+        int res = 0;
+        int judge =  root.val;
+        ArrayList<Integer> al = new ArrayList<>();
+        helper (root, al);
+        for (Integer a : al) if (a >= judge) res++;
+        return res;
+    }
+
+    public void helper (TreeNode root, List<Integer> rootLen) {
+        if (root == null) return;
+        helper(root.left, rootLen);
+        rootLen.add(root.val);
+        helper(root.right, rootLen);
+    }
+
     public static void main(String[] args) {
         Wrong_SaveNodesDFS solution = new Wrong_SaveNodesDFS();
 
@@ -28,23 +47,5 @@ public class Wrong_SaveNodesDFS {
         root3.right.left = new TreeNode(1);
         root3.right.right = new TreeNode(5);
         System.out.println(solution.goodNodes(root3));
-    }
-
-    // wrong because we need to keep counting all the node in the director
-    // Instead of having the one node.
-    public int goodNodes(TreeNode root) {
-        int res = 0;
-        int judge =  root.val;
-        ArrayList<Integer> al = new ArrayList<>();
-        helper (root, al);
-        for (Integer a : al) if (a >= judge) res++;
-        return res;
-    }
-
-    public void helper (TreeNode root, List<Integer> rootLen) {
-        if (root == null) return;
-        helper(root.left, rootLen);
-        rootLen.add(root.val);
-        helper(root.right, rootLen);
     }
 }

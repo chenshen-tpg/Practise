@@ -1,0 +1,22 @@
+{
+  "id": "123",
+  "name": "file.txt",
+  "size": 1000,
+  "mimeType": "text/plain",
+  "uploadedBy": "user1",
+  "status": "uploading",
+  "chunks": [
+    {
+      "id": "chunk1",
+      "status": "uploaded"
+    },
+    {
+      "id": "chunk2",
+      "status": "uploading"
+    },
+    {
+      "id": "chunk3",
+      "status": "not-uploaded"
+    }
+  ]
+}

@@ -15,4 +15,8 @@ public class resetDFS {
         if (node.right != null) dfs(node.left, right++, 0);
         if (node.left !=null) dfs(node.right,0,left++);
     }
+
+    public static void main(String[] args) {
+
+    }
 }

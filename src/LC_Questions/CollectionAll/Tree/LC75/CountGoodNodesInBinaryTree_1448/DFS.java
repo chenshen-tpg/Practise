@@ -3,6 +3,20 @@ package LC_Questions.CollectionAll.Tree.LC75.CountGoodNodesInBinaryTree_1448;
 import Lib.TreeNode;
 
 public class DFS {
+
+
+    int res = 0;
+
+    public int goodNodes(TreeNode root) {
+        helper(root, root.val);
+        return res;
+    }
+    private void helper(TreeNode root, int cur) {
+        if (root == null) return;
+        if (root.val >= cur) res++;
+        helper(root.left, Math.max(cur, root.val));
+        helper(root.right, Math.max(cur, root.val));
+    }
     public static void main(String[] args) {
         Wrong_SaveNodesDFS solution = new Wrong_SaveNodesDFS();
 
@@ -25,18 +39,5 @@ public class DFS {
         root3.right.left = new TreeNode(1);
         root3.right.right = new TreeNode(5);
         System.out.println(solution.goodNodes(root3));
-    }
-
-    int res = 0;
-
-    public int goodNodes(TreeNode root) {
-        helper(root, root.val);
-        return res;
-    }
-    private void helper(TreeNode root, int cur) {
-        if (root == null) return;
-        if (root.val >= cur) res++;
-        helper(root.left, Math.max(cur, root.val));
-        helper(root.right, Math.max(cur, root.val));
     }
 }

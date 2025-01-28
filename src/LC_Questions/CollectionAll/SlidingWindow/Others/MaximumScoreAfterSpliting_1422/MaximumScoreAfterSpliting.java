@@ -1,4 +1,4 @@
-package LC_Questions.CollectionAll.SlidingWindow.Others;
+package LC_Questions.CollectionAll.SlidingWindow.Others.MaximumScoreAfterSpliting_1422;
 
 public class MaximumScoreAfterSpliting {
     public static int max = 0;
