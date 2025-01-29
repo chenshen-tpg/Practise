@@ -1,8 +1,8 @@
-package LC_Questions.CollectionAll.Tree.LC75;
+package LC_Questions.CollectionAll.Tree.LC75.LongestZigZagPathBinaryTree_1372;
 
 import Lib.TreeNode;
 
-public class LongestZigZagPathInABinaryTree_1372 {
+public class LayerResetDFS {
 
     public static void main(String[] args) {
 

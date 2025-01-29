@@ -17,10 +17,6 @@ public class twoList {
     public boolean dfs(TreeNode root1, TreeNode root2) {
         List<Integer> r1 = helper(root1, new ArrayList<>());
         List<Integer> r2 = helper(root2, new ArrayList<>());
-//        for (int i = 0; i < r1.size(); i++) {
-//            if(r1.get(i) != r2.get(i)) return false;
-//        }
-//        return true;
         return r1.equals(r2);
     }
 
