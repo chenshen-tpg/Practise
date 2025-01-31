@@ -1,13 +1,14 @@
-package LC_Questions.CollectionAll.Array.Others;
+package LC_Questions.CollectionAll.Array.Others.UniqueSubStringsWithEqualDigit_2168;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class UniqueSubStringsWithEqualDigit_2168 {
+public class SetMemoFlag {
     public static void main(String[] args) {
         String s = "12321";
         equalDigitFrequency(s);
     }
+
     public static int equalDigitFrequency(String s) {
         Set<String> validSubstrings = new HashSet<>();
         for (int start = 0; start < s.length(); start++) {

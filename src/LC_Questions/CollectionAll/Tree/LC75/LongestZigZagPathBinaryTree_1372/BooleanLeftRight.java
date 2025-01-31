@@ -13,11 +13,11 @@ public class BooleanLeftRight {
         if (node == null) return;
         len = Math.max(len, steps);
         if (left) {
-            dfs(node.left, false, steps++);
+            dfs(node.left, false, steps+1);
             dfs(node.right,true, 1);
         } else {
             dfs(node.left, false, 1);
-            dfs(node.right, true, steps++);
+            dfs(node.right, true, steps+1);
         }
     }
     public static void main(String[] args) {

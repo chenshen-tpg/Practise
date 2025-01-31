@@ -5,14 +5,14 @@ import Lib.TreeNode;
 import java.util.HashMap;
 import java.util.Stack;
 
-public class ConstructBinaryTreeFromInOrderandPostOrder_106 {
+public class twoArray {
     int post_idx;
     int[] postorder;
     int[] inorder;
     HashMap<Integer, Integer> idx_map = new HashMap<Integer, Integer>();
 
     public static void main(String[] args) {
-        ConstructBinaryTreeFromInOrderandPostOrder_106 c = new ConstructBinaryTreeFromInOrderandPostOrder_106();
+        twoArray c = new twoArray();
         int[] inorder = new int[]{9,3,15,20,7};
         int[] postorder = new int[]{9,15,7,20,3};
         TreeNode root = c.buildTree(inorder, postorder);
@@ -37,6 +37,7 @@ public class ConstructBinaryTreeFromInOrderandPostOrder_106 {
         for (Integer val : inorder) idx_map.put(val, idx++);
         return helper(0, inorder.length - 1);
     }
+
     public TreeNode buildTree(int[] inorder, int[] postorder) {
         if (inorder.length == 0 || postorder.length == 0) return null;
         int ip = inorder.length - 1;

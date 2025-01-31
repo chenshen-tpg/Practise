@@ -4,10 +4,10 @@ import Lib.TreeNode;
 
 import java.util.ArrayDeque;
 
-public class TwoArrayDeque {
+public class TwoDequeBFS {
 
     public static void main(String[] args) {
-        TwoArrayDeque st = new TwoArrayDeque();
+        TwoDequeBFS st = new TwoDequeBFS();
         TreeNode root = new TreeNode(3);
         TreeNode n1 = new TreeNode(9);
         TreeNode n2 = new TreeNode(20);

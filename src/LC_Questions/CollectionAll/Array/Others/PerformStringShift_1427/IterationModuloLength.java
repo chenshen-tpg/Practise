@@ -1,6 +1,6 @@
-package LC_Questions.CollectionAll.Array.Others;
+package LC_Questions.CollectionAll.Array.Others.PerformStringShift_1427;
 
-public class PerformStringShifts_1427 {
+public class IterationModuloLength {
     public static void main(String[] args) {
         System.out.println(performStringShift("abcdefg", new int[][]{{0, 1}, {1, 2}})); // Output: "fgabcde"
         System.out.println(performStringShift("abcdefg", new int[][]{{1, 1}, {1, 1}, {0, 2}, {1, 3}})); // Output: "efgabcd"
