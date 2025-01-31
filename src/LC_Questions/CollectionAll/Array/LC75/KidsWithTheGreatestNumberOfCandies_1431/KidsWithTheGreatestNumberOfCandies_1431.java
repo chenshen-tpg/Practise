@@ -1,11 +1,11 @@
-package LC_Questions.CollectionAll.Array.LC75;
+package LC_Questions.CollectionAll.Array.LC75.KidsWithTheGreatestNumberOfCandies_1431;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class KidsWithTheGreatestNumberOfCandies_1431_easy {
+public class KidsWithTheGreatestNumberOfCandies_1431 {
     public static void main(String[] args) {
-        KidsWithTheGreatestNumberOfCandies_1431_easy k = new KidsWithTheGreatestNumberOfCandies_1431_easy();
+        KidsWithTheGreatestNumberOfCandies_1431 k = new KidsWithTheGreatestNumberOfCandies_1431();
         int[] candies = new int[]{2,3,5,1,3};
         int extraCandies = 3;
         List<Boolean> bo = k.kidsWithCandies(candies, extraCandies);

@@ -1,4 +1,4 @@
-package LC_Questions.CollectionAll.Array.LC75.ReverseVowelsOfAString;
+package LC_Questions.CollectionAll.Array.LC75.ReverseVowelsOfAString_345;
 
 public class ReverseVowelsInaString_345_easy {
     public static void main(String[] args) {

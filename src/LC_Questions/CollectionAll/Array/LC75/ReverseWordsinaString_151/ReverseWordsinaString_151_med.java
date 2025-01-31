@@ -1,4 +1,4 @@
-package LC_Questions.CollectionAll.Array.LC75;
+package LC_Questions.CollectionAll.Array.LC75.ReverseWordsinaString_151;
 
 public class ReverseWordsinaString_151_med {
     public static void main(String[] args) {

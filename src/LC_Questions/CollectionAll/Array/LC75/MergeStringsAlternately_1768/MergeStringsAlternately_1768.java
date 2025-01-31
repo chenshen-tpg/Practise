@@ -1,4 +1,4 @@
-package LC_Questions.CollectionAll.Array.LC75;
+package LC_Questions.CollectionAll.Array.LC75.MergeStringsAlternately_1768;
 
 public class MergeStringsAlternately_1768 {
     public static void main(String[] args) {

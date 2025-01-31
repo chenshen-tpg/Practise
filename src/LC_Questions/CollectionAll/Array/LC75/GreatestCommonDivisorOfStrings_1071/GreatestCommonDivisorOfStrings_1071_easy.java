@@ -1,4 +1,4 @@
-package LC_Questions.CollectionAll.Array.LC75;
+package LC_Questions.CollectionAll.Array.LC75.GreatestCommonDivisorOfStrings_1071;
 
 public class GreatestCommonDivisorOfStrings_1071_easy {
     public int gcd(int x, int y) {

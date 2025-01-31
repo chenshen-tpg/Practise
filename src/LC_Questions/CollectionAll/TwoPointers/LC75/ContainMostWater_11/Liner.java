@@ -1,8 +1,8 @@
 package LC_Questions.CollectionAll.TwoPointers.LC75.ContainMostWater_11;
 
-public class ContainerWithMostWater_11 {
+public class Liner {
     public static void main(String[] args) {
-        ContainerWithMostWater_11 cw = new ContainerWithMostWater_11();
+        Liner cw = new Liner();
         System.out.println(cw.maxArea(new int[]{1,8,6,2,5,4,8,3,7}));
     }
 
