@@ -1,4 +1,4 @@
-package LC_Questions.CollectionAll.BinarySearch;
+package LC_Questions.CollectionAll.BinarySearch.Others;
 
 import java.util.Arrays;
 import java.util.HashSet;

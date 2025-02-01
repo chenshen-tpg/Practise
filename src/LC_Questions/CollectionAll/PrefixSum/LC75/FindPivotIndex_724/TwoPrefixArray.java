@@ -1,8 +1,8 @@
-package LC_Questions.CollectionAll.PrefixSum.LC75;
+package LC_Questions.CollectionAll.PrefixSum.LC75.FindPivotIndex_724;
 
-public class FindPivotIndex_724 {
+public class TwoPrefixArray {
     public static void main(String[] args) {
-        FindPivotIndex_724 f = new FindPivotIndex_724();
+        TwoPrefixArray f = new TwoPrefixArray();
         System.out.println(f.rewrite(new int[]{1, 7, 3, 6, 5, 6}));
         
     }
@@ -10,16 +10,13 @@ public class FindPivotIndex_724 {
     private int rewrite (int[] nums) {
         int [] leftToRight = new int [nums.length];
         int [] rightToLeft = new int [nums.length];
-
         int tempF = 0;
         for (int i = 0; i < nums.length; i++) {
-
             tempF += nums[i];
             leftToRight[i] = tempF;
         }
         int tempB = 0;
         for (int i = nums.length - 1; i >= 0; i--) {
-
             tempB += nums[i];
             rightToLeft[i] += tempB;
         }

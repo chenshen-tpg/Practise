@@ -23,7 +23,7 @@ public class LISTDFS {
         }
         for (int i = start; i <= n; i++) {
             comb.add(i);
-            helper(comb, k, i+1, n-i);
+            helper(comb, k, i + 1, n-i);
             comb.removeLast();
         }
     }

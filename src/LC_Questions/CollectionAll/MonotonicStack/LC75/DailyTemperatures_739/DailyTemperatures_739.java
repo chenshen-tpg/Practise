@@ -1,4 +1,4 @@
-package LC_Questions.CollectionAll.MonotonicStack.LC75;
+package LC_Questions.CollectionAll.MonotonicStack.LC75.DailyTemperatures_739;
 
 import java.util.Stack;
 
@@ -6,7 +6,6 @@ public class DailyTemperatures_739 {
     public static void main(String[] args) {
         DailyTemperatures_739 d = new DailyTemperatures_739();
         int[] res = d.dailyTemperatures(new int[]{73, 74, 75, 71, 69, 72, 76, 73});
-//        [1,1,4,2,1,1,0,0]
         for (int i : res) {
             System.out.println(i);
         }
