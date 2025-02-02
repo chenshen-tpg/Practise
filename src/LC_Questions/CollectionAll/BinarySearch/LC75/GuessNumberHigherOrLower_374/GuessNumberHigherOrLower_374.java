@@ -1,4 +1,4 @@
-package LC_Questions.CollectionAll.BinarySearch.LC75;
+package LC_Questions.CollectionAll.BinarySearch.LC75.GuessNumberHigherOrLower_374;
 
 public class GuessNumberHigherOrLower_374 {
     public static void main(String[] args) {

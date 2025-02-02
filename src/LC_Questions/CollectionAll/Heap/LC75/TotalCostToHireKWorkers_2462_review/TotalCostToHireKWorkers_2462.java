@@ -1,4 +1,4 @@
-package LC_Questions.CollectionAll.Heap.LC75;
+package LC_Questions.CollectionAll.Heap.LC75.TotalCostToHireKWorkers_2462_review;
 
 import java.util.PriorityQueue;
 

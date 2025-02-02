@@ -1,6 +1,6 @@
-package LC_Questions.CollectionAll.HashMap.LC75;
+package LC_Questions.CollectionAll.HashMap.LC75.EqualRowAndColumnPairs_2352;
 
-public class EqualRowAndColumnPairs_2352 {
+public class BruteForce {
     public static void main(String[] args) {
 
     }

@@ -1,11 +1,11 @@
-package LC_Questions.CollectionAll.HashMap.LC75;
+package LC_Questions.CollectionAll.HashMap.LC75.DetermineIfTwoStringsAreClose_1657;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
-public class DetermineIfTwoStringsAreClose_1657 {
+public class DoubleHashMapDoubleSort {
     public static void main(String[] args) {
 
     }
