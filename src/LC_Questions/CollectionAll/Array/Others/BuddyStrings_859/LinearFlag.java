@@ -1,13 +1,13 @@
-package LC_Questions.CollectionAll.Array.Others;
+package LC_Questions.CollectionAll.Array.Others.BuddyStrings_859;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class BuddyStrings_859 {
+public class LinearFlag {
     public static void main(String[] args) {
         String s = "ab";
         String goal = "ba";
-        BuddyStrings_859 b = new BuddyStrings_859();
+        LinearFlag b = new LinearFlag();
         b.buddyStrings(s,goal);
     }
 
@@ -31,24 +31,5 @@ public class BuddyStrings_859 {
         return A_letters.size() < A.length();
     }
 
-    public boolean buddyStrings_MyWrongVersion_NoOrder(String s, String goal) {
-        int count = 0;
-        int [] memo = new int [26];
-        if (s.length() != goal.length())
-            return false;
-        for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) != goal.charAt(i)) {
-                count++;
-                memo[s.charAt(i) - 'a']++;
-                memo[goal.charAt(i) - 'a']++;
-            }
-        }
-        if (count > 2) return false;
-        for (int i = 0; i < 26; i++) {
-            if (memo[i] > 0 && memo[i] != 2) {
-                return false;
-            }
-        }
-        return true;
-    }
+
 }

@@ -1,4 +1,4 @@
-package LC_Questions.CollectionAll.DP.LC75.NthTribonacci;
+package LC_Questions.CollectionAll.DP.LC75.NthTribonacci_1137;
 
 public class NthTribonacciNumber_1137 {
     public static void main(String[] args) {
