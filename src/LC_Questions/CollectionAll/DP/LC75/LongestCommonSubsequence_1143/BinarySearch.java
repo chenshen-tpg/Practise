@@ -1,24 +1,14 @@
-package LC_Questions.CollectionAll.DP.LC150.LongestCommonSubsequence_1143;
+package LC_Questions.CollectionAll.DP.LC75.LongestCommonSubsequence_1143;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
-public class LongestIncreaseSequence_300_med {
+public class BinarySearch {
 
     public static void main(String[] args) {
-        LongestIncreaseSequence_300_med lis = new LongestIncreaseSequence_300_med();
+        BinarySearch lis = new BinarySearch();
         System.out.println(lis.lengthOfLIS1(new int[]{0,1,0,3,2,3}));
     }
-    public int lengthOfLIS(int[] nums) {
-        int[] dp = new int[nums.length];
-        Arrays.fill(dp, 1);
-        for (int i = 0; i < nums.length; i++) {
-            for (int j = 0; j < i; j++) {
-                if (nums[j] < nums[i]) dp[i] =  Math.max(dp[i], dp[j] + 1);
-            }
-        }
-        return Arrays.stream(dp).max().getAsInt();
-    }
+
     public int lengthOfLIS1(int[] nums) {
         ArrayList<Integer> sub = new ArrayList<>();
         sub.add(nums[0]);

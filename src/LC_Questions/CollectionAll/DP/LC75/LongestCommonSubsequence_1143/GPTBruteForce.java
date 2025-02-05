@@ -10,8 +10,6 @@ public class GPTBruteForce {
     public int longestCommonSubsequence(String text1, String text2) {
         Set<String> subsequences1 = generateSubsequences(text1);
         Set<String> subsequences2 = generateSubsequences(text2);
-
-        // Find the longest common subsequence
         int maxLength = 0;
         for (String sub1 : subsequences1) {
             if (subsequences2.contains(sub1)) {

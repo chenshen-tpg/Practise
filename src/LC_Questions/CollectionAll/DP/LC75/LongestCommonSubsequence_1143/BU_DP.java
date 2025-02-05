@@ -1,9 +1,9 @@
 package LC_Questions.CollectionAll.DP.LC75.LongestCommonSubsequence_1143;
 
-public class DP {
+public class BU_DP {
     public static void main(String[] args) {
         String text1 = "abcccccde", text2 = "abfce";
-        DP solution = new DP();
+        BU_DP solution = new BU_DP();
         System.out.println(solution.longestCommonSubsequence(text1, text2));
     }
 

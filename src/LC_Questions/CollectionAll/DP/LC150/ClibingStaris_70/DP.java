@@ -1,8 +1,8 @@
 package LC_Questions.CollectionAll.DP.LC150.ClibingStaris_70;
 
-public class ClimbingStairs_70_easy {
+public class DP {
     public static void main(String[] args) {
-        ClimbingStairs_70_easy cs = new ClimbingStairs_70_easy();
+        DP cs = new DP();
         System.out.println(cs.climbStairs(3));
     }
     public int climbStairs(int n) {
