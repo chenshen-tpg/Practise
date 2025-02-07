@@ -14,8 +14,8 @@ public class BuildanArrayWithStackOperations_1441 {
     public List<String> buildArray(int[] target, int n) {
         List<String> li = new ArrayList<>();
         int index = 0;
-        for(int i = 0; i < n; i++){
-            if(i >target.length - 1){
+        for (int i = 0; i < n; i++){
+            if (i > target.length - 1){
                 break;
             }
             while (index < target[i] - 1){

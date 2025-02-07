@@ -12,27 +12,7 @@ public class Review {
         System.out.println(TwoStack(s));
     }
 
-    //randomly wrong..
-    public static String helper (String s) {
-        Stack<Integer> stack = new Stack<>();
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < s.length(); i++) {
-            if (Character.isDigit(s.charAt(i))) {
-                stack.add(Integer.valueOf(s.charAt(i)));
-            }
-            String temp = "";
-            int multiplayer = 0;
-            if (Character.isAlphabetic(s.charAt(i))) {
-                multiplayer = stack.pop();
-            }
-            while (Character.isAlphabetic(s.charAt(i))) {
-                i++;
-                temp += s.charAt(i);
-            }
-            sb.append(temp.repeat(multiplayer));
-        }
-        return sb.toString();
-    }
+
     public static String BruteForce(String s) {
         Stack<Character> stack = new Stack<>();
         for (int i = 0; i < s.length(); i++) {

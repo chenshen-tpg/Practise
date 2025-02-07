@@ -44,7 +44,7 @@ public class BinaryTreeZigzagLevelOrderTraversal_103 {
                 if (cur.left != null) {q.add(cur.left);}
                 if (cur.right != null) {q.add(cur.right);}
             }
-            li.add(layer.reversed());
+           Collections.reverse(layer);
         }
         return li;
     }

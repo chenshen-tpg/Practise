@@ -1,13 +1,11 @@
 package LC_Questions.CollectionAll.DP.LC75.EditDistance_72;
 
 public class DP {
-    class Solution {
         Integer memo[][];
 
         public static void main(String[] args) {
 
         }
-
         public int minDistance(String word1, String word2) {
             memo = new Integer[word1.length() + 1][word2.length() + 1];
             return minDistanceRecur(word1, word2, word1.length(), word2.length());
@@ -28,5 +26,5 @@ public class DP {
             memo[w1index][w2index] = ans;
             return ans;
         }
-    }
+
 }

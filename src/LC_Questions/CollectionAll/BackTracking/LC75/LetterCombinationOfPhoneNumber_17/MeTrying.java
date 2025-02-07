@@ -6,10 +6,17 @@ import java.util.Map;
 
 public class MeTrying {
     ArrayList res = new ArrayList();
-    static Map<Character, String> letters = Map.of(
-            '2', "abc", '3', "def", '4', "ghi", '5', "jkl",
-            '6', "mno", '7', "pqrs", '8', "tuv", '9', "wxyz");
-
+    static Map<Character, String> letters;
+    static {
+        letters.put('2', "abc");
+        letters.put('3', "def");
+        letters.put('4', "ghi");
+        letters.put('5', "jkl");
+        letters.put('6', "mno");
+        letters.put('7', "pqrs");
+        letters.put('8', "tuv");
+        letters.put('9', "wxyz");
+    }
     public static void main(String[] args) {
         MeTrying solution = new MeTrying();
         System.out.println(solution.letterCombinations("23"));

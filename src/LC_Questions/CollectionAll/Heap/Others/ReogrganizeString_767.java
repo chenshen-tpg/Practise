@@ -20,7 +20,7 @@ public class ReogrganizeString_767 {
 
     StringBuilder sb = new StringBuilder();
     while (!pq.isEmpty()) {
-        var first = pq.poll();
+        int [] first = pq.poll();
         if (sb.length() == 0 || first[0] != sb.charAt(sb.length() - 1)) {
             sb.append((char) first[0]);
             if (--first[1] > 0) {
@@ -30,7 +30,7 @@ public class ReogrganizeString_767 {
             if (pq.isEmpty()) {
                 return "";
             }
-            var second = pq.poll();
+            int [] second = pq.poll();
             sb.append((char) second[0]);
             if (--second[1] > 0) {
                 pq.offer(second);

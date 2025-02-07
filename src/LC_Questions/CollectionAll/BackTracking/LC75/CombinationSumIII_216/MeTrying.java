@@ -24,7 +24,7 @@ public class MeTrying {
         for (int i = j; i <= n; i++) {
             li.add(i);
             helper(li, k, i + 1,n - i);
-            li.removeLast();
+            li.remove(li.size() - 1);
         }
     }
 }

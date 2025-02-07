@@ -2,11 +2,7 @@ package LC_Questions.CollectionAll.Heap.Others;
 
 import Lib.Pair;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.PriorityQueue;
-import java.util.Set;
+import java.util.*;
 
 public class FindKPairswithSmallestSums_373_MED {
 
@@ -31,7 +27,7 @@ public class FindKPairswithSmallestSums_373_MED {
             int[] top = minHeap.poll();
             int i = top[1];
             int j = top[2];
-            ans.add(List.of(nums1[i], nums2[j]));
+            ans.add(Arrays.asList(nums1[i], nums2[j]));
             if (i + 1 < m && !visited.contains(new Pair<Integer, Integer>(i + 1, j))) {
                 minHeap.offer(new int[]{nums1[i + 1] + nums2[j], i + 1, j});
                 visited.add(new Pair<Integer, Integer>(i + 1, j));

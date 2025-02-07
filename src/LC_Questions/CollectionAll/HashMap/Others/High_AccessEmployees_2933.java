@@ -8,13 +8,6 @@ import java.util.List;
 public class High_AccessEmployees_2933 {
     public static void main(String[] args) {
         List<List<String>> access_times = new ArrayList<>();
-        access_times.add(List.of("cd", "1025"));
-        access_times.add(List.of("ab", "1025"));
-        access_times.add(List.of("cd", "1046"));
-        access_times.add(List.of("cd", "1055"));
-        access_times.add(List.of("ab", "1124"));
-        access_times.add(List.of("ab", "1120"));
-
         System.out.println(highAccessEmployees(access_times));
     }
 

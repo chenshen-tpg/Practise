@@ -8,13 +8,6 @@ import java.util.Queue;
 public class QueueBFS {
     HashSet<Integer> hs = new HashSet<>();
     public static void main(String[] args) {
-        List<List<Integer>> rooms = List.of(
-                List.of(1),
-                List.of(2),
-                List.of(3),
-                List.of()
-        );
-        helper(rooms);
     }
 
     public static boolean helper (List<List<Integer>> rooms) {
