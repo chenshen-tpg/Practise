@@ -3,12 +3,6 @@ package LC_Questions.CollectionAll.Array.Others;
 public class NumberOfWaysToSplitArray_2270 {
     public static void main(String[] args) {
         int [] arr = {10,4,-8,7};
-        // 14 : -1
-        // 6 : 7
-        // left > right
-        // {2,3,1,0}
-        // 5:1
-        // 6:0
         System.out.println(helper(arr));
     }
     public int waysToSplitArray(int[] arr) {

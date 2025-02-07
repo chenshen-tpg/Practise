@@ -1,6 +1,6 @@
-package LC_Questions.CollectionAll.TwoPointers.LC100;
+package LC_Questions.CollectionAll.TwoPointers.LC100.NextPermutation_31;
 
-public class NextPermutation_31 {
+public class ReverseSwap {
     public static void main(String[] args) {
         int [] test = {1,2,3};
         nextPermutation(test);

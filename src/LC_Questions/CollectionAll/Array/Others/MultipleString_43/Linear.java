@@ -1,8 +1,11 @@
-package LC_Questions.CollectionAll.Array.Others;
+package LC_Questions.CollectionAll.Array.Others.MultipleString_43;
 
-public class CopyAnswer {
+public class Linear {
     public static void main(String[] args) {
-
+        String num1 = "20";
+        String num2 = "30";
+        Linear solution = new Linear();
+        System.out.println(solution.multiply(num1, num2));
     }
     public String multiply(String num1, String num2) {
         int m = num1.length(), n = num2.length();

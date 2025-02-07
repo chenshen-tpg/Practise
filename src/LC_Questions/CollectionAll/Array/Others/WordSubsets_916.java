@@ -6,15 +6,9 @@ import java.util.List;
 public class WordSubsets_916 {
     public static void main(String[] args) {
         WordSubsets_916 ws = new WordSubsets_916();
-
-//        String [] words1 = new String[]{"facebook"};
         String [] words1 = new String[]{"amazon", "apple", "facebook", "google", "leetcode"};
         String [] words2 = new String[]{"aa", "am", "ap"};
-        System.out.println(ws.wordSubsets(words1, words2)); // Output: [google, leetcode]
-
-//        String [] words1 = new String[]{"amazon", "apple", "facebook", "google", "leetcode"};
-//        String [] words2 = new String[]{"ec", "oc", "ceo"};
-//        System.out.println(ws.wordSubsets(words1, words2));
+        System.out.println(ws.wordSubsets(words1, words2));
     }
     public List<String> wordSubsets(String[] A, String[] B) {
         List<String> res = new ArrayList<>();

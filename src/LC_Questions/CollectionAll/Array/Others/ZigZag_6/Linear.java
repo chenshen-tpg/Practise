@@ -1,10 +1,15 @@
-package LC_Questions.CollectionAll.Array.Others;
+package LC_Questions.CollectionAll.Array.Others.ZigZag_6;
 
 import java.util.Arrays;
 
-public class ZigzagConversion_6_med {
+public class Linear {
     public static void main(String[] args) {
 
+        Linear solution = new Linear();
+        String s = "PAYPALISHIRING";
+        System.out.println(s.length());
+        int numRows = 3;
+        solution.convert(s, numRows);
     }
     public String convert(String s, int numRows) {
         if (numRows == 1) {
