@@ -1,4 +1,4 @@
-package LC_Questions.CollectionAll.Array.LC150;
+package LC_Questions.CollectionAll.Array.LC150.JumpGame_55;
 
 public class JumpGame_55 {
     public static void main(String[] args) {
