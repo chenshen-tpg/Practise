@@ -1,4 +1,4 @@
-package LC_Questions.CollectionAll.Array.LC150;
+package LC_Questions.CollectionAll.Array.LC150.GasStation_134;
 
 public class GasStation_134 {
     public static void main(String[] args) {

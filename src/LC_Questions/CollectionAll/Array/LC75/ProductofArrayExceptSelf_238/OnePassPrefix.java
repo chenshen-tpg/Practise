@@ -1,8 +1,8 @@
 package LC_Questions.CollectionAll.Array.LC75.ProductofArrayExceptSelf_238;
 
-public class ProductofArrayExceptSelf_238 {
+public class OnePassPrefix {
     public static void main(String[] args) {
-        ProductofArrayExceptSelf_238 p = new ProductofArrayExceptSelf_238();
+        OnePassPrefix p = new OnePassPrefix();
         int[] nums = new int[]{1,2,3,4};
         int[] res = p.productExceptSelf(nums);
         for (int i : res) {

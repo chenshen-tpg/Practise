@@ -1,4 +1,4 @@
-package LC_Questions.CollectionAll.Array.Others.FindTheNumberOfDistinctColorsAmongTheBalls_3160;
+package LC_Questions.CollectionAll.HashMap.Others.FindTheNumberOfDistinctColorsAmongTheBalls_3160;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package LC_Questions.CollectionAll.Array.LC150;
+package LC_Questions.CollectionAll.Array.LC150.Candy_135;
 
 import java.util.Arrays;
 
