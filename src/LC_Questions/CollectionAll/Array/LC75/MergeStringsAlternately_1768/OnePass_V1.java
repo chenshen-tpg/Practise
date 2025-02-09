@@ -1,10 +1,10 @@
 package LC_Questions.CollectionAll.Array.LC75.MergeStringsAlternately_1768;
 
-public class MergeStringsAlternately_1768 {
+public class OnePass_V1 {
     public static void main(String[] args) {
         String word1 = "abc";
         String word2 = "pqr";
-        MergeStringsAlternately_1768 m = new MergeStringsAlternately_1768();
+        OnePass_V1 m = new OnePass_V1();
         System.out.println(m.mergeAlternately(word1, word2));
     }
 
@@ -23,20 +23,5 @@ public class MergeStringsAlternately_1768 {
             sb.append(word2.substring(i));
         }
         return sb.toString();
-    }
-    public String mergeAlternately1(String word1, String word2) {
-        int len1 = word1.length();
-        int len2 = word2.length();
-        StringBuilder result = new StringBuilder();
-        int i = 0, j = 0;
-        while(i < len1 || j < len2) {
-            if (i < len1) {
-                result.append(word1.charAt(i++));
-            }
-            if (j < len2) {
-                result.append(word2.charAt(j++));
-            }
-        }
-        return result.toString();
     }
 }

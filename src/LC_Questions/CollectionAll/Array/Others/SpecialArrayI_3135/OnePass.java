@@ -1,9 +1,9 @@
 package LC_Questions.CollectionAll.Array.Others.SpecialArrayI_3135;
 
-public class Linear {
+public class OnePass {
     public static void main(String[] args) {
         int [] arr = {4,3,1,6};
-        Linear solution = new Linear();
+        OnePass solution = new OnePass();
         System.out.println(solution.isArraySpecial(arr));
     }
 

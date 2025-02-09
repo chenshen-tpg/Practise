@@ -1,10 +1,10 @@
 package LC_Questions.CollectionAll.Array.LC75.CanPlaceFlower_605;
 
-public class CanPlaceFlower_605_easy {
+public class OnePassFlag {
     public static void main(String[] args) {
         int[] f = {1,0,0,0,1};
         int n = 2;
-        CanPlaceFlower_605_easy c = new CanPlaceFlower_605_easy();
+        OnePassFlag c = new OnePassFlag();
         System.out.println(c.canPlaceFlowersCorrect(f, n));
     }
     public boolean canPlaceFlowersCorrect(int[] f, int n) {
