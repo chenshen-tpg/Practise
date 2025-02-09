@@ -1,4 +1,4 @@
-package LC_Questions.CollectionAll.Trie.Others;
+package Lib;
 
 public class TrieNode {
     TrieNode[] children = new TrieNode[26];

@@ -1,4 +1,4 @@
-package LC_Questions.CollectionAll.Array.Others;
+package LC_Questions.CollectionAll.Graph.LC150.WordLadder_127;
 
 
 import java.util.ArrayList;
@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class ForEachArray {
+public class HashMap_ForEach {
 
     public static void main(String[] args) {
         List<String> wordList = new ArrayList<>(Arrays.asList("hot", "dot", "dog", "lot", "log", "cog"));
@@ -24,5 +24,4 @@ public class ForEachArray {
         });
         System.out.println("end");
     }
-
 }

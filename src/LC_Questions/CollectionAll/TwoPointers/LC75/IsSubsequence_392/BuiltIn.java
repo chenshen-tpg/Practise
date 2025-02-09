@@ -1,6 +1,6 @@
 package LC_Questions.CollectionAll.TwoPointers.LC75.IsSubsequence_392;
 
-public class builtIn {
+public class BuiltIn {
     public static void main(String[] args) {
 
     }

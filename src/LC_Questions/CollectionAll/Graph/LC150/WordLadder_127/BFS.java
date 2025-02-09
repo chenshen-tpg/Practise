@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Queue;
 
-public class WordLadder_127 {
+public class BFS {
 
 
     public static void main(String[] args) {
