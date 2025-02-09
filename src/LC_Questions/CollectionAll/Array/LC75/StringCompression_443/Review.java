@@ -1,10 +1,9 @@
 package LC_Questions.CollectionAll.Array.LC75.StringCompression_443;
 
-public class StringCompression_Review {
+public class Review {
     public static void main(String[] args) {
-        StringCompression_Review sc = new StringCompression_Review();
+        Review sc = new Review();
         char[] chars = new char[]{'a', 'a', 'b', 'b', 'c', 'c', 'c'};
-//        char[] chars = new char[]{'a'};
         System.out.println(sc.review(chars));
     }
     public int review (char [] chars) {

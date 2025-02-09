@@ -1,6 +1,6 @@
 package LC_Questions.CollectionAll.Array.Others.BuddyStrings_859;
 
-public class LinearMemo {
+public class OnePassMemo {
     public static void main(String[] args) {
 
     }

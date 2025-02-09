@@ -3,11 +3,11 @@ package LC_Questions.CollectionAll.Array.Others.BuddyStrings_859;
 import java.util.HashSet;
 import java.util.Set;
 
-public class LinearFlag {
+public class OnePassFlag {
     public static void main(String[] args) {
         String s = "ab";
         String goal = "ba";
-        LinearFlag b = new LinearFlag();
+        OnePassFlag b = new OnePassFlag();
         b.buddyStrings(s,goal);
     }
 

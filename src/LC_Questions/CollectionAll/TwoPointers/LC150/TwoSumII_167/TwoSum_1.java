@@ -1,4 +1,4 @@
-package LC_Questions.CollectionAll.TwoPointers.LC150;
+package LC_Questions.CollectionAll.TwoPointers.LC150.TwoSumII_167;
 
 import java.util.HashMap;
 

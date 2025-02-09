@@ -2,7 +2,7 @@ package LC_Questions.CollectionAll.Array.Others.DistinctNumbersInEachSubArray_18
 
 import java.util.HashSet;
 
-public class TLE {
+public class BruteForce_TLE {
 
 
     public static void main(String[] args) {

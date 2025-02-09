@@ -14,7 +14,7 @@ public class OnePassFlag {
                 boolean left = i == 0 || f[i-1] == 0;
                 boolean right = i == f.length -1 || f[i+1] == 0;
                 if (left && right) {
-                    f[i]=1;
+                    f[i]= 1;
                     count++;
                 }
             }

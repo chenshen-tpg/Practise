@@ -3,9 +3,9 @@ package LC_Questions.CollectionAll.Array.LC75.KidsWithTheGreatestNumberOfCandies
 import java.util.ArrayList;
 import java.util.List;
 
-public class KidsWithTheGreatestNumberOfCandies_1431 {
+public class OnePass {
     public static void main(String[] args) {
-        KidsWithTheGreatestNumberOfCandies_1431 k = new KidsWithTheGreatestNumberOfCandies_1431();
+        OnePass k = new OnePass();
         int[] candies = new int[]{2,3,5,1,3};
         int extraCandies = 3;
         List<Boolean> bo = k.kidsWithCandies(candies, extraCandies);

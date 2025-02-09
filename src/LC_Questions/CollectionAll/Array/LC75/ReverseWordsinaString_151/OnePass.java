@@ -1,8 +1,8 @@
 package LC_Questions.CollectionAll.Array.LC75.ReverseWordsinaString_151;
 
-public class ReverseWordsinaString_151_med {
+public class OnePass {
     public static void main(String[] args) {
-        ReverseWordsinaString_151_med r = new ReverseWordsinaString_151_med();
+        OnePass r = new OnePass();
         String s = "  Bob    Loves  Alice   ";
         System.out.println(r.reverseWords(s));
     }

@@ -1,11 +1,11 @@
-package LC_Questions.CollectionAll.Array.Others.ZigZag_6;
+package LC_Questions.CollectionAll.Array.Others.ZigZag_6_review;
 
 import java.util.Arrays;
 
-public class Linear {
+public class TwoPass {
     public static void main(String[] args) {
 
-        Linear solution = new Linear();
+        TwoPass solution = new TwoPass();
         String s = "PAYPALISHIRING";
         System.out.println(s.length());
         int numRows = 3;

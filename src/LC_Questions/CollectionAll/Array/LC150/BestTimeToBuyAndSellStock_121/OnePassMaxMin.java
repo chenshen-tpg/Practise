@@ -1,9 +1,9 @@
 package LC_Questions.CollectionAll.Array.LC150.BestTimeToBuyAndSellStock_121;
 
-public class Linear {
+public class OnePassMaxMin {
     public static void main(String[] args) {
         int [] prices = {7,1,5,3,6,4};
-        Linear solution = new Linear();
+        OnePassMaxMin solution = new OnePassMaxMin();
         System.out.println(solution.linear(prices));
     }
 
