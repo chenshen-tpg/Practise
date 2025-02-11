@@ -20,6 +20,7 @@ public class IPO_502 {
             return capital - project.capital;
         }
     }
+
     public int findMaximizedCapital(int k, int w, int[] profits, int[] capital) {
         int n = profits.length;
         Project[] projects = new Project[n];

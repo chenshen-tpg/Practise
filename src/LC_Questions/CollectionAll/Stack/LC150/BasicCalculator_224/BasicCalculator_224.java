@@ -16,7 +16,7 @@ public class BasicCalculator_224 {
         for (int i = 0; i<s.length();i++) {
             char ch = s.charAt(i);
             if (Character.isDigit(ch)) {
-                operand = 10 * operand + (int) (ch - '0');
+                operand = 10 * operand + (ch - '0');
             } else if (ch == '+') {
                 result += sign * operand;
                 sign = 1;
