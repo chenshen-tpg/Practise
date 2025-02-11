@@ -1,0 +1,25 @@
+package LC_Questions.CollectionAll.PrefixSum.Others.MakeThePrefixSumNonNegative_2599;
+
+import java.util.PriorityQueue;
+
+public class test {
+    public static void main(String[] args) {
+        int [] nums = {2,3,-5,4};
+
+    }
+
+    public int makePrefix(int [] nums) {
+        PriorityQueue<Integer> pq = new PriorityQueue<>(( a,  b) -> b - a);
+        int countZero = 0, len = nums.length;
+        int temp = 0;
+        for (int i = 0; i < len; i++) {
+            if (nums[i] < 0) pq.add(nums[i]);
+            temp += nums[i];
+            if (temp < 0)  {
+                pq.poll();
+                countZero++;
+            }
+        }
+        return countZero;
+    }
+}

@@ -1,9 +1,9 @@
-package LC_Questions.CollectionAll.TwoPointers.Others;
+package LC_Questions.CollectionAll.HashMap.Others.CountGoodMeals_1711;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class CountGoodMeals_1711 {
+public class IterationMHashMap {
     public static void main(String[] args) {
         int [] d = {1,3,5,7,9};
         solver(d);

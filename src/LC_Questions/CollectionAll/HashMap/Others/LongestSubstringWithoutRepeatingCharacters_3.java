@@ -5,12 +5,6 @@ import java.util.HashMap;
 public class LongestSubstringWithoutRepeatingCharacters_3 {
     public static void main(String[] args) {
         String s = "abcabcbb";
-//        System.out.println(lengthOfLongestSubstring(s));
-
-
-
-    // a0 b1 c2, c3
-
         int ans = 0;
         int start = 0;
         HashMap<Character, Integer> hm = new HashMap<>();
