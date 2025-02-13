@@ -4,13 +4,12 @@ import Lib.NeighbourNode;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
-public class CloneGraph_133 {
+public class DFS {
 
 
     public static void main(String[] args) {
-        CloneGraph_133 cg = new CloneGraph_133();
+        DFS cg = new DFS();
         NeighbourNode node = new NeighbourNode(1);
         node.neighbors.add(new NeighbourNode(2));
         node.neighbors.add(new NeighbourNode(4));

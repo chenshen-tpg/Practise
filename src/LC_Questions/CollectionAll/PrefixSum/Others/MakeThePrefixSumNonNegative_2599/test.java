@@ -5,11 +5,11 @@ import java.util.PriorityQueue;
 public class test {
     public static void main(String[] args) {
         int [] nums = {2,3,-5,4};
-
+        makePrefix(nums);
     }
 
-    public int makePrefix(int [] nums) {
-        PriorityQueue<Integer> pq = new PriorityQueue<>(( a,  b) -> b - a);
+    public static int makePrefix(int [] nums) {
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
         int countZero = 0, len = nums.length;
         int temp = 0;
         for (int i = 0; i < len; i++) {
