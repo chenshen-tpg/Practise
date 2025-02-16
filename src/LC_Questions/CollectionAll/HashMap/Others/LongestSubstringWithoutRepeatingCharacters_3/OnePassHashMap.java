@@ -1,8 +1,8 @@
-package LC_Questions.CollectionAll.HashMap.Others;
+package LC_Questions.CollectionAll.HashMap.Others.LongestSubstringWithoutRepeatingCharacters_3;
 
 import java.util.HashMap;
 
-public class LongestSubstringWithoutRepeatingCharacters_3 {
+public class OnePassHashMap {
     public static void main(String[] args) {
         String s = "abcabcbb";
         int ans = 0;
@@ -11,24 +11,17 @@ public class LongestSubstringWithoutRepeatingCharacters_3 {
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
             if (hm.containsKey(c)) {
+                // max keep forwards..
                 start = Math.max(start, hm.get(c) + 1);
             }
             hm.put(c, i);
             ans = Math.max(ans, i - start + 1);
         }
         System.out.println(ans);
-
-
-
-
-
-
-
     }
 
     public int lengthOfLongestSubstring_SlidingWindow(String s) {
         HashMap<Character, Integer> hm = new HashMap();
-
         int left = 0;
         int right = 0;
         int res = 0;
@@ -46,19 +39,7 @@ public class LongestSubstringWithoutRepeatingCharacters_3 {
         return res;
     }
 
-    public static int lengthOfLongestSubstring(String s) {
-        HashMap<Character, Integer> hm = new HashMap<>();
-        int ans = 0;
-        int start = 0;
-        for (int i = 0; i < s.length(); i++) {
-            if (hm.containsKey(s.charAt(i))){
-                start = Math.max(start, hm.get(s.charAt(i)) + 1);
-            }
-            hm.put(s.charAt(i), i);
-            ans = Math.max(ans, i - start + 1);
-        }
-        return ans;
-    }
+
 
 
 
