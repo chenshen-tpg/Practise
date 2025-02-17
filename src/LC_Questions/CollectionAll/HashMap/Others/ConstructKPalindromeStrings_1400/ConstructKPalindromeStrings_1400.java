@@ -1,4 +1,4 @@
-package LC_Questions.CollectionAll.HashMap.Others;
+package LC_Questions.CollectionAll.HashMap.Others.ConstructKPalindromeStrings_1400;
 
 import java.util.HashMap;
 
