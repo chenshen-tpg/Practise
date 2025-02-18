@@ -1,13 +1,19 @@
-package LC_Questions.CollectionAll.HashMap.Others;
+package LC_Questions.CollectionAll.HashMap.Others.High_AccessEmployees_2933;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
-public class High_AccessEmployees_2933 {
+public class HashMapSolution {
     public static void main(String[] args) {
-        List<List<String>> access_times = new ArrayList<>();
+        List<List<String>> access_times = new ArrayList<>(Arrays.asList(
+                Arrays.asList("d", "0002"),
+                Arrays.asList("c", "0808"),
+                Arrays.asList("c", "0829"),
+                Arrays.asList("e", "0215"),
+                Arrays.asList("d", "1508"),
+                Arrays.asList("d", "1444"),
+                Arrays.asList("d", "1410"),
+                Arrays.asList("c", "0809")
+        ));
         System.out.println(highAccessEmployees(access_times));
     }
 
