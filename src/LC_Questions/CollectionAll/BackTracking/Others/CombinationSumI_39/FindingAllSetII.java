@@ -1,4 +1,4 @@
-package LC_Questions.CollectionAll.BackTracking.Others;
+package LC_Questions.CollectionAll.BackTracking.Others.CombinationSumI_39;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +16,6 @@ public class FindingAllSetII {
         public static List<List<Integer>> subsets(int[] nums) {
             List<List<Integer>> res = new ArrayList<>();
             res.add(new ArrayList<>());
-
             for (int num : nums) {
                 int size = res.size();
                 for (int i = 0; i < size; i++) {
@@ -25,8 +24,6 @@ public class FindingAllSetII {
                     res.add(newSubset);
                 }
             }
-
             return res;
-
-    }
+        }
 }

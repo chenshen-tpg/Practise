@@ -16,7 +16,7 @@ public class MaximumProductOfTheLengthOfTwoPalindromicSubsequences_2002 {
     public void dfs(char[] strArr, int i, String s1, String s2){
         if(i >= strArr.length){
             if(isPalindromic(s1) && isPalindromic(s2)) {
-                res = Math.max(res, s1.length()*s2.length());
+                res = Math.max(res, s1.length() * s2.length());
             }
             return;
         }
