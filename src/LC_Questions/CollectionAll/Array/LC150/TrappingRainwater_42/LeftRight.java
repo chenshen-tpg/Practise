@@ -1,12 +1,10 @@
-package LC_Questions.CollectionAll.Array.LC150;
+package LC_Questions.CollectionAll.Array.LC150.TrappingRainwater_42;
 
-public class TrappingRainwater_42_Hard {
+public class LeftRight {
     public static void main(String[] args) {
-        TrappingRainwater_42_Hard t = new TrappingRainwater_42_Hard();
+        LeftRight t = new LeftRight();
         System.out.println(t.trap(new int[]{0,1,0,2,1,0,1,3,2,1,2,1}));
     }
-
-
 
     public int trap(int[] height) {
         if (height.length == 0) return 0;

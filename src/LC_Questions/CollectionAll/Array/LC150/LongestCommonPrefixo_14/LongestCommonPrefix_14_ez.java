@@ -1,4 +1,4 @@
-package LC_Questions.CollectionAll.Array.LC150;
+package LC_Questions.CollectionAll.Array.LC150.LongestCommonPrefixo_14;
 
 public class LongestCommonPrefix_14_ez {
     public static void main(String[] args) {
@@ -6,6 +6,7 @@ public class LongestCommonPrefix_14_ez {
         String[] strs = {"flower","flow","flight"};
         System.out.println(l.longestCommonPrefix(strs));
     }
+
     public String longestCommonPrefix(String[] strs) {
         if (strs.length == 0) return "";
         String prefix = strs[0];
