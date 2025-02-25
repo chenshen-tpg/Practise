@@ -3,9 +3,9 @@ package LC_Questions.CollectionAll.BackTracking.LC150.Combination_77;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Combinations_77 {
+public class Backtracking {
     public static void main(String[] args) {
-        Combinations_77 c = new Combinations_77();
+        Backtracking c = new Backtracking();
         System.out.println(c.start(4, 2));
     }
 
