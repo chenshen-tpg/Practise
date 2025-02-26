@@ -1,4 +1,4 @@
-package LC_Questions.CollectionAll.Array.Others;
+package LC_Questions.CollectionAll.Heap.Others;
 
 
 import java.util.Arrays;

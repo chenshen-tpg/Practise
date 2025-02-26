@@ -1,4 +1,4 @@
-package LC_Questions.CollectionAll.Array.Others;
+package LC_Questions.CollectionAll.Matrix.Others;
 
 import java.util.HashMap;
 

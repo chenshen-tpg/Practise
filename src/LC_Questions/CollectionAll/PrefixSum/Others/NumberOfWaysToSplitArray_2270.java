@@ -1,4 +1,4 @@
-package LC_Questions.CollectionAll.Array.Others;
+package LC_Questions.CollectionAll.PrefixSum.Others;
 
 public class NumberOfWaysToSplitArray_2270 {
     public static void main(String[] args) {

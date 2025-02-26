@@ -1,4 +1,4 @@
-package LC_Questions.CollectionAll.Array.Others;
+package LC_Questions.CollectionAll.Stack.Others;
 
 import java.util.ArrayList;
 import java.util.List;

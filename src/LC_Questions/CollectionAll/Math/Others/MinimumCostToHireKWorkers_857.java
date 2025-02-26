@@ -1,4 +1,4 @@
-package LC_Questions.CollectionAll.Array.Others;
+package LC_Questions.CollectionAll.Math.Others;
 
 public class MinimumCostToHireKWorkers_857 {
     public static int minEatingSpeed(int[] piles, int h) {

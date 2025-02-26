@@ -1,4 +1,4 @@
-package LC_Questions.CollectionAll.Array.Others;
+package LC_Questions.CollectionAll.Math.Others;
 
 public class PairsOfSongWithTotalDivisionBy60_1010 {
     public static void main(String[] args) {

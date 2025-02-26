@@ -1,4 +1,4 @@
-package LC_Questions.CollectionAll.Array.Others;
+package LC_Questions.CollectionAll.TwoPointers.Others;
 
 public class LongestPalindromicSubString_5 {
     public static void main(String[] args) {
