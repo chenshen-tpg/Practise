@@ -8,13 +8,12 @@ public class DP {
     }
 
     public String shortestCommonSupersequence(String str1, String str2) {
-        int len2 = str2.length();
-        String[] prev = new String[len2 + 1];
-        for (int i = 0; i <= len2; i++) prev[i] = str2.substring(0, i);
-        for (int i = 1; i <=  str1.length(); i++) {
-            String[] cur = new String[len2 + 1];
+        String[] prev = new String[str2.length() + 1];
+        for (int i = 0; i <= str2.length(); i++) prev[i] = str2.substring(0, i);
+        for (int i = 1; i <= str1.length(); i++) {
+            String[] cur = new String[str2.length() + 1];
             cur[0] = str1.substring(0, i);
-            for (int j = 1; j <= len2; j++) {
+            for (int j = 1; j <= str2.length(); j++) {
                 if (str1.charAt(i - 1) == str2.charAt(j - 1)) cur[j] = prev[j - 1] + str1.charAt(i - 1);
                 else {
                     String s1 = prev[j];
@@ -24,6 +23,6 @@ public class DP {
             }
             prev = cur;
         }
-        return prev[len2];
+        return prev[str2.length()];
     }
 }
