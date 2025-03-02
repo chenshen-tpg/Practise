@@ -1,4 +1,4 @@
-package LC_Questions.DP.Others.PascalTrangle_118;
+package LC_Questions.Graph.Others.PascalTrangle_118;
 
 import java.util.ArrayList;
 import java.util.List;
