@@ -1,13 +1,13 @@
-package LC_Questions.DP.Others;
+package LC_Questions.DP.Others.Triangle_120;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class Triangle_120_Med {
+public class BUDP {
     public static void main(String[] args) {
-        Triangle_120_Med t = new Triangle_120_Med();
+        BUDP t = new BUDP();
         List<List<Integer>> triangle = new ArrayList<>();
         triangle.add(new ArrayList<>(Arrays.asList(2)));
         triangle.add(new ArrayList<>(Arrays.asList(3, 4)));

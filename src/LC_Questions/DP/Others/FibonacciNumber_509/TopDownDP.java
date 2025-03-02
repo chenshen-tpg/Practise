@@ -1,6 +1,6 @@
-package LC_Questions.DP.Others;
+package LC_Questions.DP.Others.FibonacciNumber_509;
 
-public class FibonacciTopDown {
+public class TopDownDP {
     private static int[] memo;
 
     public static void main(String[] args) {
