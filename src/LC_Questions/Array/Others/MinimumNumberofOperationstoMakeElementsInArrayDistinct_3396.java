@@ -3,7 +3,7 @@ package LC_Questions.Array.Others;
 import java.util.Arrays;
 import java.util.HashSet;
 
-public class MinimumNumberofOperationstoMakeElementsInArrayDistinct_3396_Q1 {
+public class MinimumNumberofOperationstoMakeElementsInArrayDistinct_3396 {
     public static void main(String[] args) {
         int[] nums1 = {1, 2, 3, 4, 2, 3, 3, 5, 7};
         System.out.println(method(nums1));

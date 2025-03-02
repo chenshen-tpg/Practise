@@ -1,6 +1,6 @@
 package LC_Questions.Array.Others;
 
-public class SubstringMatchingPattern_2407_Q1 {
+public class SubstringMatchingPattern_2407 {
     public static void main(String[] args) {
         String s = "leetcode", p = "ee*e";
 

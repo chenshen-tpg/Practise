@@ -1,6 +1,6 @@
 package LC_Questions.Array.Others;
 
-public class longestProductEquivalentSubarray_3411_Q1 {
+public class longestProductEquivalentSubarray_3411 {
 
     public static void main(String[] args) {
         int[] nums = {2, 3, 4, 6, 12};

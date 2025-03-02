@@ -4,11 +4,11 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-public class MaximumNumberofDistinctElementsAfterOperations_3397_Q2 {
+public class MaximumNumberofDistinctElementsAfterOperations_3397 {
     public static void main(String[] args) {
         int[] nums = {1, 2, 2, 3, 3, 4};
         int k = 2;
-        MaximumNumberofDistinctElementsAfterOperations_3397_Q2 obj = new MaximumNumberofDistinctElementsAfterOperations_3397_Q2();
+        MaximumNumberofDistinctElementsAfterOperations_3397 obj = new MaximumNumberofDistinctElementsAfterOperations_3397();
         System.out.println(obj.maxDistinctElements(nums, k));
     }
 

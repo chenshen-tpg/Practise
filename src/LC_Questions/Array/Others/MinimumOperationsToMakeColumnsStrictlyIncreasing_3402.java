@@ -1,6 +1,6 @@
 package LC_Questions.Array.Others;
 
-public class MinimumOperationsToMakeColumnsStrictlyIncreasing_3402_Q1 {
+public class MinimumOperationsToMakeColumnsStrictlyIncreasing_3402 {
     public static void main(String[] args) {
         int[][] grid = {
                 {1, 3, 5},
