@@ -28,3 +28,15 @@ WHERE CHAR_LENGTH(content) > 15;
 SELECT user_id, CONCAT(UPPER(SUBSTRING(name, 1, 1)), LOWER(SUBSTRING(name, 2))) AS name
 FROM Users
 ORDER BY user_id;
+
+--- 1068 Product Sales Analysis i
+SELECT p.product_name, s.year, s.price
+FROM Sales s, Product p
+WHERE s.product_id = p.product_id;
+
+---1581. Customer Who Visited but Did Not Make Any Transactions
+
+SELECT customer_id, COUNT(visit_id) AS count_no_trans
+FROM    Visits
+WHERE visit_id NOT IN (SELECT visit_id FROM Transactions)
+GROUP BY customer_id
