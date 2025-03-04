@@ -33,6 +33,7 @@ public class MaximumNumberOfMovesInAGrid {
                         vis[newRow][newCol] = true;
                         q.offer(new int[]{newRow, newCol, count + 1});
                     }
+                    
                 }
             }
         }

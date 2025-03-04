@@ -16,4 +16,5 @@ public class GridGame_2017 {
         }
         return min;
     }
+
 }
