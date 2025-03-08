@@ -10,17 +10,14 @@ public class longestProductEquivalentSubarray_3411 {
     public static int longestProductEquivalentSubarray_3411_Q1(int[] nums) {
         int maxLength = 0;
         int n = nums.length;
-
         for (int i = 0; i < n; i++) {
             int product = 1;
             int gcd = nums[i];
             int lcm = nums[i];
-
             for (int j = i; j < n; j++) {
                 product *= nums[j];
                 gcd = gcd(gcd, nums[j]);
                 lcm = lcm(lcm, nums[j]);
-
                 if (product == gcd * lcm) {
                     maxLength = Math.max(maxLength, j - i + 1);
                 }
@@ -29,7 +26,6 @@ public class longestProductEquivalentSubarray_3411 {
 
         return maxLength;
     }
-
 //    private static int gcd(int a, int b) {
 //        while (b != 0) {
 //            int temp = b;

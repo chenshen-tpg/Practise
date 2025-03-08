@@ -14,20 +14,13 @@ public class ValiWordAbbreviation_408 {
         int num = 0;
         if (abbr.length() == 0) return true;
         while (w < wl && a < al) {
-            char tempw = word.charAt(w);
-            char tempa = word.charAt(a);
-            if (tempw == '0' && tempa !='0') return false;
+            if (word.charAt(w) == '0' && word.charAt(a) !='0') return false;
             if (word.charAt(w) == word.charAt(a)){
                 w++;
                 a++;
             }
-
-            if (Character.isDigit(tempa)) {
-                num  = num * 10 + tempa - '0';
-            }
+            if (Character.isDigit(word.charAt(a))) num  = num * 10 + word.charAt(a) - '0';
         }
         return w == a + num;
     }
-
-
 }
