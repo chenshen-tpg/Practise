@@ -1,8 +1,8 @@
 package LC_Questions.Matrix.Others;
 
-public class GameOfLife_289_Med {
+public class GameOfLife_289 {
     public static void main(String[] args) {
-        GameOfLife_289_Med g = new GameOfLife_289_Med();
+        GameOfLife_289 g = new GameOfLife_289();
         int[][] board = new int[][]{{0,1,0},{0,0,1},{1,1,1},{0,0,0}};
         g.gameOfLife(board);
         for (int[] ints : board) {

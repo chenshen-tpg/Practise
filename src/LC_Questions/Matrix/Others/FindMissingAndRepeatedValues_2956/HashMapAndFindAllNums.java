@@ -1,8 +1,8 @@
-package LC_Questions.Matrix.Others;
+package LC_Questions.Matrix.Others.FindMissingAndRepeatedValues_2956;
 
 import java.util.HashMap;
 
-public class FindMissingAndRepeatedValues_2956 {
+public class HashMapAndFindAllNums {
     public static void main(String[] args) {
         int[][] grid = {{1,3}, {2, 2}};
         helper(grid);
