@@ -1,8 +1,8 @@
 package LC_Questions.Array.LC150.TrappingRainwater_42;
 
-public class LeftRight {
+public class LeftRightPrefix {
     public static void main(String[] args) {
-        LeftRight t = new LeftRight();
+        LeftRightPrefix t = new LeftRightPrefix();
         System.out.println(t.trap(new int[]{0,1,0,2,1,0,1,3,2,1,2,1}));
     }
 
