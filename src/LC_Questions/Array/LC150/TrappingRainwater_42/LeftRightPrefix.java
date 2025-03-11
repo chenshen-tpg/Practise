@@ -20,9 +20,9 @@ public class LeftRightPrefix {
         for (int i = size - 2; i >= 0; i--) {
             right_max[i] = Math.max(height[i], right_max[i + 1]);
         }
-        for (int i = 1; i < size - 1; i++) ans += Math.min(left_max[i], right_max[i]) - height[i];
+        for (int i = 1; i < size - 1; i++) {
+            ans += Math.min(left_max[i], right_max[i]) - height[i];
+        }
         return ans;
     }
-
-
 }
