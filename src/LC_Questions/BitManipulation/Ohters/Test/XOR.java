@@ -1,4 +1,4 @@
-package LC_Questions.BitManipulation.Ohters;
+package LC_Questions.BitManipulation.Ohters.Test;
 
 public class XOR {
     //Bitwise Operations:

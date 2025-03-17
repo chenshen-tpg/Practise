@@ -7,7 +7,7 @@ import java.util.Set;
 public class LongestSquareStreakInAnArray_2501 {
     public static void main(String[] args) {
         LongestSquareStreakInAnArray_2501 ls = new LongestSquareStreakInAnArray_2501();
-        System.out.println(ls.longestSquareStreak(new int[]{4,3,6,16,8,2}));
+        System.out.println(ls.longestSquareStreak(new int[]{4, 3, 6, 16, 8, 2}));
     }
     public int longestSquareStreak(int[] nums) {
         Arrays.sort(nums);
@@ -15,7 +15,6 @@ public class LongestSquareStreakInAnArray_2501 {
         int longestStreak = 0;
         for (int current : nums) {
             if (processedNumbers.contains(current)) continue;
-
             int streak = current;
             int streakLength = 1;
             while (true) {

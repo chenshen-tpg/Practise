@@ -1,9 +1,8 @@
 package LC_Questions.Array.LC75.GreatestCommonDivisorOfStrings_1071;
 
-public class OnePass {
+public class BuiltIn {
     public static void main(String[] args) {
         String str1 = "ABABAB", str2 = "ABAB";
-//        System.out.println(str1.substring(str2.length()));begin index
         System.out.println(gcdOfStrings(str1, str2));
     }
 

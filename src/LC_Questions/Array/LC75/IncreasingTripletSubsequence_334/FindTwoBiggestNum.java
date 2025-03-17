@@ -2,9 +2,10 @@ package LC_Questions.Array.LC75.IncreasingTripletSubsequence_334;
 
 public class FindTwoBiggestNum {
     public static void main(String[] args) {
-
+        FindTwoBiggestNum solution = new FindTwoBiggestNum();
+        solution.increasingTripletTest(new int [] {1,2,3,4,5});
     }
-    public static int increasingTripletTest (int [] nums) {
+    public int increasingTripletTest (int [] nums) {
         int smallest = Integer.MAX_VALUE;
         int secondSmallest = Integer.MAX_VALUE;
         int biggest = Integer.MIN_VALUE;
