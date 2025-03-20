@@ -1,4 +1,4 @@
-package LC_Questions.SlidingWindow.Others;
+package LC_Questions.SlidingWindow.Others.FindThePowerOfSizeKSubarrays_3255;
 
 public class FindThePowerOfKSizeSubarrays_3255 {
     public static void main(String[] args) {
@@ -9,30 +9,11 @@ public class FindThePowerOfKSizeSubarrays_3255 {
         for (int i : res) {
             System.out.println(i);
         }
+    }
 
-    }
+
     public int[] resultsArray(int[] nums, int k) {
-        int n = nums.length;
-        int[] results = new int[n - k + 1];
-        for (int i = 0; i <= n - k; i++) {
-            if (isConsecutiveAndSorted(nums, i, k)) {
-                results[i] = nums[i + k - 1];
-            } else {
-                results[i] = -1;
-            }
-        }
-        return results;
-    }
-    private boolean isConsecutiveAndSorted(int[] nums, int start, int k) {
-        for (int i = start; i < start + k - 1; i++) {
-            if (nums[i] + 1 != nums[i + 1]) {
-                return false;
-            }
-        }
-        return true;
-    }
-    public int[] resultsArray1(int[] nums, int k) {
-        int [] ans = new int [nums.length-k+1];
+        int [] ans = new int [nums.length - k + 1];
         int maxans = 0;
         for (int i = 0; i < nums.length; i ++) {
             int [] tempAns = new int [k];
@@ -51,6 +32,7 @@ public class FindThePowerOfKSizeSubarrays_3255 {
         }
         return ans;
     }
+
     public boolean checkConsecutive(int[] nums) {
         for (int i = 0; i < nums.length - 1; i++) {
             if (nums[i] + 1 != nums[i + 1]) {
