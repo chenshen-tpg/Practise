@@ -1,4 +1,4 @@
-package LC_Questions.Graph.Others;
+package LC_Questions.Graph.Others.NumbersOfIsland_200;
 
 
 

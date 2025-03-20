@@ -1,4 +1,4 @@
-package LC_Questions.Graph.Others.MinimumCosttoMakeatLeastOneValidPathinaGrid_1368;
+package LC_Questions.DP.Others;
 
 import java.util.ArrayDeque;
 import java.util.Arrays;
