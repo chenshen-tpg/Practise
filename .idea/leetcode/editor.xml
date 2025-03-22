@@ -47,6 +47,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[1765]Map of Highest Peak.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/doc/content/[1765]Map of Highest Peak.md" />
+              <option name="frontendQuestionId" value="leetcode.com1765" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[1765]Map of Highest Peak.java" />
+              <option name="titleSlug" value="map-of-highest-peak" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[2161]Partition Array According to Given Pivot.java">
           <value>
             <LeetcodeEditor>
@@ -55,6 +66,17 @@
               <option name="host" value="leetcode.com" />
               <option name="path" value="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[2161]Partition Array According to Given Pivot.java" />
               <option name="titleSlug" value="partition-array-according-to-given-pivot" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[2226]Maximum Candies Allocated to K Children.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/doc/content/[2226]Maximum Candies Allocated to K Children.md" />
+              <option name="frontendQuestionId" value="leetcode.com2226" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[2226]Maximum Candies Allocated to K Children.java" />
+              <option name="titleSlug" value="maximum-candies-allocated-to-k-children" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -88,6 +110,17 @@
               <option name="host" value="leetcode.com" />
               <option name="path" value="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[2570]Merge Two 2D Arrays by Summing Values.java" />
               <option name="titleSlug" value="merge-two-2d-arrays-by-summing-values" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[3108]Minimum Cost Walk in Weighted Graph.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/doc/content/[3108]Minimum Cost Walk in Weighted Graph.md" />
+              <option name="frontendQuestionId" value="leetcode.com3108" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[3108]Minimum Cost Walk in Weighted Graph.java" />
+              <option name="titleSlug" value="minimum-cost-walk-in-weighted-graph" />
             </LeetcodeEditor>
           </value>
         </entry>
