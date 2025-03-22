@@ -4,15 +4,6 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class MapOfHighestPeak_1765 {
-    /***
-     * 001
-     * 100
-     * 000
-     *
-     * 110
-     * 011
-     * 122
-     */
     static int[][] DIRECTION = new int[][] { { 0, -1 }, { 0, 1 }, { -1, 0 }, { 1, 0 } };
     int rows;
     int cols;

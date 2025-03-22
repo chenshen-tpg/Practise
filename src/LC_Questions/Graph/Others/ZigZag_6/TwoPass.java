@@ -1,4 +1,4 @@
-package LC_Questions.Array.Others.ZigZag_6;
+package LC_Questions.Graph.Others.ZigZag_6;
 
 import java.util.Arrays;
 

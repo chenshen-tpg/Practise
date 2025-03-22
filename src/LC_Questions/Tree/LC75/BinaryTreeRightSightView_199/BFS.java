@@ -9,7 +9,18 @@ import java.util.Queue;
 
 public class BFS {
 
-
+    public static void main(String[] args) {
+        TreeNode root1 = new TreeNode(1);
+        root1.left = new TreeNode(2);
+        root1.right = new TreeNode(3);
+        root1.left.right = new TreeNode(5);
+        root1.right.right = new TreeNode(4);
+        BFS solution = new BFS();
+        List<Integer> showing = solution.BFS(root1);
+        for (int i = 0; i < showing.size(); i++) {
+            System.out.print(showing.get(i) + " ");
+        }
+    }
     private List<Integer> BFS(TreeNode root) {
         if (root == null) return new ArrayList<>();
         Queue<TreeNode> q = new LinkedList<>();
@@ -32,16 +43,5 @@ public class BFS {
         }
         return res;
     }
-    public static void main(String[] args) {
-        TreeNode root1 = new TreeNode(1);
-        root1.left = new TreeNode(2);
-        root1.right = new TreeNode(3);
-        root1.left.right = new TreeNode(5);
-        root1.right.right = new TreeNode(4);
-        BFS solution = new BFS();
-        List<Integer> showing = solution.BFS(root1);
-        for (int i = 0; i < showing.size(); i++) {
-            System.out.print(showing.get(i) + " ");
-        }
-    }
+
 }

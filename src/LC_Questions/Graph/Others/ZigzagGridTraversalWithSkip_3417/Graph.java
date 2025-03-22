@@ -1,24 +1,21 @@
-package LC_Questions.Graph.Others;
+package LC_Questions.Graph.Others.ZigzagGridTraversalWithSkip_3417;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ZigzagGridTraversalWithSkip_Q1 {
+public class Graph {
     public static void main(String[] args) {
         int[][] grid1 = {{1, 2}, {3, 4}};
         int[][] grid2 = {{2, 1}, {2, 1}, {2, 1}};
         int[][] grid3 = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
 //
-        System.out.println(zigzag(grid1)); // Expected output: [1, 2, 3, 4]
-        System.out.println(zigzag(grid2)); // Expected output: [2, 1, 2, 1, 2, 1]
+        System.out.println(zigzag(grid1));
+        System.out.println(zigzag(grid2));
         System.out.println(zigzag(grid3));
     }
     public static List<Integer> zigzag(int [][] grid) {
         List<Integer> result = new ArrayList<>();
-        if (grid == null || grid.length == 0 || grid[0].length == 0) {
-            return result;
-        }
-
+        if (grid == null || grid.length == 0 || grid[0].length == 0) return result;
         int rows = grid.length;
         int cols = grid[0].length;
         boolean goingRight = true;
@@ -39,7 +36,6 @@ public class ZigzagGridTraversalWithSkip_Q1 {
             }
             goingRight = !goingRight;
         }
-
         return result;
     }
 }

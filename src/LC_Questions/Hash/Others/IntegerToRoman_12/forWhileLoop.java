@@ -1,4 +1,4 @@
-package LC_Questions.Array.Others.IntegerToRoman_12;
+package LC_Questions.Hash.Others.IntegerToRoman_12;
 
 public class forWhileLoop {
 

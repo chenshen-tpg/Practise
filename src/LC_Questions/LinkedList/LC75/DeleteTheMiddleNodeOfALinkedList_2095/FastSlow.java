@@ -2,7 +2,7 @@ package LC_Questions.LinkedList.LC75.DeleteTheMiddleNodeOfALinkedList_2095;
 
 import Lib.ListNode;
 
-public class TwoPointers {
+public class FastSlow {
 
     public static void main(String[] args) {
         ListNode head = new ListNode(1);
@@ -12,7 +12,7 @@ public class TwoPointers {
         head.next.next.next.next = new ListNode(1);
         head.next.next.next.next.next = new ListNode(2);
         head.next.next.next.next.next.next = new ListNode(6);
-        TwoPointers solution = new TwoPointers();
+        FastSlow solution = new FastSlow();
         solution.deleteMiddle(head);
     }
 

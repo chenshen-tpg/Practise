@@ -8,6 +8,10 @@ import java.util.List;
 public class DFS {
     List<Integer> rightside = new ArrayList();
 
+    public static void main(String[] args) {
+
+    }
+
     public void helper(TreeNode node, int level) {
         //it's working because its preorder in each layer1
         if (level == rightside.size()) rightside.add(node.val);
