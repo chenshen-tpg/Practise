@@ -24,24 +24,21 @@ public class DFS {
         d.helper(treenode, targetSum);
     }
 
-    int sum;
     int count ;
-    HashMap<Long, Integer> h = new HashMap();
 
     public int helper(TreeNode root, int targetSum) {
-        sum = targetSum;
-        dfs (root, 0);
+        dfs(root, 0, targetSum, new HashMap());
         return count;
     }
 
-    public void dfs (TreeNode root, long current) {
+    public void dfs (TreeNode root, long current, int sum, HashMap<Long, Integer> h) {
         if (root == null) return;
         current += root.val;
         if (current == sum) count++;
         count += h.getOrDefault(current - sum,0);
         h.put(current, h.getOrDefault(current, 0) + 1);
-        dfs(root.left, current);
-        dfs(root.right, current);
+        dfs(root.left, current, sum, h);
+        dfs(root.right, current, sum, h);
         h.put(current, h.get(current) - 1);
     }
 }

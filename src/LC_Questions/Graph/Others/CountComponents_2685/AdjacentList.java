@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class test {
+public class AdjacentList {
     public static void main(String[] args) {
             int n = 6;
             int[][] edges = {
@@ -16,7 +16,7 @@ public class test {
                     {3, 4},
                     {3, 5}
             };
-            test solution = new test();
+            AdjacentList solution = new AdjacentList();
             int result = solution.countCompleteComponents(n, edges);
             System.out.println("Number of complete components: " + result);
     }

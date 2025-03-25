@@ -1,4 +1,4 @@
-package LC_Questions.Array.Others;
+package LC_Questions.Prefix.Others;
 
 import java.util.Arrays;
 import java.util.List;

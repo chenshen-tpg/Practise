@@ -1,4 +1,4 @@
-package LC_Questions.Tree.LC75.PathSumIII_437;
+package LC_Questions.Hash.Others.SubArraySumEqualsK_560;
 
 import java.util.HashMap;
 
@@ -8,6 +8,7 @@ public class SubArraySum {
         SubArraySum s = new SubArraySum();
         System.out.println(s.subarraySum(test,7));
     }
+    //important concept
     public int subarraySum(int[] nums, int k) {
         int count = 0, currSum = 0;
         HashMap<Integer, Integer> h = new HashMap();

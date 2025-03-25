@@ -3,11 +3,11 @@ package LC_Questions.Graph.Others.MapOfHighestPeak_1765;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class MapOfHighestPeak_1765 {
+public class BFS {
 
     public static void main(String[] args) {
         int[][] mat = {{1, 0}, {2, 1}};
-        MapOfHighestPeak_1765 m = new MapOfHighestPeak_1765();
+        BFS m = new BFS();
         m.HighestPeak(mat);
     }
     Queue<int[]> q = new LinkedList<>();

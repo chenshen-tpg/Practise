@@ -1,4 +1,4 @@
-package LC_Questions.Array.Others;
+package LC_Questions.Hash.LC150;
 
 import java.util.ArrayList;
 import java.util.Arrays;

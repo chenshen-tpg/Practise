@@ -17,9 +17,9 @@ public class DoubleRecursive {
 
     void helper(TreeNode root, int sum, long curr) {
         if (root == null) return;
-        curr += root.val;
+//        curr += root.val;
         if (curr == sum) total++;
-        helper(root.left, sum, curr);
-        helper(root.right, sum, curr);
+        helper(root.left, sum, curr + root.val);
+        helper(root.right, sum, curr + root.val);
     }
 }
