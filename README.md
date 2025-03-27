@@ -1,25 +1,53 @@
-Project is aimed for CRASH the interview for Big FAANG-level companies
+Project is to practise and improve coding skills
 
-(SYSTEM DESIGN INCLUDED - interview level)
-URL SHORTENER/TICKETMASTER/LEETCODE/UBER/DROPBOX
-FB POST SEARCH/WEB CRAWLER/TINDER/AD CLICK AGGREGATOR
-FB LIVE COMMENTS/FB NEWS FEED/GOPUFF/TOP-K YOUTUBE VIDEOS/WHATSAPP
-YOUTUBE /YELP /STRAVA /DISTRIBUTED JOB SCHEDULER /GOOGLE DOCS
-ONLINE AUCTION /ROBINHOOD /DISTRIBUTED CACHE
+Main parts of the project are:
 
-(TECH INCLUDED - interview level:
-REDIS/ELASTICSEARCH/KAFKA/API GATEWAY/CASSANDRA/DYNAMODB/POSTGRESQL/REAL-TIME UPDATES/
-NUMBERS TO KNOW.
+    -SYSTEM DESIGN
+    (1)URL SHORTENER
+    (2)TICKETMASTER
+    (3)LEETCODE
+    (4)UBER
+    (5)DROPBOX
+    (6)FB POST SEARCH 
+    (7)WEB CRAWLER
+    (8)TINDER
+    (9)AD CLICK AGGREGATOR
+    (10)FB LIVE COMMENTS
+    (11)FB NEWS FEED
+    (12)GOPUFF
+    (13)TOP-K YOUTUBE VIDEOS
+    (14)WHATSAPP
+    (15)YOUTUBE 
+    (16)YELP 
+    (17)STRAVA 
+    (18)DISTRIBUTED JOB SCHEDULER 
+    (19)GOOGLE DOCS
+    (20)ONLINE AUCTION 
+    (21)ROBINHOOD 
+    (22)DISTRIBUTED CACHE
+
+    -SYSTEM DESIGN IN COMPONENTS
+    (1)REDIS
+    (2)ELASTICSEARCH
+    (3)KAFKA
+    (4)API GATEWAY
+    (5)CASSANDRA
+    (6)DYNAMODB
+    (7)POSTGRESQL
+    (8)REAL-TIME UPDATES
+    (9)NUMBERS TO KNOW.
 
 
-QUESTIONS COLLECTION - interview level)  
-TOP interview 75
-TOP interview 150
-Highest Vote 100
-Premium Question 100
-SQL50
-AdvanceSQL 50
-Daily challenges  (Starting 2025)
-Contest Questions (WeekByWeek)
+    -QUESTIONS COLLECTION 
+    (1)TOP  75
+    (2)TOP 150 
+    (3)TOP 100
+    (4)Premium 100 
+    (5)Daily chanllenges
 
-All questions will include official solution/ My solution/ highest voted
+    -APPENDIX
+    (1)SQL 50
+    (2)AdvanceSQL 50
+
+
+
