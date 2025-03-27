@@ -1,4 +1,4 @@
-package LC_Questions.Hash.Others.MakeLexicographicallySmallestArraybySwappingElements_2948_REVIEW;
+package LC_Questions.Hash.Others.MakeLexicographicallySmallestArraybySwappingElements_2948;
 
 import java.util.Arrays;
 import java.util.HashMap;
