@@ -1,4 +1,4 @@
-package LC_Questions.OOP.Snake;
+package LC_Questions.OOP.Others.Snake;
 
 import java.util.LinkedList;
 import java.util.Queue;
