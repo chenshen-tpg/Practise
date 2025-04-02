@@ -5,12 +5,13 @@ public class PrefixTrying {
         helper(new int [] {17,18,5,4,6,1});
     }
 
-    public static int helper (int [] arr) {
-        if (arr.length == 1) return -1;
-        int [] pre = new int [arr.length];
-        for (int i = arr.length - 2; i > 0; i--) {
-            pre[i] = Math.max(arr[i], pre[i + 1]);
+    public static int[] helper (int [] arr) {
+        int keeper = -1;
+        for (int i = arr.length -1; i >= 0; i-- ) {
+            int temp = arr[i];
+            arr[i] = keeper;
+            keeper = Math.max(temp, keeper);
         }
-        return 0;
+        return arr;
     }
 }
