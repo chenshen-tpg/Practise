@@ -1,4 +1,4 @@
-package LC_Questions.UnionFind.TheEarliestMomentWhenEveryoneBecomeFriends_1101;
+package LC_Questions.Graph.Others.TheEarliestMomentWhenEveryoneBecomeFriends_1101;
 
 import java.util.Arrays;
 
