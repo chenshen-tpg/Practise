@@ -1,8 +1,7 @@
-package LC_Questions.Math;
+package LC_Questions.Math.Others;
 
-import java.util.PriorityQueue;
 
-public class MaxiumumSwap_670 {
+public class MaximumSwap_670 {
 
     public static void main(String[] args) {
         int num = 2736;
@@ -45,17 +44,5 @@ public class MaxiumumSwap_670 {
             num /= 10;
         }
         return res + diff;
-    }
-    public static int method_Wrong (int num) {
-        PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) ->b - a);
-        String str = Integer.toString(num);
-        for (char c : str.toCharArray()) {
-            pq.add(Character.getNumericValue(c));
-        }
-        int result = 0;
-        while (!pq.isEmpty()) {
-            result = result * 10 + pq.poll();
-        }
-        return result;
     }
 }

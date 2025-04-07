@@ -1,13 +1,16 @@
-package LC_Questions.Graph.Others.NumbersOfIsland_200;
+package LC_Questions.Graph.LC150.NumberOfIsLands_200;
 
 
 
-public class NumberOfIslands_200 {
+public class BFSSolution {
+
     public static void main(String[] args) {
-
+        char [][] island = {{1,1,1,1,1,1},{1,0,0,0,0,0},{1,0,0,0,0,0},{1,0,0,0,0,0},{1,0,0,0,0,0}};
+        BFSSolution solution = new BFSSolution();
+        System.out.println(solution.bfs(island));
     }
 
-    public int islands(char[][] island) {
+    public int bfs(char[][] island) {
         int count = 0;
         for (int i = 0; i < island.length; i++) {
             for (int j = 0; j < island[i].length; j++) {
