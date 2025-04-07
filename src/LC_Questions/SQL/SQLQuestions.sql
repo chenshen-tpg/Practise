@@ -40,3 +40,24 @@ SELECT customer_id, COUNT(visit_id) AS count_no_trans
 FROM    Visits
 WHERE visit_id NOT IN (SELECT visit_id FROM Transactions)
 GROUP BY customer_id
+
+
+--197 Rising temperature
+SELECT w1.id
+FROM Weather w1
+         JOIN Weather w2
+              ON DATEDIFF(w1.recordDate, w2.recordDate) = 1
+WHERE w1.temperature > w2.temperature;
+
+--181 Employees Earning more than their manager
+
+SELECT Name As Employee FROM Employee e
+WHERE e.salary > (SELECT salary FROM Employee WHERE e.managerId = id );
+
+SELECT a.Name AS 'Employee' FROM Employee AS a, Employee AS b
+WHERE a.ManagerId = b.Id AND a.Salary > b.Salary;
+
+--1581. Customer Who Visited but Did Not Make Any Transactions
+SELECT customer_id, COUNT(visit_id) AS count_no_trans from Visits
+WHERE visit_id NOT IN (SELECT visit_id FROM Transactions)
+GROUP BY customer_id

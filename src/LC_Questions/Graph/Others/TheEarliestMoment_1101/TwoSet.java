@@ -6,7 +6,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class Test {
+public class TwoSet {
     public static void main(String[] args) {
         int[][] logs = {
                 {20190101, 0, 1},
@@ -19,12 +19,12 @@ public class Test {
                 {20190322, 4, 5}
         };
         int n = 6;
-        Test test = new Test();
-        int result = test.earliestAcq(logs, n);
+        TwoSet twoSet = new TwoSet();
+        int result = twoSet.helper(logs, n);
         System.out.println("The earliest moment when everyone becomes friends: " + result);
     }
 
-    public int earliestAcq(int[][] logs, int n) {
+    public int helper(int[][] logs, int n) {
         Arrays.sort(logs, (a, b) -> Integer.compare(a[0], b[0]));
         List<Set<Integer>> sets = new ArrayList<>();
         for (int i = 0; i < n; i++) {
