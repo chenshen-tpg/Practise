@@ -2,12 +2,12 @@ package LC_Questions.BinarySearch.LC75.SuccessfulPairsofSpellsandPotions_2300_re
 
 
 
-public class bruteForce {
+public class BruteForce {
     public static void main(String[] args) {
         int [] spells = {3,1,2};
         int [] potions = {8,5,8};
         int success = 16;
-        bruteForce solution = new bruteForce();
+        BruteForce solution = new BruteForce();
         int [] spell = solution.successfulPairs(spells, potions,success);
         for (int i = 0; i < spells.length; i++) {
             System.out.print(spell[i] + " ");

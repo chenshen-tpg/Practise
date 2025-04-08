@@ -2,12 +2,12 @@ package LC_Questions.BinarySearch.LC75.SuccessfulPairsofSpellsandPotions_2300_re
 
 import java.util.Arrays;
 
-public class sortBiinarySearch {
+public class SortBinarySearch {
     public static void main(String[] args) {
         int [] spells = {5, 1, 3};
         int [] potions = {1, 2, 3, 4, 5};
         int success = 7;
-        sortBiinarySearch solution = new sortBiinarySearch();
+        SortBinarySearch solution = new SortBinarySearch();
         solution.successfulPairs(spells, potions, success);
     }
 

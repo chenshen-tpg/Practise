@@ -1,17 +1,12 @@
 package LC_Questions.BinarySearch.LC75.FindPeakElement_162;
 
-public class FindPeakElement_162_med {
+public class BinarySearch {
     public static void main(String[] args) {
-        FindPeakElement_162_med f = new FindPeakElement_162_med();
+        BinarySearch f = new BinarySearch();
         int[] nums = {1,2,3,1};
         System.out.println(f.findPeakElement(nums));
     }
-    public int findPeakElementLiner(int[] nums) {
-        for (int i = 0; i < nums.length - 1; i++) {
-            if (nums[i] > nums[i + 1]) return i;
-        }
-        return nums.length - 1;
-    }
+
 
     public int findPeakElement(int[] nums) {
         return search(nums, 0, nums.length - 1);
