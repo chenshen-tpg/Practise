@@ -1,4 +1,4 @@
-package LC_Questions.Array.Others.PartitionArrayAccordingToGivenPivot;
+package LC_Questions.Array.Others.PartitionArrayAccordingToGivenPivot_2161;
 
 public class ThreePass {
     public static void main(String[] args) {

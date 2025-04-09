@@ -1,4 +1,4 @@
-package LC_Questions.Array.Others.ReplaceElementsWithGreatestElements;
+package LC_Questions.Array.Others.ReplaceElementsWithGreatestElements_1299;
 
 public class BruteForce {
     public static void main(String[] args) {

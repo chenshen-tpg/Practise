@@ -1,4 +1,4 @@
-package LC_Questions.Array.Others.ReplaceElementsWithGreatestElements;
+package LC_Questions.Array.Others.ReplaceElementsWithGreatestElements_1299;
 
 public class PrefixTrying {
     public static void main(String[] args) {
