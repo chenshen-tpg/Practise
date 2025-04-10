@@ -1,4 +1,4 @@
-package LC_Questions.Tree.LC100;
+package LC_Questions.Tree.LC100.DiameterOfBinaryTree_543;
 import Lib.TreeNode;
 
 public class DiameterOfBinaryTree_543 {

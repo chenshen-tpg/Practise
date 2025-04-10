@@ -1,4 +1,4 @@
-package LC_Questions.Tree.LC100;
+package LC_Questions.Tree.LC150.KthSmallestElementInABST_230;
 
 import java.util.ArrayList;
 import java.util.List;
