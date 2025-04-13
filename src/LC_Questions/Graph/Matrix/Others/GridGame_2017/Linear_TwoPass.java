@@ -1,6 +1,6 @@
-package LC_Questions.Graph.Matrix.Others;
+package LC_Questions.Graph.Matrix.Others.GridGame_2017;
 
-public class GridGame_2017 {
+public class Linear_TwoPass {
     public static void main(String[] args) {
         
     }
