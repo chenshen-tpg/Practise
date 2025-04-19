@@ -1,4 +1,4 @@
-package LC_Questions.Array.Intervals.PremiumAlgo100;
+package LC_Questions.Array.Intervals.PremiumAlgo100.MissingRanges_163;
 
 import java.util.ArrayList;
 import java.util.Arrays;
