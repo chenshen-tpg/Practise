@@ -1,4 +1,4 @@
-package LC_Questions.Array.ArrayGeneral.Others.PutMarblesinBags_2551;
+package LC_Questions.Hard.PutMarblesinBags_2551;
 
 import java.util.Arrays;
 

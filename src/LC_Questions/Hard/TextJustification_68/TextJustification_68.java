@@ -1,4 +1,4 @@
-package LC_Questions.Array.ArrayGeneral.LC150;
+package LC_Questions.Hard.TextJustification_68;
 
 public class TextJustification_68 {
 

@@ -1,4 +1,4 @@
-package LC_Questions.Heap.LC150.FindMedianFromDataStream_295;
+package LC_Questions.Hard.FindMedianFromDataStream_295;
 
 import java.util.PriorityQueue;
 

@@ -1,4 +1,4 @@
-package LC_Questions.Stack.LC100.largestRectangleINHistogram_84;
+package LC_Questions.Hard.largestRectangleINHistogram_84;
 
 import java.util.Stack;
 

@@ -1,4 +1,4 @@
-package LC_Questions.Math.Others.FindTheCountOfGoodInteger_3272;
+package LC_Questions.Hard.FindTheCountOfGoodInteger_3272;
 
 import java.util.Arrays;
 import java.util.HashSet;

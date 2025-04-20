@@ -1,4 +1,4 @@
-package LC_Questions.Array.ArrayGeneral.LC150.TrappingRainwater_42;
+package LC_Questions.Hard.TrappingRainwater_42;
 
 public class LeftRightPrefix {
     public static void main(String[] args) {

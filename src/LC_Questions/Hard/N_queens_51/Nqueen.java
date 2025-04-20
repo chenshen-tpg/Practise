@@ -1,4 +1,4 @@
-package LC_Questions.Array.BackTracking.Others.N_queens_51;
+package LC_Questions.Hard.N_queens_51;
 
 import java.util.ArrayList;
 import java.util.Arrays;

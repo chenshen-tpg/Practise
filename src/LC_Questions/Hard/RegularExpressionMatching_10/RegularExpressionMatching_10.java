@@ -1,4 +1,4 @@
-package LC_Questions.DP.Others;
+package LC_Questions.Hard.RegularExpressionMatching_10;
 
 public class RegularExpressionMatching_10 {
     Result[][] memo;
