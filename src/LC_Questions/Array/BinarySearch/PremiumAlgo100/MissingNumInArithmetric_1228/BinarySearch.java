@@ -1,6 +1,10 @@
 package LC_Questions.Array.BinarySearch.PremiumAlgo100.MissingNumInArithmetric_1228;
 
 public class BinarySearch {
+    public static void main(String[] args) {
+
+    }
+
     public int missingNumber(int arr[]) {
         int n = arr.length;
         int difference = (arr[n - 1] - arr[0]) / n;

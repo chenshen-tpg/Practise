@@ -41,7 +41,20 @@ public class BoardDropper {
         }
     }
 
-
+    public void drop1(int[][] board) {
+        for (int j = 0; j < board[0].length; j++) {
+            int emptyRow =  board.length - 1;
+            for (int i =  board.length - 1; i >= 0; i--) {
+                if (board[i][j] != 0) {
+                    if (i < emptyRow) {
+                        board[emptyRow][j] = board[i][j];
+                        board[i][j] = 0;
+                    }
+                    emptyRow--;
+                }
+            }
+        }
+    }
 
     private static void printBoard(int[][] board) {
         for (int[] row : board) {

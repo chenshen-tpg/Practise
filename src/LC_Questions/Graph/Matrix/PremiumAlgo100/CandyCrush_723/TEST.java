@@ -6,15 +6,28 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class TEST {
+    int m, n;
     public static void main(String[] args) {
 
     }
-    int m, n;
 
-    Set<Pair<Integer, Integer>> find(int[][] board) {
+    public int[][] candyCrush(int[][] board) {
+        m = board.length;
+        n = board[0].length;
+        Set<Pair<Integer, Integer>> crushedSet = find(board);
+        while (!crushedSet.isEmpty()) {
+            crush(board, crushedSet);
+            drop(board);
+            crushedSet = find(board);
+        }
+
+        return board;
+    }
+
+    public Set<Pair<Integer, Integer>> find(int[][] board) {
         Set<Pair<Integer, Integer>> crushedSet = new HashSet<>();
-        for (int r = 1; r < m - 1; r++) {
-            for (int c = 0; c < n; c++) {
+        for (int r = 1; r < board.length - 1; r++) {
+            for (int c = 0; c < board[0].length; c++) {
                 if (board[r][c] == 0) continue;
                 if (board[r][c] == board[r - 1][c] && board[r][c] == board[r + 1][c]) {
                     crushedSet.add(new Pair<>(r, c));
@@ -23,7 +36,7 @@ public class TEST {
                 }
             }
         }
-        for (int r = 0; r < m; r++) {
+        for (int r = 0; r <  board.length; r++) {
             for (int c = 1; c < n - 1; c++) {
                 if (board[r][c] == 0) continue;
                 if (board[r][c] == board[r][c - 1] && board[r][c] == board[r][c + 1]) {
@@ -62,16 +75,5 @@ public class TEST {
         }
     }
 
-    public int[][] candyCrush(int[][] board) {
-        m = board.length;
-        n = board[0].length;
-        Set<Pair<Integer, Integer>> crushedSet = find(board);
-        while (!crushedSet.isEmpty()) {
-            crush(board, crushedSet);
-            drop(board);
-            crushedSet = find(board);
-        }
 
-        return board;
-    }
 }
