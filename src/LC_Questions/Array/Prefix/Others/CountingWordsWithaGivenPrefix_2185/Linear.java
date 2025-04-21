@@ -1,6 +1,6 @@
-package LC_Questions.Array.Prefix.Others;
+package LC_Questions.Array.Prefix.Others.CountingWordsWithaGivenPrefix_2185;
 
-public class CountingWordsWithaGivenPrefix_2185 {
+public class Linear {
     public int prefixCount(String[] words, String pref) {
         int count = 0;
         for (String word:words) {

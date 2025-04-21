@@ -3,7 +3,9 @@ package LC_Questions.Tree.Others.BinaryTreeLongestConsecutiveSequence_298;
 import Lib.TreeNode;
 
 public class BottomUPDFS {
+
     private int maxLength = 0;
+
     public int longestConsecutive(TreeNode root) {
         dfs(root);
         return maxLength;
