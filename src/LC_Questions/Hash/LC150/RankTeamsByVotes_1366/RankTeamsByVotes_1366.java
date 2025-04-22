@@ -1,4 +1,4 @@
-package LC_Questions.Hash.LC150;
+package LC_Questions.Hash.LC150.RankTeamsByVotes_1366;
 
 import java.util.ArrayList;
 import java.util.Arrays;

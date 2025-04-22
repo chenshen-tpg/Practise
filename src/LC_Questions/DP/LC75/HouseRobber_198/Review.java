@@ -1,8 +1,8 @@
 package LC_Questions.DP.LC75.HouseRobber_198;
 
-public class MeTryingDP {
+public class Review {
     public static void main(String[] args) {
-        MeTryingDP solution = new MeTryingDP();
+        Review solution = new Review();
         int [] nums = {2, 7, 9, 3, 1};
         solution.rob(nums);
     }
