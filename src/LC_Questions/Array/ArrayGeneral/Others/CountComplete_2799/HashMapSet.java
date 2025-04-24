@@ -5,9 +5,10 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-public class TEST1 {
+public class HashMapSet {
     public static void main(String[] args) {
-
+        HashMapSet solution = new HashMapSet();
+        solution.countCompleteSubarrays(new int [] {1,3,1,2,2});
     }
     public int countCompleteSubarrays(int[] nums) {
         Set<Integer> stack = new HashSet<>();
