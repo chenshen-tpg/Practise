@@ -1,4 +1,4 @@
-package LC_Questions.Array.ArrayGeneral.LC150.StockBuyAndSell;
+package LC_Questions.Array.ArrayGeneral.LC150.BestTimeToBuyAndSellStock_121;
 
 public class BestTimeToBuyAndSellStock_121 {
     public static void main(String[] args) {
