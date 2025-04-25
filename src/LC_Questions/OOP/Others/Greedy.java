@@ -37,5 +37,5 @@ public class Greedy {
         };
         System.out.println("Maximum number of activities: " + maxActivities(activities));
 
-}
+    }
 }
