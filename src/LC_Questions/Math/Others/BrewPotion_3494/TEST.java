@@ -1,6 +1,4 @@
-package LC_Questions.Array.ArrayGeneral.Others.BrewPotion_3494;
-
-import java.util.Arrays;
+package LC_Questions.Math.Others.BrewPotion_3494;
 
 public class TEST {
     public static void main(String[] args) {
