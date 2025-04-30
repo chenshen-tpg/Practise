@@ -6,14 +6,10 @@ public class TEST {
         solution.minimumPairRemoval(new int [] {5,2,3,1});
     }
     public int minimumPairRemoval(int[] nums) {
-        int length = nums.length - 1;
-        int count = 0;
-
+        int length = nums.length - 1, count = 0;
         while(length > 0) {
             boolean increase = true;
-            int minSum = Integer.MAX_VALUE;
-            int minIndex = -1;
-
+            int minSum = Integer.MAX_VALUE, minIndex = -1;
             for(int i = 0; i < length; i++) {
                 if(nums[i] > nums[i + 1]) increase = false;
                 if(nums[i] + nums[i + 1] < minSum) {
@@ -21,11 +17,9 @@ public class TEST {
                     minIndex = i;
                 }
             }
-
             if(increase) break;
             nums[minIndex] = minSum;
             for(int i = minIndex + 1; i < length; i++) nums[i] = nums[i + 1];
-
             length--;
             count++;
         }
