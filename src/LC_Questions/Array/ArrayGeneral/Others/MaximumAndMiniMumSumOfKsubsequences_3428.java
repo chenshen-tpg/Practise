@@ -1,6 +1,6 @@
 package LC_Questions.Array.ArrayGeneral.Others;
 
-//Math
+//MatSolution
 public class MaximumAndMiniMumSumOfKsubsequences_3428 {
     public static void main(String[] args) {
         int [] nums = {1,2,3};

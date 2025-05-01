@@ -23,10 +23,10 @@ public class SUMMARY {
 
      // Process current node (child in this context)
      if (parent != null) {
-     if (child.val + 1 == parent.val) parentLens[0] = Math.max(parentLens[0], childLen[0] + 1);
-     else if (child.val == parent.val + 1) parentLens[1] = Math.max(parentLens[1], childLen[1] + 1);
+     if (child.val + 1 == parent.val) parentLens[0] = MatSolution.max(parentLens[0], childLen[0] + 1);
+     else if (child.val == parent.val + 1) parentLens[1] = MatSolution.max(parentLens[1], childLen[1] + 1);
      }
-     maxLen = Math.max(maxLen, parentLens[0] + parentLens[1] - 1);
+     maxLen = MatSolution.max(maxLen, parentLens[0] + parentLens[1] - 1);
 
      helper_inorder(child.right, child, childLen); // Process right subtree
      }

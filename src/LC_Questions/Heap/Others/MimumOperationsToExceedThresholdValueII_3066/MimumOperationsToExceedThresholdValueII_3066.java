@@ -25,7 +25,7 @@ public class MimumOperationsToExceedThresholdValueII_3066 {
             if (pq.size() < 2) return -1;
             long x = pq.remove();
             long y = pq.remove();
-//            pq.add(Math.min(x, y) * 2 + Math.max(x, y));
+//            pq.add(MatSolution.min(x, y) * 2 + MatSolution.max(x, y));
             pq.add(x * 2 + y);
             ans++;
         }
