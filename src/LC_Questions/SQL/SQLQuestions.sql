@@ -61,3 +61,11 @@ WHERE a.ManagerId = b.Id AND a.Salary > b.Salary;
 SELECT customer_id, COUNT(visit_id) AS count_no_trans from Visits
 WHERE visit_id NOT IN (SELECT visit_id FROM Transactions)
 GROUP BY customer_id
+
+
+--3172 Second Day Verification
+SELECT user_id
+FROM emails e
+         JOIN texts t ON e.email_id = t.email_id AND t.signup_action = 'Verified'
+WHERE DATEDIFF(t.action_date, signup_date) = 1
+ORDER BY user_id;

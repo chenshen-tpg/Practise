@@ -1,6 +1,6 @@
-package TipsAndSummary;
+package TipsAndSummary.DP;
 
-public class howDPuseful {
+public class DP {
     /***
      *
     a. Google Maps

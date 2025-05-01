@@ -1,4 +1,4 @@
-package TipsAndSummary.CoreLogicCollection;
+package TipsAndSummary.Queue;
 
 public class QueueBetweenArrayDQandLinkedList {
     /***

@@ -1,4 +1,4 @@
-package TipsAndSummary.CoreLogicCollection;
+package TipsAndSummary.BinarySearch;
 
 public class BinarySearchModel {
 /***

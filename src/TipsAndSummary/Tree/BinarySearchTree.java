@@ -1,22 +1,16 @@
-package TipsAndSummary.CoreLogicCollection;
+package TipsAndSummary.Tree;
 
-public class SUMMARY {
-    /*** core of the number extraction logic
+public class BinarySearchTree {
 
-     //core of the number extraction logic
-     num = num * 10 + s.charAt(i) - '0';
-
-
-
-     */
 
 
     /***
-     // order of binary Search investigation.
+
+
+     order of Binary Search Tree
 
      public void helper_inorder(TreeNode child, TreeNode parent, int[] parentLens) {
      if (child == null) return;
-
      int[] childLen = new int[]{1, 1};
 
      helper_inorder(child.left, child, childLen); // Process left subtree

@@ -1,4 +1,4 @@
-package TipsAndSummary.CoreLogicCollection;
+package TipsAndSummary.Tree;
 
 public class Tree {
     /***

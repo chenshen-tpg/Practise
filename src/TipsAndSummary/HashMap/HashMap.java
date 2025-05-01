@@ -1,6 +1,6 @@
-package TipsAndSummary;
+package TipsAndSummary.HashMap;
 
-public class HashMapHint {
+public class HashMap {
     /***
             TreeMap: Maintains entries in ascending order of keys.
             HashMap: Does not maintain any order of entries.

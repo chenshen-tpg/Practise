@@ -1,4 +1,4 @@
-package TipsAndSummary.CoreLogicCollection;
+package TipsAndSummary.Recursive;
 
 public class RecursiveSolution {
     /***
