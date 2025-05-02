@@ -40,6 +40,7 @@ public class TEST {
                 if (p == 0) {
                     return false;
                 }
+                //Particular TreeMap API higher,lower,ceiling, floor
                 key = ws.ceilingKey(tasks[i] - strength);
                 if (key == null) {
                     return false;
