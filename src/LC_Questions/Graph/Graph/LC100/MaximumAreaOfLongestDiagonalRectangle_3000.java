@@ -1,6 +1,6 @@
 package LC_Questions.Graph.Graph.LC100;
 
-public class MaximumAreaofLongestDiagonalRectangle_3000 {
+public class MaximumAreaOfLongestDiagonalRectangle_3000 {
     public static void main(String[] args) {
         int[][] dimensions = {
                 {4, 7}, {8, 9}, {5, 3}, {6, 10}, {2, 9}, {3, 10}, {2, 2}, {5, 8}, {5, 10}, {5, 6},
@@ -22,7 +22,7 @@ public class MaximumAreaofLongestDiagonalRectangle_3000 {
         double max = 0;
         for (int[] dimension : dimensions) {
             if (dimension[0] <= 0 || dimension[1] <= 0) {
-                continue; // Skip invalid dimensions
+                continue;
             }
             double temp = Math.sqrt(dimension[0] * dimension[0] + dimension[1] * dimension[1]);
             if (temp > max) {
