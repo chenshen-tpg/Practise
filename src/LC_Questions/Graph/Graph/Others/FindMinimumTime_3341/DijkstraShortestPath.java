@@ -3,7 +3,7 @@ package LC_Questions.Graph.Graph.Others.FindMinimumTime_3341;
 import java.util.Arrays;
 import java.util.PriorityQueue;
 
-public class DijkstraShrotestPath {
+public class DijkstraShortestPath {
     private static final int INF = 0x3f3f3f3f;
 
     public int minTimeToReach(int[][] moveTime) {

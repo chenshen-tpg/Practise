@@ -1,6 +1,6 @@
-package LC_Questions.Graph.Graph.LC100;
+package LC_Questions.Graph.Graph.LC100.MaximumArea_3000;
 
-public class MaximumAreaOfLongestDiagonalRectangle_3000 {
+public class TEST {
     public static void main(String[] args) {
         int[][] dimensions = {
                 {4, 7}, {8, 9}, {5, 3}, {6, 10}, {2, 9}, {3, 10}, {2, 2}, {5, 8}, {5, 10}, {5, 6},
@@ -14,8 +14,7 @@ public class MaximumAreaOfLongestDiagonalRectangle_3000 {
                 {7, 9}, {4, 5}, {2, 8}, {7, 9}, {7, 3}, {4, 9}, {2, 8}, {4, 6}, {9, 1}, {8, 4},
                 {2, 4}, {7, 8}, {3, 5}, {7, 6}, {8, 6}, {4, 7}, {25, 60}, {39, 52}, {16, 63}, {33, 56}
         };
-        int [][] dimension1 = {{9,3},{8,6}};
-        System.out.println(areaofXX(dimension1));
+        System.out.println(areaOfMaxDiagonal(dimensions));
     }
     public static int areaOfMaxDiagonal(int[][] dimensions) {
         int ans = 0;
@@ -32,34 +31,6 @@ public class MaximumAreaOfLongestDiagonalRectangle_3000 {
         }
         return ans;
     }
-    public static int areaofXX(int[][] dimensions) {
-        int ans = 0;
-        double max = 0;
-        for (int [] dimension: dimensions) {
-            double temp = Math.sqrt(dimension[0] *  dimension[0] + dimension[1] * dimension[1]);
-            int tempArea = dimension[0] * dimension[1];
-            if (temp > max) {
-                max = temp;
-                ans = tempArea;
-            } else if (temp == max && tempArea > ans) {
-                ans = tempArea;
-            }
-        }
-        return ans;
-    }
-    public int areaOfMaxDiagonal_Correct(int[][] dimensions) {
-        int ans = 0, max = 0;
-        for (int [] dimension: dimensions) {
-            int ds = dimension[0] * dimension[0] + dimension[1] * dimension[1];
-            int ar = dimension[0] * dimension[1];
-            if (ds > max) {
-                max = ds;
-                ans = ar;
-            } else if (ds == max && ar > ans) {
-                ans = ar;
-            }
 
-        }
-        return ans;
-    }
+
 }
