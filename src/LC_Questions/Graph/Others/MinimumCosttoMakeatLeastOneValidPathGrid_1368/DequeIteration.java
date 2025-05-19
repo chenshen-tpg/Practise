@@ -1,4 +1,4 @@
-package LC_Questions.DP.Others;
+package LC_Questions.Graph.Others.MinimumCosttoMakeatLeastOneValidPathGrid_1368;
 
 import java.util.ArrayDeque;
 import java.util.Arrays;
