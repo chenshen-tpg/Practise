@@ -1,0 +1,19 @@
+package LC_Questions.Array.ArrayGeneral.Others.ZeroArrayTrans_3355;
+
+public class TLE {
+    public boolean isZeroArray(int[] nums, int[][] queries) {
+        for (int [] query : queries) {
+            int start = query[0], end = query[1];
+            while (start <= end) {
+                nums[start]--;
+                start++;
+            }
+        }
+        for (int num : nums) {
+            if (num > 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+}

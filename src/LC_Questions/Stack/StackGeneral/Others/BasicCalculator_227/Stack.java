@@ -1,14 +1,12 @@
-package LC_Questions.Stack.StackGeneral.Others;
+package LC_Questions.Stack.StackGeneral.Others.BasicCalculator_227;
 
-import java.util.Stack;
-
-public class BasicCalculatorII_227 {
+public class Stack {
     public static void main(String[] args) {
-        BasicCalculatorII_227 calculator = new BasicCalculatorII_227();
+        Stack calculator = new Stack();
         System.out.println(calculator.helper("3+2*2")); // Output: 7
     }
     private int helper(String s) {
-        Stack<Integer> st = new Stack<>();
+        java.util.Stack<Integer> st = new java.util.Stack<>();
         int num = 0;
         int ans = 0;
         char operator = '+';
