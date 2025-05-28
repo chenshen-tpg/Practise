@@ -23,8 +23,9 @@ public class SampleAns {
         char[] cs = colors.toCharArray();
         int n = cs.length;
         List<Integer>[] graph = new List[n];
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < n; i++) {
             graph[i] = new LinkedList<>();
+        }
         int[] indegree = new int[n];
         for (int[] edge : edges) {
             int u = edge[0], v = edge[1];
@@ -35,8 +36,9 @@ public class SampleAns {
         int[][] count = new int[n][26];
         Queue<Integer> q = new LinkedList<>();
         for (int i = 0; i < n; i++) {
-            if (indegree[i] == 0)
+            if (indegree[i] == 0) {
                 q.offer(i);
+            }
         }
         int visited = 0;
         int result = 0;
@@ -45,10 +47,12 @@ public class SampleAns {
             int u = q.poll(), color = cs[u] - 'a';
             result = Math.max(result, ++count[u][color]);
             for (int v : graph[u]) {
-                for (int i = 0; i < 26; ++i)
+                for (int i = 0; i < 26; ++i) {
                     count[v][i] = Math.max(count[v][i], count[u][i]);
-                if (--indegree[v] == 0)
+                }
+                if (--indegree[v] == 0) {
                     q.offer(v);
+                }
 
             }
         }
