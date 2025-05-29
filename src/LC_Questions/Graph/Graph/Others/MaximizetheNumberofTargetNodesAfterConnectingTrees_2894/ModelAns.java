@@ -4,6 +4,29 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ModelAns {
+    public static void main(String[] args) {
+        ModelAns solution = new ModelAns();
+        int[][] edges1 = {
+                {0, 1},
+                {0, 2},
+                {2, 3},
+                {2, 4}
+        };
+        int[][] edges2 = {
+                {0, 1},
+                {0, 2},
+                {0, 3},
+                {2, 7},
+                {1, 4},
+                {4, 5},
+                {4, 6}
+        };
+
+        int k = 2;
+
+        int[] result = solution.maxTargetNodes(edges1, edges2, k);
+        System.out.println("Maximized Target Nodes: " + result);
+    }
     public int[] maxTargetNodes(int[][] edges1, int[][] edges2, int k) {
         int n = edges1.length + 1, m = edges2.length + 1;
         int[] count1 = build(edges1, k);
