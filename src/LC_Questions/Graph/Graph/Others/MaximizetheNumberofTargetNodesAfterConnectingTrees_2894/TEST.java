@@ -33,21 +33,21 @@ public class TEST {
     private int[] maximizeTargetNodes(int[][] edges1, int[][] edges2, int k) {
         List<List<Integer>> graph1 = new ArrayList<>();
         List<List<Integer>> graph2 = new ArrayList<>();
-        for (int i = 0; i < edges1.length; i++) {
+        for (int i = 0; i < edges1.length + 1; i++) {
             graph1.add(new ArrayList<>());
         }
-        for (int i = 0; i < edges2.length; i++) {
+        for (int i = 0; i < edges2.length + 1; i++) {
             graph2.add(new ArrayList<>());
         }
         for (int[] g1 : edges1) {
-            int u = g1[0];
-            int x = g1[1];
+            int u = g1[0], x = g1[1];
             graph1.get(u).add(x);
+            graph1.get(x).add(u);
         }
         for (int[] g2 : edges2) {
-            int u = g2[0];
-            int x = g2[1];
+            int u = g2[0], x = g2[1];
             graph2.get(u).add(x);
+            graph2.get(x).add(u);
         }
 
         return new int[]{};

@@ -1,13 +1,18 @@
-package LC_Questions.Array.ArrayGeneral.Others.ZeroArrayTrans_3355;
+package LC_Questions.Array.Prefix.Others.ZeroArrayTrans_3355;
 
 public class SampleTwo {
+    public static void main(String[] args) {
+
+    }
+
     public boolean isZeroArray(int[] nums, int[][] queries) {
         int[] arr = new int[nums.length + 1];
-        //add all queries in diff arr
         for (int[] q : queries) {
             arr[q[0]] += 1;
             arr[q[1] + 1] -= 1;
         }
+        // The sum is to identify the correct position, from start to end + 1
+        // within a range.
 
         int sum = 0;
         for (int i = 0; i < nums.length; i++) {

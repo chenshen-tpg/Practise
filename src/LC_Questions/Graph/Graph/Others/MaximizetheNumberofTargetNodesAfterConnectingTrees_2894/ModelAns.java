@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ModelAns {
+    public static void main(String[] args) {
+
+    }
+
     public int[] maxTargetNodes(int[][] edges1, int[][] edges2, int k) {
         int n = edges1.length + 1, m = edges2.length + 1;
         int[] count1 = build(edges1, k);
