@@ -1,4 +1,4 @@
-package LC_Questions.Array.ArrayGeneral.Others.ZeroArrayTrans_3355;
+package LC_Questions.Array.Prefix.Others.ZeroArrayTrans_3355;
 
 public class TLE {
 
