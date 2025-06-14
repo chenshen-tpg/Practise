@@ -1,12 +1,10 @@
 package LC_Questions.Graph.Graph.Others.FindClosestNode_2359;
 
-import LC_Questions.LinkedList.LC75.DeleteTheMiddleNodeOfALinkedList_2095.FastSlow;
-
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class TEST {
+public class Review {
     public static void main(String[] args) {
 
     }
@@ -18,11 +16,11 @@ public class TEST {
         Arrays.fill(memo2, Integer.MAX_VALUE);
         bfs(node1, edges, memo1);
         bfs(node2, edges, memo2);
-        int res = -1;
         int min = Integer.MAX_VALUE;
+        int res = - 1;
         for (int i = 0; i < n; i++) {
             int temp = Math.max(memo1[i], memo2[i]);
-            if (min > temp) {
+            if (temp < min) {
                 res = i;
                 min = temp;
             }
@@ -34,11 +32,11 @@ public class TEST {
         int n = edges.length;
         Queue<Integer> q = new LinkedList<>();
         q.offer(start);
-        Boolean [] vis = new Boolean[n];
+        boolean [] vis = new boolean [n];
         Arrays.fill(vis, false);
-        memo[start] = 0;
-        while (!q.isEmpty()) {
+        while(!q.isEmpty()) {
             int cur = q.poll();
+            edges[cur] = 0;
             if (vis[cur]) {
                 continue;
             }

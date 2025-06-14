@@ -8,11 +8,11 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class SnakesAndLadders_909 {
+public class ModelAns {
 
 
     public static void main(String[] args) {
-        SnakesAndLadders_909 s = new SnakesAndLadders_909();
+        ModelAns s = new ModelAns();
         System.out.println(s.snakesAndLadders(new int[][]{{-1,-1,-1,-1,-1,-1},{-1,-1,-1,-1,-1,-1},{-1,-1,-1,-1,-1,-1},{-1,35,-1,-1,13,-1},{-1,-1,-1,-1,-1,-1},{-1,15,-1,-1,-1,-1}}));
     }
     public int snakesAndLadders(int[][] board) {
