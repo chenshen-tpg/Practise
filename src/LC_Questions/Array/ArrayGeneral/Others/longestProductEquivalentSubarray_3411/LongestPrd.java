@@ -1,6 +1,6 @@
-package LC_Questions.Array.ArrayGeneral.Others;
+package LC_Questions.Array.ArrayGeneral.Others.longestProductEquivalentSubarray_3411;
 
-public class longestProductEquivalentSubarray_3411 {
+public class LongestPrd {
 
     public static void main(String[] args) {
         int[] nums = {2, 3, 4, 6, 12};
@@ -26,18 +26,12 @@ public class longestProductEquivalentSubarray_3411 {
 
         return maxLength;
     }
-//    private static int gcd(int a, int b) {
-//        while (b != 0) {
-//            int temp = b;
-//            b = a % b;
-//            a = temp;
-//        }
-//        return a;
-//    }
+
     public static int gcd(int a, int b) {
-        if (b==0) return a;
-        return gcd(b,a%b);
+        if (b == 0) return a;
+        return gcd(b, a % b);
     }
+
     private static int lcm(int a, int b) {
         return a * (b / gcd(a, b));
     }
