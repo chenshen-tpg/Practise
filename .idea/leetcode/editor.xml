@@ -212,6 +212,28 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[3423]Maximum Difference Between Adjacent Elements in a Circular Array.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/doc/content/[3423]Maximum Difference Between Adjacent Elements in a Circular Array.md" />
+              <option name="frontendQuestionId" value="leetcode.com3423" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[3423]Maximum Difference Between Adjacent Elements in a Circular Array.java" />
+              <option name="titleSlug" value="maximum-difference-between-adjacent-elements-in-a-circular-array" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[3428]Maximum and Minimum Sums of at Most Size K Subsequences.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/doc/content/[3428]Maximum and Minimum Sums of at Most Size K Subsequences.md" />
+              <option name="frontendQuestionId" value="leetcode.com3428" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[3428]Maximum and Minimum Sums of at Most Size K Subsequences.java" />
+              <option name="titleSlug" value="maximum-and-minimum-sums-of-at-most-size-k-subsequences" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[3]Longest Substring Without Repeating Characters.java">
           <value>
             <LeetcodeEditor>
@@ -231,6 +253,17 @@
               <option name="host" value="leetcode.com" />
               <option name="path" value="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[416]Partition Equal Subset Sum.java" />
               <option name="titleSlug" value="partition-equal-subset-sum" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[46]Permutations.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/doc/content/[46]Permutations.md" />
+              <option name="frontendQuestionId" value="leetcode.com46" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[46]Permutations.java" />
+              <option name="titleSlug" value="permutations" />
             </LeetcodeEditor>
           </value>
         </entry>
