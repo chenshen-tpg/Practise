@@ -1,6 +1,6 @@
-package LC_Questions.Math.Others;
+package LC_Questions.Math.Others.PairsOfSongWithTotalDivision_1010;
 
-public class PairsOfSongWithTotalDivisionBy60_1010 {
+public class TEST {
     public static void main(String[] args) {
         int[] time = {30,20,150,100,40};
         System.out.println(numPairsDivisibleBy60(time));
@@ -8,7 +8,7 @@ public class PairsOfSongWithTotalDivisionBy60_1010 {
     }
 
     private static int numPairsDivisibleBy60(int[] time) {
-        int remainders[] = new int[60];
+        int [] remainders = new int[60];
         int count = 0;
         for (int t: time) {
             if (t % 60 == 0) {

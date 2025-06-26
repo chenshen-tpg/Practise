@@ -3,6 +3,17 @@
   <component name="LeetcodeEditor">
     <option name="projectConfig">
       <map>
+        <entry key="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[1010]Pairs of Songs With Total Durations Divisible by 60.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/doc/content/[1010]Pairs of Songs With Total Durations Divisible by 60.md" />
+              <option name="frontendQuestionId" value="leetcode.com1010" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[1010]Pairs of Songs With Total Durations Divisible by 60.java" />
+              <option name="titleSlug" value="pairs-of-songs-with-total-durations-divisible-by-60" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[1092]Shortest Common Supersequence .java">
           <value>
             <LeetcodeEditor>
@@ -88,6 +99,17 @@
               <option name="host" value="leetcode.com" />
               <option name="path" value="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[200]Number of Islands.java" />
               <option name="titleSlug" value="number-of-islands" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[2081]Sum of k-Mirror Numbers.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/doc/content/[2081]Sum of k-Mirror Numbers.md" />
+              <option name="frontendQuestionId" value="leetcode.com2081" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[2081]Sum of k-Mirror Numbers.java" />
+              <option name="titleSlug" value="sum-of-k-mirror-numbers" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -297,6 +319,17 @@
               <option name="host" value="leetcode.com" />
               <option name="path" value="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[6]Zigzag Conversion.java" />
               <option name="titleSlug" value="zigzag-conversion" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[857]Minimum Cost to Hire K Workers.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/doc/content/[857]Minimum Cost to Hire K Workers.md" />
+              <option name="frontendQuestionId" value="leetcode.com857" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[857]Minimum Cost to Hire K Workers.java" />
+              <option name="titleSlug" value="minimum-cost-to-hire-k-workers" />
             </LeetcodeEditor>
           </value>
         </entry>
