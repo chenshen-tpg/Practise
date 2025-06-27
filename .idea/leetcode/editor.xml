@@ -256,6 +256,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[3483]Unique 3-Digit Even Numbers.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/doc/content/[3483]Unique 3-Digit Even Numbers.md" />
+              <option name="frontendQuestionId" value="leetcode.com3483" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[3483]Unique 3-Digit Even Numbers.java" />
+              <option name="titleSlug" value="unique-3-digit-even-numbers" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[3]Longest Substring Without Repeating Characters.java">
           <value>
             <LeetcodeEditor>
@@ -264,6 +275,17 @@
               <option name="host" value="leetcode.com" />
               <option name="path" value="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[3]Longest Substring Without Repeating Characters.java" />
               <option name="titleSlug" value="longest-substring-without-repeating-characters" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[414]Third Maximum Number.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/doc/content/[414]Third Maximum Number.md" />
+              <option name="frontendQuestionId" value="leetcode.com414" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[414]Third Maximum Number.java" />
+              <option name="titleSlug" value="third-maximum-number" />
             </LeetcodeEditor>
           </value>
         </entry>
