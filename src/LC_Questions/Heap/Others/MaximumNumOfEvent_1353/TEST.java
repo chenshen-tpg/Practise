@@ -30,7 +30,6 @@ public class TEST {
                 ans++;
             }
         }
-
         return ans;
     }
 }
