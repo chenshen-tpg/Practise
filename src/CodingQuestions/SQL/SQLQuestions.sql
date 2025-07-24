@@ -69,3 +69,10 @@ FROM emails e
          JOIN texts t ON e.email_id = t.email_id AND t.signup_action = 'Verified'
 WHERE DATEDIFF(t.action_date, signup_date) = 1
 ORDER BY user_id;
+
+--1211 Query Quality and Percentage
+select query_name,
+       round(avg(rating / position), 2) as quality,
+       round(avg(if (rating < 3, 1, 0)) * 100, 2) as poor_query_percentage
+from queries
+group by query_name;
