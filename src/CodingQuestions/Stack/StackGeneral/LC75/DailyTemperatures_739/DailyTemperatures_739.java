@@ -1,4 +1,4 @@
-package CodingQuestions.Stack.MonotonicStack.LC75.DailyTemperatures_739;
+package CodingQuestions.Stack.StackGeneral.LC75.DailyTemperatures_739;
 
 import java.util.Stack;
 

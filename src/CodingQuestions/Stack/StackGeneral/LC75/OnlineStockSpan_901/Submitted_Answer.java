@@ -1,4 +1,4 @@
-package CodingQuestions.Stack.MonotonicStack.LC75.OnlineStockSpan_901;
+package CodingQuestions.Stack.StackGeneral.LC75.OnlineStockSpan_901;
 
 import java.util.Stack;
 
