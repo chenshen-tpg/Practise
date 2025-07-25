@@ -4,6 +4,7 @@ public class Recursive {
     public static void main(String[] args) {
 
     }
+
     private int maxStart = 0;
     private int maxEnd = 0;
 
@@ -12,22 +13,22 @@ public class Recursive {
         return s.substring(maxStart, maxEnd + 1);
     }
 
-    private void expandCenters(char[] str, int index){
+    private void expandCenters(char[] str, int index) {
         int len = str.length;
-        if(index >= len) return;
+        if (index >= len) return;
         int left = index;
         int right = index;
-        while(right + 1 < len && str[right] == str[right + 1]){
+        while (right + 1 < len && str[right] == str[right + 1]) {
             right++;
         }
 
         int next = right + 1;
-        while (left > 0 && right < len - 1 && str[left - 1] == str[right + 1]){
-            left --;
-            right ++;
+        while (left > 0 && right < len - 1 && str[left - 1] == str[right + 1]) {
+            left--;
+            right++;
         }
 
-        if(right - left > maxEnd - maxStart){
+        if (right - left > maxEnd - maxStart) {
             maxEnd = right;
             maxStart = left;
         }

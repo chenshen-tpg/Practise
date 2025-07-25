@@ -1,6 +1,6 @@
 package CodingQuestions.Array.ArrayGeneral.LC75.GreatestCommonDivisorOfStrings_1071;
 
-public class Review {
+public class GCDReview {
     public static void main(String[] args) {
         System.out.println(gcd(10,5));
     }
