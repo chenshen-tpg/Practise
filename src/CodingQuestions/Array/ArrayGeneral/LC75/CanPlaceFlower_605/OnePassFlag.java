@@ -20,7 +20,7 @@ public class OnePassFlag {
             }
 
         }
-        return  count >= n ? true : false;
+        return  count >= n;
     }
 
 }
