@@ -1,6 +1,6 @@
 package CodingQuestions.Array.ArrayGeneral.LC75.StringCompression_443;
 
-public class NotSure {
+public class SampleAns2 {
     public static void main(String[] args) {
 
     }
