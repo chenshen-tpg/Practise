@@ -1,4 +1,4 @@
-Question: "How would you design a system to allow multiple users to collaborate on a document in real-time (like Canva's editor)?"   
+Question: "How would you design a system to allow multiple users to collaborate on a document in real-time (like Canva's editor)?"
 
 Conceptual Approach:
 
@@ -6,9 +6,17 @@ Real-time Communication: Use WebSockets for persistent, bidirectional communicat
 
 Consistency Model:
 
-Operational Transformation (OT): A common approach where client edits are transformed into operations, sent to the server, and then transformed again to be applied to other clients' documents, ensuring eventual consistency. Requires careful handling of concurrent operations.
+Operational Transformation (OT): A common approach where client edits are transformed into operations, sent to the server,
 
-Conflict-Free Replicated Data Types (CRDTs): An alternative that allows concurrent modifications on replicas without requiring a centralized coordination server for conflict resolution. Operations are commutative and associative.
+and then transformed again to be applied to other clients' documents,
+
+ensuring eventual consistency.
+
+Requires careful handling of concurrent operations.
+
+Conflict-Free Replicated Data Types (CRDTs): An alternative that allows concurrent modifications on replicas
+
+without requiring a centralized coordination server for conflict resolution. Operations are commutative and associative.
 
 Backend Architecture:
 
