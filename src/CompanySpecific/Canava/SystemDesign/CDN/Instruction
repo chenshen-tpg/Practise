@@ -1,0 +1,49 @@
+Question: "How would you design a Content Delivery Network (CDN) to serve media assets globally for Canva?"   
+
+Conceptual Approach:
+
+Purpose: Reduce latency for users worldwide, offload traffic from origin servers, improve asset loading times, enhance user experience.
+
+Core Components:
+
+Origin Server (e.g., Amazon S3): Centralized storage for all original, high-resolution media assets. S3 is highly durable and scalable.
+
+Edge Locations (PoPs - Points of Presence): Geographically distributed servers that cache content closer to users.
+
+DNS (Domain Name System): Directs user requests to the nearest available edge location.
+
+Caching Logic: Determines what content to cache, for how long (TTL - Time To Live), and how to invalidate cached content.
+
+Workflow:
+
+User Request: A user in Sydney requests an image from images.canva.com/asset123.png.
+
+DNS Resolution: DNS resolves images.canva.com to the IP address of the closest CDN edge location (e.g., in Sydney).
+
+Edge Cache Check: The Sydney edge location checks its cache for asset123.png.
+
+Cache Hit: If found and not expired, the edge serves the image directly to the user. (Fastest path)
+
+Cache Miss: If not found or expired, the edge location requests the image from the Origin Server (S3).
+
+Origin Fetch & Cache: S3 serves the image to the edge, which then caches it and serves it to the user.
+
+Key Considerations:
+
+Cache Invalidation: How to update/remove assets from the CDN when they change (e.g., explicit invalidation, versioning URLs).
+
+Security: HTTPS, DDoS protection (CDNs often provide this), access control for private assets (e.g., signed URLs).
+
+Cost Optimization: Balancing caching strategies with data transfer costs.
+
+Analytics & Monitoring: Track cache hit ratios, latency, errors.
+
+Asset Optimization: Image compression, different formats (WebP, AVIF), responsive images (serving different sizes based on device).
+
+Trade-offs:
+
+Cost vs. Performance: More edge locations and higher cache hit ratios generally mean better performance but higher cost.
+
+Cache Freshness vs. Performance: Shorter TTLs ensure fresher content but lead to more origin fetches. Longer TTLs improve performance but might serve stale content.
+
+Complexity of Invalidation: Managing cache invalidation for a large, dynamic asset library can be complex.
