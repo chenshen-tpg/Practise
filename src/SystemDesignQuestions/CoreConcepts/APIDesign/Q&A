@@ -1,0 +1,267 @@
+1. What is an API (Application Programming Interface), and why is good API design important?
+
+Answer: An API (Application Programming Interface) is a set of defined rules and protocols that allows different software components to communicate with each other. It's essentially a contract that specifies how one piece of software can request services from another.
+
+Why good design is important:
+
+Usability & Developer Experience (DX): A well-designed API is intuitive and easy for developers to understand and use, leading to faster integration and adoption.
+
+Maintainability & Evolution: A consistent and logical design makes it easier to add new features, fix bugs, and evolve the API over time without breaking existing clients.
+
+Scalability & Performance: Good design considers efficiency, allowing the API to handle increasing loads and perform optimally.
+
+Reliability & Predictability: Clear contracts reduce ambiguity, leading to fewer errors and more predictable behavior for consumers.
+
+Security: Proper design inherently considers security best practices, reducing vulnerabilities.
+
+From: HTTP Methods & Status Codes
+8. When would you typically use GET, POST, PUT, PATCH, and DELETE in a REST API?
+
+Answer: These are the standard HTTP methods (verbs) used to perform CRUD (Create, Read, Update, Delete) operations on resources:
+
+GET: Used to retrieve data from a server. It's idempotent and safe (doesn't change server state). Example: GET /users/123
+
+POST: Used to create a new resource on the server. It's neither idempotent nor safe. Example: POST /users (with user data in the body)
+
+PUT: Used to fully update/replace an existing resource or create a resource if it doesn't exist at a specified URI. It's idempotent. Example: PUT /users/123 (with complete updated user data)
+
+PATCH: Used to partially update an existing resource. It's neither idempotent nor safe. Example: PATCH /users/123 (with only the fields to be updated)
+
+DELETE: Used to remove a resource from the server. It's idempotent. Example: DELETE /users/123
+
+9. List some common HTTP status codes you would use in API responses for success and failure, and explain their meaning.
+
+Answer:
+
+Success Codes (2xx):
+
+200 OK: The request succeeded, and the response body contains the requested data. Most common success code.
+
+201 Created: The request has succeeded, and a new resource has been created as a result (typically for POST or PUT).
+
+204 No Content: The request succeeded, but there's no content to return in the response body (typically for DELETE or PUT where no data is expected back).
+
+Client Error Codes (4xx):
+
+400 Bad Request: The server cannot process the request due to a client error (e.g., malformed syntax, invalid request body data).
+
+401 Unauthorized: The client must authenticate itself to get the requested response (e.g., missing or invalid authentication credentials).
+
+403 Forbidden: The client does not have access rights to the content (authenticated but not authorized).
+
+404 Not Found: The server cannot find the requested resource.
+
+409 Conflict: Indicates a request conflict with current state of the target resource (e.g., trying to create a resource that already exists, or an optimistic locking failure).
+
+429 Too Many Requests: The user has sent too many requests in a given amount of time (rate limiting).
+
+Server Error Codes (5xx):
+
+500 Internal Server Error: The server encountered an unexpected condition that prevented it from fulfilling the request. A generic catch-all.
+
+503 Service Unavailable: The server is not ready to handle the request (e.g., server is down for maintenance or is overloaded).
+
+From: Authentication & Authorization
+18. What is the difference between authentication and authorization in the context of API security? Name some common API authentication methods.
+
+Answer:
+
+Authentication: This is the process of verifying who a user or client is. It's about identity. "Are you who you say you are?"
+
+Example: Providing a username and password, or an API key, or a JWT.
+
+Authorization: This is the process of determining what a verified user or client is allowed to do. It's about permissions. "What are you allowed to access or perform?"
+
+Example: A user might be authenticated, but only authorized to view their own data, not another user's.
+
+Common API Authentication Methods:
+
+API Keys: Simple, secret tokens sent with each request. Easy to implement but less secure than other methods if compromised.
+
+Basic Authentication: Username and password encoded in Base64 in the HTTP Authorization header. Simple but transmits credentials directly.
+
+Bearer Tokens (e.g., JWT - JSON Web Tokens): A cryptographically signed token issued after successful authentication, sent in the Authorization: Bearer header. Stateless and widely used.
+
+OAuth 2.0: An authorization framework that allows third-party applications to obtain limited access to an HTTP service, on behalf of a resource owner. Often used with JWTs.
+
+From: API Versioning
+15. Why is API versioning necessary? Describe different API versioning strategies.
+
+Answer:
+
+Why necessary: API versioning is crucial because APIs evolve. New features are added, old features are removed, and data structures may change. Without versioning, these changes would break existing applications that rely on the old API behavior, leading to client instability and frustration. Versioning allows providers to introduce changes while maintaining backward compatibility for older clients.
+
+Versioning Strategies:
+
+URI Versioning (Path-based):
+
+Example: https://api.example.com/v1/users
+
+Pros: Simple, clear, easy to cache, human-readable.
+
+Cons: "Pollutes" the URI, requires router changes for each new version, not truly RESTful (as the resource identifier changes).
+
+Header Versioning (Custom Header):
+
+Example: GET /users with X-API-Version: 1 header.
+
+Pros: Keeps URI clean, can be used for minor or major version changes.
+
+Cons: Not easily discoverable, harder to test directly in browsers, can conflict with standard HTTP headers.
+
+Query Parameter Versioning:
+
+Example: https://api.example.com/users?version=1
+
+Pros: Easy to test in browsers, simple.
+
+Cons: Can conflict with other query parameters, makes URLs less "clean," potentially cache busting if not handled carefully.
+
+Content Negotiation (Accept Header):
+
+Example: GET /users with Accept: application/vnd.example.v1+json header.
+
+Pros: Most RESTful (client requests a specific representation), keeps URI clean.
+
+Cons: Complex to implement and test, not widely adopted by all clients, requires careful media type registration.
+
+From: Error Handling & Response Design
+22. How should an API communicate errors to consumers effectively? What information should an error response typically include?
+
+Answer: Effective error communication is vital for debugging and client development.
+
+How:
+
+Use appropriate HTTP Status Codes: The primary way to signal the type of error (e.g., 400 for client-side, 500 for server-side).
+
+Provide a consistent error response format: Don't just return a raw stack trace. A structured format (usually JSON) helps clients parse and handle errors programmatically.
+
+Be informative but not overly verbose/sensitive: Provide enough detail for debugging without exposing internal system details or security vulnerabilities.
+
+Information to include in an error response (e.g., JSON):
+
+code (or error_code): A unique, internal, custom error code specific to the API for easier programmatic identification.
+
+message: A human-readable, concise summary of the error.
+
+details (optional): An array or object for more specific information, especially for validation errors (e.g., which field caused the error, why).
+
+timestamp (optional): When the error occurred.
+
+trace_id (optional): A unique ID for logging/tracing requests, useful for support requests ("Can you look up error xyz-123?").
+
+more_info (optional): A URL to documentation explaining the error in more detail.
+
+From: Situational & Problem Solving (Senior/Architect)
+32. Design a RESTful API for an e-commerce product catalog. Include resources, typical endpoints, and relevant HTTP methods.
+
+Answer:
+
+Core Resources:
+
+products: Represents individual products.
+
+categories: Represents product categories.
+
+brands: Represents product brands.
+
+reviews: Represents customer reviews for products.
+
+images: (Potentially sub-resource or separate service)
+
+Typical Endpoints & Methods:
+
+Products:
+
+GET /products: Get a list of all products (with pagination, filtering, sorting).
+
+GET /products/{id}: Get details of a specific product.
+
+POST /products: Create a new product (admin only).
+
+PUT /products/{id}: Fully update a product (admin only).
+
+PATCH /products/{id}: Partially update a product (admin only).
+
+DELETE /products/{id}: Delete a product (admin only).
+
+GET /products/{id}/related: Get related products.
+
+GET /products/{id}/reviews: Get reviews for a specific product.
+
+Categories:
+
+GET /categories: Get a list of all categories.
+
+GET /categories/{id}: Get details of a specific category.
+
+GET /categories/{id}/products: Get products within a specific category.
+
+Brands:
+
+GET /brands: Get a list of all brands.
+
+GET /brands/{id}: Get details of a specific brand.
+
+GET /brands/{id}/products: Get products by a specific brand.
+
+Reviews (as a sub-resource of products):
+
+POST /products/{product_id}/reviews: Submit a new review for a product.
+
+GET /products/{product_id}/reviews/{review_id}: Get a specific review for a product.
+
+PUT /products/{product_id}/reviews/{review_id}: Update a review (user who posted it, admin).
+
+DELETE /products/{product_id}/reviews/{review_id}: Delete a review (user who posted it, admin).
+
+Considerations:
+
+Pagination, Filtering, Sorting: For GET /products, use query parameters like ?page=1&limit=20&category=electronics&sort=price_asc.
+
+Search: GET /products?q=keyword.
+
+Authentication/Authorization: Admin endpoints (POST, PUT, PATCH, DELETE for products) would require strong authentication (e.g., OAuth 2.0 with specific scopes/roles). User reviews (POST, PUT, DELETE for reviews) would require user authentication.
+
+Error Handling: Consistent JSON error responses with appropriate HTTP status codes.
+
+Versioning: Start with v1 in the URI: api.example.com/v1/products.
+
+From: Emerging Trends (Senior/Architect)
+36. What is GraphQL, and when might you choose to use it over a REST API? What are its advantages and disadvantages?
+
+Answer:
+
+What it is: GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. It's an alternative to REST that allows clients to request exactly the data they need, and nothing more.
+
+When to choose it over REST:
+
+Complex Data Relationships: When data is highly interconnected (e.g., social graphs) and clients need to fetch related data in a single request without multiple roundtrips (solving N+1 problems).
+
+Mobile Clients/Limited Bandwidth: When minimizing payload size is critical, as clients can specify only the fields they require.
+
+Rapidly Evolving Frontend Requirements: When different client applications (web, iOS, Android) need slightly different data shapes from the same backend. GraphQL's flexibility reduces the need for constant backend API changes.
+
+Data Aggregation from Multiple Sources: When building an API gateway that aggregates data from various microservices.
+
+Advantages:
+
+Efficient Data Fetching (No Over-fetching or Under-fetching): Clients ask for precisely what they need.
+
+Single Endpoint: Simplifies client-side code by having one endpoint for all data queries.
+
+Strongly Typed Schema: Provides a clear contract between client and server, enabling auto-completion, validation, and powerful tooling (e.g., GraphiQL).
+
+Reduced Round Trips: Can fetch related data in a single query.
+
+Disadvantages:
+
+Increased Complexity: Server-side implementation can be more complex than simple REST endpoints (resolvers, schema management).
+
+Caching Challenges: Traditional HTTP caching mechanisms (based on URI) are harder to apply directly to GraphQL's single endpoint. Requires more sophisticated caching strategies.
+
+Learning Curve: New query language and concepts for developers.
+
+File Uploads/Binary Data: Not as straightforward as REST for binary data.
+
+Rate Limiting: More complex to implement granular rate limiting per field or query depth.

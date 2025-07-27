@@ -1,0 +1,39 @@
+What is Garbage Collection (GC) in Java?
+
+GC is an automatic process in Java that identifies and reclaims memory occupied by objects that are no longer referenced by the running program, thus freeing up resources for new objects.
+Why is GC important in Java.
+GC helps prevent memory leaks, simplifies memory management for developers, and enhances application stability by ensuring that unused memory is reclaimed.
+
+
+How does GC determine if an object is eligible for garbage collection?
+
+An object is eligible for GC when it is no longer reachable from any GC root (e.g., active threads, static variables, JNI references).
+Explain the different generations in the Java Heap (Young, Old/Tenured, Metaspace/PermGen).
+Young Generation: Where new objects are initially allocated. It's divided into Eden Space and two Survivor Spaces (S0 and S1).
+Old/Tenured Generation: Objects that survive multiple minor GCs in the Young Generation are promoted to the Old Generation.
+Metaspace (Java 8+)/PermGen (Java 7 and earlier): Stores metadata about classes, methods, and other internal JVM data.
+
+What are Minor GC, Major GC, and Full GC?
+
+Minor GC: Occurs in the Young Generation to reclaim space from short-lived objects.
+Major GC: Occurs in the Old Generation.
+Full GC: Involves both Young and Old Generations, and potentially Metaspace/PermGen. It typically involves "Stop-the-World" pauses.
+
+What is "Stop-the-World" (STW) in GC?
+
+STW refers to the pauses during which all application threads are temporarily halted to allow the garbage collector to perform its work, ensuring data consistency.
+
+Can you explicitly trigger GC in Java?
+
+Methods like System.gc() and Runtime.getRuntime().gc() can be called, but they are only hints to the JVM, not guarantees that GC will run immediately.
+
+What is the finalize() method? When is it called?
+
+The finalize() method is called by the garbage collector on an object just before it is garbage collected, allowing for cleanup operations. It's generally discouraged due to performance and predictability issues.
+Name some common GC algorithms and their characteristics.
+Examples include Serial GC, Parallel GC, CMS (Concurrent Mark-Sweep) GC, G1 (Garbage-First) GC,
+and ZGC/Shenandoah (newer, low-pause collectors). Understanding their trade-offs regarding throughput, pause times, and memory footprint is important.
+
+How can you monitor and tune GC performance?
+
+Tools like JConsole, VisualVM, GC logs, and JVM arguments (e.g., -Xmx, -Xms, -XX:+PrintGCDetails) can be used to analyze and optimize GC behavior.

@@ -1,4 +1,4 @@
-package SystemDesignQuestions.Canava.LRU;
+package CompanySpecific.Canava.SystemDesign.LRU;
 
 import java.util.Collections;
 import java.util.LinkedHashMap;

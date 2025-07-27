@@ -1,0 +1,19 @@
+Abstract Class:
+
+An abstract class can contain both abstract methods (declared but not implemented)
+and concrete methods (declared and implemented).
+It can have instance variables (fields) that can be non-final and non-static.
+It can have constructors.
+A class can only inherit from one abstract class (single inheritance).
+Abstract classes are used when there is a "is-a" relationship,
+representing a common base for a hierarchy of related classes.
+
+
+Interface:
+
+An interface can only contain abstract methods (prior to Java 8, which introduced default and static methods).
+It can have variables, but these are implicitly public static final.
+It cannot have constructors.
+A class can implement multiple interfaces (multiple inheritance of type).
+Interfaces are used to define a "can-do" or "contractual" relationship, specifying a set of behaviors that a class must implement,
+regardless of its position in the class hierarchy.
