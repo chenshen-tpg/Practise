@@ -4,9 +4,9 @@ package CompanySpecific.Canava.ProgrammingQuestions;
 
 import java.util.HashSet;
 
-public class findLongetSubStringWithoutRepeatCharacter {
+public class LongestSubStringWithoutRepeatCharacter {
     public static void main(String[] args) {
-        findLongetSubStringWithoutRepeatCharacter solution = new findLongetSubStringWithoutRepeatCharacter();
+        LongestSubStringWithoutRepeatCharacter solution = new LongestSubStringWithoutRepeatCharacter();
         System.out.println(solution.helper("abcdefghiiiiiijk"));
     }
 

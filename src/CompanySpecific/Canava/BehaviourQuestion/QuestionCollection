@@ -1,0 +1,71 @@
+Question: "Describe a time when you had to adapt to a significant change in a project.
+=======================================================================================================
+Situation: "In my previous role,
+we were halfway through developing a new payment gateway integration
+when our primary third-party payment provider announced a deprecation of their API,
+requiring us to switch to a completely new provider with a different integration model within a tight deadline."
+
+Task: "My task was to lead the backend team in quickly assessing the new API,
+redesigning our integration module, and implementing the changes without disrupting existing services or
+delaying the project launch."
+
+Action: "I immediately initiated a deep dive with the team into the new provider's documentation,
+identifying key differences and potential challenges. I then created a phased migration plan,
+prioritizing critical functionalities.
+I also proactively communicated with the product and frontend teams
+about the scope changes and potential impacts.
+We adopted an agile approach,
+conducting daily stand-ups to quickly address blockers.
+I personally took on the most complex API mapping tasks and mentored junior engineers on the new integration patterns.
+We also implemented robust feature flags to allow for a controlled rollout."
+
+Result: "Despite the significant unexpected change,
+we successfully migrated to the new payment provider within the original project timeline,
+with minimal impact on our existing users. The new integration proved more resilient and scalable,
+and the team gained valuable experience in rapid adaptation and complex API migrations.
+This experience reinforced my belief in proactive communication and agile execution in the face of change."
+
+Question: "Tell me about a project where you used your programming skills to solve a difficult problem."
+=======================================================================================================
+Sample STAR Answer:
+
+Situation: "At [Previous Company], our legacy data ingestion service for user analytics was struggling to keep up with increasing traffic,
+leading to significant data processing delays and impacting our real-time dashboards. It was a monolithic Java application with complex, tightly coupled logic."
+
+Task: "My task was to re-architect and re-implement this service to handle a 10x increase in data volume,
+reduce processing latency, and improve its maintainability, all while ensuring data integrity."
+
+Action: "I proposed and led the migration to a microservices architecture.
+We broke down the monolithic service into smaller, independent Java microservices using Spring Boot, each responsible for a
+specific stage of the data pipeline (e.g., ingestion, validation, transformation, storage). We introduced Kafka as a message queue for asynchronous communication between services, which decoupled them and allowed for independent scaling. I designed the data schemas for Kafka topics and implemented robust error handling and retry mechanisms. I also introduced a new data validation service that used a rules engine to ensure data quality before storage. For performance, I optimized database queries and introduced connection pooling."
+
+Result: "The new microservices-based data ingestion pipeline successfully
+handled the increased data volume, reducing processing latency by 70% and improving data freshness on dashboards.
+The modular design significantly improved maintainability and allowed different teams to contribute to specific services independently.
+This project not only solved a critical performance bottleneck but also established a scalable pattern for future data processing initiatives."
+
+
+Question: "Give an example of how you’ve worked effectively within a team."
+=======================================================================================================
+Sample STAR Answer:
+
+Situation: "During the development of a new feature that required significant collaboration
+between our backend team, the frontend team, and the product management team,
+we encountered a misunderstanding regarding API specifications that threatened to delay the launch."
+
+Task: "My task was to help bridge the communication gap and ensure that both technical teams
+were aligned with the product requirements to deliver the feature on time."
+
+Action: "I initiated a joint technical sync meeting with representatives from all three teams.
+Instead of just discussing the API, I used a whiteboard to visually map out the data flow from the frontend,
+through our backend services, to the database, and back. I encouraged open discussion,
+asking clarifying questions to both the frontend developers and the product manager to uncover the root cause of the misunderstanding.
+I then proposed a revised API contract that satisfied both the frontend's needs for efficient data display
+and the backend's constraints for data processing. I also documented this revised contract clearly in our Confluence page
+and ensured everyone signed off on it."
+
+Result: "By facilitating this collaborative session and visually clarifying the requirements,
+we quickly resolved the API misalignment. The feature was delivered on schedule,
+and the process improved inter-team communication, leading to smoother future collaborations.
+This experience highlighted the importance of proactive,
+clear communication and visual aids in complex cross-functional projects."
