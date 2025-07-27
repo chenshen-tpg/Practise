@@ -1,0 +1,92 @@
+blob storage like S3
+Large files like videos, images, and documents need special handling in distributed systems.
+Instead of shoving gigabytes through your servers,
+this pattern uses presigned URLs to let clients upload directly to blob storage and download from CDNs.
+You also get resumable uploads,
+parallel transfers, and progress tracking - the stuff that separates real systems from toy projects.
+
+
+
+The Solution
+Same thing here. We validate authorization once, then let clients interact with storage directly.
+
+Simple Direct Upload
+https://mybucket.s3.amazonaws.com/uploads/user123/video.mp4
+?X-Amz-Algorithm=AWS4-HMAC-SHA256
+&X-Amz-Credential=AKIAIOSFODNN7EXAMPLE%2F20240115%2Fus-east-1%2Fs3%2Faws4_request
+&X-Amz-Date=20240115T000000Z
+&X-Amz-Expires=900
+&X-Amz-SignedHeaders=host
+&X-Amz-Signature=b2754f5b1c9d7c4b8d4f6e9a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0
+
+Simple Direct Download
+
+Resumable Uploads for Large Files
+
+
+State Synchronization Challenges
+CREATE TABLE files (
+    id              UUID PRIMARY KEY,
+    user_id         UUID NOT NULL,
+    filename        VARCHAR(255),
+    size_bytes      BIGINT,
+    content_type    VARCHAR(100),
+    storage_key     VARCHAR(500),  -- s3://bucket/user123/files/abc-123.pdf
+    status          VARCHAR(50),   -- 'pending', 'uploading', 'completed', 'failed'
+    created_at      TIMESTAMP,
+    updated_at      TIMESTAMP
+);
+
+
+Cloud Provider Terminology
+Temporary Upload URLs	Presigned URLs
+(PUT or POST)
+Multipart Uploads Multipart Upload API
+(5MB-5GB parts)
+Event Notifications	S3 Event Notifications
+(to Lambda/SQS/SNS)
+CDN with Signed URLs	CloudFront
+(signed URLs/cookies)
+Cleanup Policies	Lifecycle Rules
+
+
+Common interview scenarios
+YouTube/Video Platforms
+Instagram/Photo Sharing
+Dropbox/File Sync
+WhatsApp/Chat Applications
+
+When NOT to use it in an interview
+Small files don't need it. <10MB files can be handled directly by your app.
+Large files that are not user-generated (like logs) can be handled by your backend directly.
+Synchronous validation requirements.
+Compliance and data inspection.
+When the experience demands immediate response.
+
+What if the upload fails at 99%?
+The implementation requires the client to track the upload session identifier.
+This is an upload ID in S3, a resumable upload URL in GCS, or block blob container URL in Azure.
+Some teams store this in localStorage so uploads can resume even after app restarts.
+. Keep in mind that incomplete uploads cost money because cloud providers charge for stored parts,
+so set lifecycle policies to clean them up after 1-2 days.
+
+"How do you prevent abuse?"
+Implement a processing pipeline where uploads go into a quarantine bucket first. Run virus scans, content validation,
+and any other checks before moving files to the public bucket.
+This prevents someone from uploading malicious content and immediately sharing the link.
+Set up automatic content analysis - image recognition to detect inappropriate content,
+file type validation to ensure a "photo" isn't actually an executable, size checks to prevent storage bombs.
+
+"How do you handle metadata?"
+The storage key is your connection point. Use a consistent pattern like uploads/{user_id}/{timestamp}/{uuid}
+that includes useful info but prevents collisions. When storage events fire, they include this key,
+letting you find the exact database row to update.
+Never let clients specify their own keys - that's asking for overwrites and security issues.
+
+"How do you ensure downloads are fast?"
+his enables resumable downloads. Track which ranges completed and request only missing pieces after reconnection.
+Modern browsers and download managers handle this automatically if your storage and CDN support range requests (they all do).
+ You just need to ensure your signed URLs don't restrict the HTTP verbs or headers needed.
+
+ When you hear "video uploads," "file sharing," or "photo storage,"
+ immediately think about bypassing your servers for the actual data transfer
