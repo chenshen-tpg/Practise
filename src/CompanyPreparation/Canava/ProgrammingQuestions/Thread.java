@@ -1,4 +1,4 @@
-package CompanySpecific.Canava.ProgrammingQuestions;
+package CompanyPreparation.Canava.ProgrammingQuestions;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
