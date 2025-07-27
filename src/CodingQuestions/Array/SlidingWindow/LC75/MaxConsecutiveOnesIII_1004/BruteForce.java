@@ -13,7 +13,6 @@ public class BruteForce {
         for (int i = 0; i < nums.length; i++) {
             int count = 0;
             for (int j = i; j < nums.length; j++) {
-                //always use a count we need a certain value..
                 if (nums[j] == 0) {
                     count++;
                 }
