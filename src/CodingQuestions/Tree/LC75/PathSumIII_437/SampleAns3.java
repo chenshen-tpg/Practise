@@ -10,8 +10,7 @@ public class SampleAns3 {
     int helper(TreeNode root, long targetSum) {
         if (root == null) return 0;
         int count = 0;
-        if (root.val == targetSum)
-            count = 1;
+        if (root.val == targetSum)  count = 1;
         count += helper(root.left, targetSum - root.val);
         count += helper(root.right, targetSum - root.val);
         return count;
