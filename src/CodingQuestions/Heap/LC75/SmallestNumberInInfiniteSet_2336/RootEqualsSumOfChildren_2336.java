@@ -1,4 +1,4 @@
-package CodingQuestions.Heap.Others;
+package CodingQuestions.Heap.LC75.SmallestNumberInInfiniteSet_2336;
 
 import java.util.HashSet;
 import java.util.PriorityQueue;
@@ -9,7 +9,6 @@ public class RootEqualsSumOfChildren_2336 {
 
     static Set<Integer> add = new HashSet<>();
     static PriorityQueue<Integer> pr = new PriorityQueue();
-
     static Integer cur = 1;
 
     public static void add (int num) {
