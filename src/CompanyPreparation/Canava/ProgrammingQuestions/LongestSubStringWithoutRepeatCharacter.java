@@ -10,10 +10,11 @@ public class LongestSubStringWithoutRepeatCharacter {
         System.out.println(solution.helper("abcdefghiiiiiijk"));
     }
 
-    public int helper (String test) {
-        int len = test.length();
-        int ans = 0, temp = 0;
+    public String helper (String test) {
+        int ans = 0;
+
         HashSet<Character> set = new HashSet<>();
+        StringBuilder sb = new StringBuilder();
         int index = 0;
         for (int i = 0; i < test.length(); i++) {
             while (set.contains(test.charAt(i))) {
@@ -21,8 +22,13 @@ public class LongestSubStringWithoutRepeatCharacter {
                 index++;
             }
             set.add(test.charAt(i));
-            ans = Math.max(ans, i - index + 1);
+            if (i - index + 1 > ans) {
+                ans = i - index + 1;
+                sb = new StringBuilder(test.substring(index, i + 1));
+//                System.out.println(sb);
+            }
+
         }
-        return ans;
+        return sb.toString();
     }
 }
