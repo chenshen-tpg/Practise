@@ -1,13 +1,13 @@
-package CodingQuestions.OOP.Others;
+package CodingQuestions.OOP.Others.LRUCache_146;
 
 import java.util.LinkedHashMap;
 
-public class LRUCache_146 {
+public class SampleAns1 {
     private LinkedHashMap<Integer, Integer> map;
     private int size;
 
     public static void main(String[] args) {
-            LRUCache_146 cache = new LRUCache_146(2);
+            SampleAns1 cache = new SampleAns1(2);
             cache.put(1, 1);
             cache.put(2, 2);
             System.out.println(cache.get(1)); // returns 1
@@ -18,7 +18,7 @@ public class LRUCache_146 {
             System.out.println(cache.get(3)); // returns 3
             System.out.println(cache.get(4)); // returns 4
     }
-    public LRUCache_146(int capacity) {
+    public SampleAns1(int capacity) {
         map = new LinkedHashMap<>();
         size = capacity;
     }

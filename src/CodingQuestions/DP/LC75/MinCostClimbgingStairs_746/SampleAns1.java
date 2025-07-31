@@ -1,9 +1,9 @@
 package CodingQuestions.DP.LC75.MinCostClimbgingStairs_746;
 
-public class MinCostClimbingStairs_746 {
+public class SampleAns1 {
     public static void main(String[] args) {
         int [] cost = {1,100,1,1,1,100,1,1,100,1};
-        MinCostClimbingStairs_746 solution = new MinCostClimbingStairs_746();
+        SampleAns1 solution = new SampleAns1();
         System.out.println(solution.minCostClimbingStairs(cost));
     }
     public int minCostClimbingStairs(int[] cost) {

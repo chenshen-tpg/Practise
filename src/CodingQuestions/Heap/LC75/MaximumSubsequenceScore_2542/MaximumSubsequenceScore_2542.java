@@ -1,4 +1,4 @@
-package CodingQuestions.Heap.Others;
+package CodingQuestions.Heap.LC75.MaximumSubsequenceScore_2542;
 
 import java.util.Arrays;
 import java.util.Comparator;
