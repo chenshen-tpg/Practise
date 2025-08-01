@@ -1,8 +1,8 @@
-package CodingQuestions.Heap.LC75.TotalCostToHireKWorkers_2462_review;
+package CodingQuestions.Heap.LC75.TotalCostToHireKWorkers_2462;
 
 import java.util.PriorityQueue;
 
-public class TotalCostToHireKWorkers_2462 {
+public class SampleAnswer {
     public static void main(String[] args) {
 
     }

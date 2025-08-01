@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class SearchSuggestionsSystem_1268 {
+public class TrieToSolve {
     class Trie {
         class Node {
             boolean isWord = false;
