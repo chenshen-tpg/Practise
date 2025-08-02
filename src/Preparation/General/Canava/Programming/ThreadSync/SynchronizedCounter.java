@@ -1,6 +1,4 @@
-package CompanyPreparation.Canava.ProgrammingQuestions;
-
-import java.lang.Thread;
+package Preparation.General.Canava.Programming.ThreadSync;
 
 public class SynchronizedCounter {
 

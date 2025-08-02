@@ -1,4 +1,4 @@
-package CompanyPreparation.Canava.ProgrammingQuestions;
+package Preparation.General.Canava.Programming.Graph;
 
 import java.util.Collections;
 import java.util.HashSet;

@@ -1,4 +1,4 @@
-package CompanyPreparation.Canava.ProgrammingQuestions;
+package Preparation.General.Canava.Programming.LongestSubStringNoRepeat;
 
 
 

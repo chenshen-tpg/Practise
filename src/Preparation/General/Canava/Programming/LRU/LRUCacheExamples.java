@@ -1,4 +1,4 @@
-package CompanyPreparation.Canava.ProgrammingQuestions.LRU;
+package Preparation.General.Canava.Programming.LRU;
 
 import java.util.Collections;
 import java.util.LinkedHashMap;

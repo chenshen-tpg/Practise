@@ -1,4 +1,4 @@
-package CompanyPreparation.Canava.ProgrammingQuestions.ClassAndAbstract.Abastract;
+package Preparation.General.Canava.Programming.ClassAndAbstract.Abastract;
 
 public abstract class AbstractProduct {
 

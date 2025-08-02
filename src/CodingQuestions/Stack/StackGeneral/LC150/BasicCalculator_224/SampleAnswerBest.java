@@ -24,9 +24,7 @@ public class SampleAnswerBest {
             } else if (ch == ')') {
                 return (ans = ans + num * sign);
             }
-
         }
-
         ans = ans + num * sign;
         return ans;
     }

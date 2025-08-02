@@ -1,8 +1,7 @@
-package CompanyPreparation.Canava.ProgrammingQuestions;
+package Preparation.General.Canava.Programming.ThreadSync;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
 
 public class ThreadTesting {
     public static void main(String[] args) {

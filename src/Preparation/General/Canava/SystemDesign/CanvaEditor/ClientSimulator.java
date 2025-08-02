@@ -1,6 +1,4 @@
-package CompanyPreparation.Canava.SystemDesign.CanvaEditor;
-
-import CompanyPreparation.Canava.SystemDesign.CanvaEditor.SharedDocument;
+package Preparation.General.Canava.SystemDesign.CanvaEditor;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

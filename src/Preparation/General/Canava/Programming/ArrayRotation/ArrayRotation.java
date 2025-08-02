@@ -1,4 +1,4 @@
-package CompanyPreparation.Canava.ProgrammingQuestions;
+package Preparation.General.Canava.Programming.ArrayRotation;
 
 public class ArrayRotation {
     public static void main(String[] args) {

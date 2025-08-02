@@ -1,4 +1,4 @@
-package CompanyPreparation.Canava.ProgrammingQuestions.ClassAndAbstract.Interface;
+package Preparation.General.Canava.Programming.ClassAndAbstract.Interface;
 
 public interface IService {
     void configureService();

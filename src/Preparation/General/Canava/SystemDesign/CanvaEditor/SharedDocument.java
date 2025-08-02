@@ -1,4 +1,4 @@
-package CompanyPreparation.Canava.SystemDesign.CanvaEditor;
+package Preparation.General.Canava.SystemDesign.CanvaEditor;
 
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
