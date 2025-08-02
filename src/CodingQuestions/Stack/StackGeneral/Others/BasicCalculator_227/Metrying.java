@@ -1,12 +1,14 @@
 package CodingQuestions.Stack.StackGeneral.Others.BasicCalculator_227;
 
-public class Stack {
+import java.util.Stack;
+
+public class Metrying {
     public static void main(String[] args) {
-        Stack calculator = new Stack();
+        Metrying calculator = new Metrying();
         System.out.println(calculator.helper("3+2*2")); // Output: 7
     }
     private int helper(String s) {
-        java.util.Stack<Integer> st = new java.util.Stack<>();
+        Stack<Integer> st = new Stack<>();
         int num = 0;
         int ans = 0;
         char operator = '+';
@@ -15,7 +17,7 @@ public class Stack {
             if (Character.isDigit(c)) {
                 num = num * 10 + (c - '0');
             }
-            if (isOperator(c) || i == s.length() - 1) {
+            if ((Character.isDigit(c) && c != ' ') || i == s.length() - 1) {
                 if (operator == '+') st.push(num);
                 else if (operator == '-') st.push(-num);
                 else if (operator == '*') st.push(st.pop() * num);
@@ -24,10 +26,9 @@ public class Stack {
                 operator = c;
             }
         }
-        while (!st.isEmpty()) ans += st.pop();
+        while (!st.isEmpty()) {
+            ans += st.pop();
+        }
         return ans;
-    }
-    private boolean isOperator(char c) {
-        return c == '+' || c == '-' || c == '*' || c == '/';
     }
 }
