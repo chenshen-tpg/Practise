@@ -10,21 +10,10 @@ Task: "My task was to lead the backend team in quickly assessing the new API,
 redesigning our integration module, and implementing the changes without disrupting existing services or
 delaying the project launch."
 
-Action: "I immediately initiated a deep dive with the team into the new provider's documentation,
-identifying key differences and potential challenges. I then created a phased migration plan,
-prioritizing critical functionalities.
-I also proactively communicated with the product and frontend teams
-about the scope changes and potential impacts.
-We adopted an agile approach,
-conducting daily stand-ups to quickly address blockers.
+
 I personally took on the most complex API mapping tasks and mentored junior engineers on the new integration patterns.
 We also implemented robust feature flags to allow for a controlled rollout."
 
-Result: "Despite the significant unexpected change,
-we successfully migrated to the new payment provider within the original project timeline,
-with minimal impact on our existing users. The new integration proved more resilient and scalable,
-and the team gained valuable experience in rapid adaptation and complex API migrations.
-This experience reinforced my belief in proactive communication and agile execution in the face of change."
 
 Question: "Tell me about a project where you used your programming skills to solve a difficult problem."
 =======================================================================================================
@@ -54,16 +43,6 @@ Situation: "During the development of a new feature that required significant co
 between our backend team, the frontend team, and the product management team,
 we encountered a misunderstanding regarding API specifications that threatened to delay the launch."
 
-Task: "My task was to help bridge the communication gap and ensure that both technical teams
-were aligned with the product requirements to deliver the feature on time."
-
-Action: "I initiated a joint technical sync meeting with representatives from all three teams.
-Instead of just discussing the API, I used a whiteboard to visually map out the data flow from the frontend,
-through our backend services, to the database, and back. I encouraged open discussion,
-asking clarifying questions to both the frontend developers and the product manager to uncover the root cause of the misunderstanding.
-I then proposed a revised API contract that satisfied both the frontend's needs for efficient data display
-and the backend's constraints for data processing. I also documented this revised contract clearly in our Confluence page
-and ensured everyone signed off on it."
 
 Result: "By facilitating this collaborative session and visually clarifying the requirements,
 we quickly resolved the API misalignment. The feature was delivered on schedule,

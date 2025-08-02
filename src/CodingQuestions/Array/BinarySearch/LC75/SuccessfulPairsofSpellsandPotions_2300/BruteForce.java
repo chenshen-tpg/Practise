@@ -1,4 +1,4 @@
-package CodingQuestions.Array.BinarySearch.LC75.SuccessfulPairsofSpellsandPotions_2300_review;
+package CodingQuestions.Array.BinarySearch.LC75.SuccessfulPairsofSpellsandPotions_2300;
 
 
 

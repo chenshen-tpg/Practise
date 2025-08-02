@@ -1,4 +1,4 @@
-package CodingQuestions.OOP.Trie.LC75.SearchSuggestionsSystem_review;
+package CodingQuestions.OOP.Trie.LC75.SearchSuggestionsSystem_1268;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -3,24 +3,24 @@ package CodingQuestions.Graph.Graph.LC75.ReoderRoutesToMakeAllPathsLeadToTheCity
 import java.util.ArrayList;
 import java.util.List;
 
-public class ModelAnswer {
+public class SampleAnswer {
     boolean [] visited;
     List<List<Integer>> al;
 
     public static void main(String[] args) {
-        DFSList d = new DFSList();
+        SampleAnswer solution = new SampleAnswer();
         int n1 = 6;
         int[][] connections1 = {{0, 1}, {1, 3}, {2, 3}, {4, 0}, {4, 5}};
-        System.out.println(d.minReorder(n1, connections1)); // Expected output: 3
+        System.out.println(solution.minReorder(n1, connections1)); // Expected output: 3
 
         // Test case 2
         int n2 = 5;
         int[][] connections2 = {{1, 0}, {1, 2}, {3, 2}, {3, 4}};
-        System.out.println(d.minReorder(n2, connections2));
+        System.out.println(solution.minReorder(n2, connections2));
     }
 
 
-    public int helper (int n, int [][] arr) {
+    public int minReorder (int n, int [][] arr) {
         al = new ArrayList<>();
         visited = new boolean[n];
         for (int i = 0; i < n; i++)
