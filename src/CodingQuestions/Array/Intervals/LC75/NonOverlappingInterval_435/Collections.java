@@ -3,9 +3,9 @@ package CodingQuestions.Array.Intervals.LC75.NonOverlappingInterval_435;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class NonOverlappingInterval_435 {
+public class Collections {
     public static void main(String[] args) {
-        NonOverlappingInterval_435 solution = new NonOverlappingInterval_435();
+        Collections solution = new Collections();
         int[][] intervals = {{1, 2}, {3, 4}, {5, 6}};
 //        solution.eraseOverlapIntervals(intervals);
     }
@@ -58,23 +58,6 @@ public class NonOverlappingInterval_435 {
         Arrays.fill(dp, -1);
         return n - dfs1(intervals, Integer.MIN_VALUE, 0);
     }
-    public int eraseOverlapIntervalsxx(int[][] intervals) {
-        Arrays.sort(intervals, (a,b) -> a[1] - b[1]);
-        int n = intervals.length;
-        int[] dp = new int[n];
-        dp[0] = 1;
-        int prev_end = intervals[0][1];
-        for(int i=1; i<n ; i++){
-            int picked = Integer.MIN_VALUE;
-            if(intervals[i][0] >= prev_end){
-                picked = 1 + dp[i-1];
-                prev_end = intervals[i][1];
-            }
-            int not_picked = dp[i - 1];
-            dp[i] = Math.max(picked, not_picked);
-        }
-        return n - dp[n-1];
-    }
 
     public int eraseOverlapIntervals_second(int[][] intervals) {
         Arrays.sort(intervals, Comparator.comparingInt(a -> a[1]));
@@ -92,21 +75,5 @@ public class NonOverlappingInterval_435 {
         }
         return count;
     }
-    public int eraseOverlapIntervals1(int[][] intervals) {
-        if (intervals.length == 0) return 0;
-        Arrays.sort(intervals, (a, b) -> Integer.compare(a[1], b[1]));
 
-        int c = 0;
-        int end = intervals[0][1];
-
-        for (int i = 1; i < intervals.length; i++) {
-            if (intervals[i][0] < end) {
-                c++;
-            } else {
-                end = intervals[i][1];
-            }
-        }
-
-        return c;
-    }
 }
