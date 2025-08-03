@@ -1,4 +1,4 @@
-package CodingQuestions.Graph.Matrix.Others;
+package CodingQuestions.Graph.Graph.LC75.NearestExitFromEntranceInMaze_1926;
 
 import java.util.LinkedList;
 import java.util.Queue;

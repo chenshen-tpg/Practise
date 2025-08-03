@@ -1,4 +1,4 @@
-package CodingQuestions.Graph.Matrix.Others;
+package CodingQuestions.Graph.Graph.LC75.RottingOrganges_994;
 
 public class RottingOranges_994 {
 

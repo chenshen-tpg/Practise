@@ -1,0 +1,40 @@
+System Architecture
+
+The system should be built using a microservices architecture,
+where each component is decoupled and can scale independently.
+The process begins with an event being triggered and ends with the notification being delivered to the user through their preferred channel.
+A core principle is to make the system asynchronous to prevent bottlenecks.
+
+
+
+Message Queue
+
+The foundation of the asynchronous design is a message queue like Apache Kafka.
+When an event occurs (e.g., a new message or a friend request),
+the application service doesn't send the notification directly.
+Instead, it publishes a message to a topic in the message queue.
+This decouples the event-generating service from the notification delivery system.
+The message queue acts as a buffer, efficiently handling sudden spikes in traffic and ensuring that no events are lost.
+
+
+
+Notification Service and User Preferences
+
+A dedicated Notification Service consumes messages from the queue. This service is responsible for:
+Processing the event: It takes the raw event data and generates the notification content.
+Fetching user preferences: It queries a fast, scalable database (like a NoSQL database) to see which channels the user has enabled (push, email, SMS)
+and if any rate limits or "do not disturb" settings apply.
+A distributed cache like Redis can be used to store frequently accessed user preferences for faster lookups.
+Deduplication and Batching: To prevent "notification fatigue," the service may aggregate multiple similar notifications into a single message (e.g., "You have 3 new likes on your photo").
+
+
+Delivery Channels and Real-time Communication
+Once the notification is processed, it is handed off to the appropriate handler for delivery. Instead of building the delivery infrastructure from scratch, it's efficient to use third-party services:
+Push Notifications: Use Firebase Cloud Messaging (FCM) for Android and Apple Push Notification Service (APNS) for iOS.
+
+
+Email and SMS: Integrate with services like SendGrid or Twilio.
+For in-app notifications, the system needs a persistent connection with the client.
+Server-Sent Events (SSE) is an excellent choice for this, as it allows the server to push updates to the client over a single HTTP connection.
+It’s simpler and has built-in reconnection capabilities, making it ideal for a one-way notification stream.
+WebSockets are another option, particularly if you need bi-directional communication (e.g., for a chat feature).
