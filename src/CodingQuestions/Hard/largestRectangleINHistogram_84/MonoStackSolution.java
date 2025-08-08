@@ -2,7 +2,7 @@ package CodingQuestions.Hard.largestRectangleINHistogram_84;
 
 import java.util.Stack;
 
-public class largestRectangleINHistogram_84 {
+public class MonoStackSolution {
 
     public static void main(String[] args) {
         largestRectangleArea(new int [] {2,1,5,6,2,3});
