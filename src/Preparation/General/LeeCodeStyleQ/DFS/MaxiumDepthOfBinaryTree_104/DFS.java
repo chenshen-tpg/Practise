@@ -1,4 +1,4 @@
-package CodingQuestions.Tree.MaximumDepthOfBinaryTree_104;
+package Preparation.General.LeeCodeStyleQ.DFS.MaxiumDepthOfBinaryTree_104;
 
 import CodingQuestions.Lib.TreeNode;
 
