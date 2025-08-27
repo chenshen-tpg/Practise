@@ -3,9 +3,9 @@ package CodingQuestions.Array.SlidingWindow.LongestSubStringWithoutRepeatAns_3;
 import java.util.HashMap;
 
 
-public class TwoPointers_INDEXINMAP {
+public class SampleAns1 {
     public static void main(String[] args) {
-        TwoPointers_INDEXINMAP solution = new TwoPointers_INDEXINMAP();
+        SampleAns1 solution = new SampleAns1();
         String s = "bbbbb";
         System.out.println(solution.method(s));
     }

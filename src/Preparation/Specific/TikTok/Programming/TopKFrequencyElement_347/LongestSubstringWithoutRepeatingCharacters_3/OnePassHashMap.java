@@ -1,4 +1,4 @@
-package CodingQuestions.Hash.LongestSubstringWithoutRepeatingCharacters_3;
+package Preparation.Specific.TikTok.Programming.TopKFrequencyElement_347.LongestSubstringWithoutRepeatingCharacters_3;
 
 import java.util.HashMap;
 

@@ -1,10 +1,10 @@
-package CodingQuestions.Hash.LongestConsecutiveSequence_128;
+package Preparation.Specific.TikTok.Programming.LongestConsecutiveSequence_128;
 
 import java.util.Arrays;
 
-public class SortSolution {
+public class SampleAns3 {
     public static void main(String[] args) {
-        SortSolution solution = new SortSolution();
+        SampleAns3 solution = new SampleAns3();
 
         int[] nums = {100, 4, 200, 1, 3, 2};
         System.out.println(solution.longestConsecutive(nums));
