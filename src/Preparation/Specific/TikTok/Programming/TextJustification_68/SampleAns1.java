@@ -26,10 +26,8 @@ public class SampleAns1 {
                 len += words[j].length();
                 j++;
             }
-
             int spaces = 0, dif = 0;
             int gaps = j - i - 1;
-
             if (j == words.length || gaps == 0) {
                 for (int k = i; k < j; k++) {
                     sb.append(words[k]);
@@ -39,7 +37,6 @@ public class SampleAns1 {
             } else {
                 spaces = (maxWidth - len) / gaps;
                 dif = (maxWidth - len) % gaps;
-
                 for (int k = i; k < j; k++) {
                     sb.append(words[k]);
                     if (k != j - 1) {
@@ -49,7 +46,6 @@ public class SampleAns1 {
                     }
                 }
             }
-
             rez.add(sb.toString());
             i = j - 1;
         }
