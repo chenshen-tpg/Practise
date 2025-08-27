@@ -1,4 +1,4 @@
-package SystemDesignQuestions.AIAssistantedRound;
+package Preparation.General.SystemDesignQuestions.AIAssistantedRound;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package SystemDesignQuestions.LeeCodeStyleQ.MaxDistinctSubArrays_2461;
+package Preparation.General.LeeCodeStyleQ.MaxDistinctSubArrays_2461;
 
 import java.util.HashMap;
 

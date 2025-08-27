@@ -5,7 +5,16 @@ import java.util.List;
 
 public class SampleAns1 {
     public static void main(String[] args) {
-
+        SampleAns1 solution = new SampleAns1();
+        String[] words1 = {"This", "is", "an", "example", "of", "text", "justification."};
+        int maxWidth1 = 16;
+        System.out.println("Case 1:");
+        printLines(solution.fullJustify(words1, maxWidth1));
+    }
+    private static void printLines(List<String> lines) {
+        for (String line : lines) {
+            System.out.println("\"" + line + "\"");
+        }
     }
     public List<String> fullJustify(String[] words, int maxWidth) {
         List<String> rez = new ArrayList<>();
