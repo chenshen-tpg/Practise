@@ -1,8 +1,6 @@
-<<<<<<<< HEAD:src/Preparation/Specific/Canava/Programming/MaxDistinctSubArrays_2461/TEST.java
-package Preparation.Specific.Canava.Programming.MaxDistinctSubArrays_2461;
-========
+
 package Preparation.General.LeeCodeStyleQ.MaxDistinctSubArrays_2461;
->>>>>>>> origin/master:src/Preparation/General/LeeCodeStyleQ/MaxDistinctSubArrays_2461/TEST.java
+
 
 import java.util.HashMap;
 

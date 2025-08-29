@@ -1,8 +1,5 @@
-<<<<<<<< HEAD:src/Preparation/Specific/Canava/Programming/MaximumPointsYouCanObtainFromCards_1423/SampleAns.java
-package Preparation.Specific.Canava.Programming.MaximumPointsYouCanObtainFromCards_1423;
-========
 package Preparation.General.LeeCodeStyleQ.MaximumPointsYouCanObtainFromCards_1423;
->>>>>>>> origin/master:src/Preparation/General/LeeCodeStyleQ/MaximumPointsYouCanObtainFromCards_1423/SampleAns.java
+
 
 public class SampleAns {
 
