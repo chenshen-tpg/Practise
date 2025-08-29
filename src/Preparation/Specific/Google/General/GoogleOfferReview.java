@@ -1,4 +1,4 @@
-package Preparation.Specific.Google.General.Google;
+package Preparation.Specific.Google.General;
 
 public class GoogleOfferReview {
 /***

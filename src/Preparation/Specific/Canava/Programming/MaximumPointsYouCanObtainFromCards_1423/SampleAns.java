@@ -1,4 +1,4 @@
-package SystemDesignQuestions.LeeCodeStyleQ.MaximumPointsYouCanObtainFromCards_1423;
+package Preparation.Specific.Canava.Programming.MaximumPointsYouCanObtainFromCards_1423;
 
 public class SampleAns {
 

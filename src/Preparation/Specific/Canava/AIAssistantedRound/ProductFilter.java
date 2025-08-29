@@ -1,4 +1,4 @@
-package SystemDesignQuestions.AIAssistantedRound;
+package Preparation.Specific.Canava.AIAssistantedRound;
 
 import java.util.*;
 
