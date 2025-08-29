@@ -1,12 +1,12 @@
-package CodingQuestions.Hard.TextJustification_68;
+package Preparation.Specific.TikTok.Programming.TextJustification_68;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Model {
+public class ModelAns {
 
     public static void main(String[] args) {
-        Model t = new Model();
+        ModelAns t = new ModelAns();
         String[] words = {"This", "is", "an", "example", "of", "text", "justification."};
         int maxWidth = 16;
         List<String> ans = t.fullJustify(words, maxWidth);
