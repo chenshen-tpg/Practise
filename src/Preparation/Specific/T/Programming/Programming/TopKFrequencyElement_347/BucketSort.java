@@ -1,4 +1,4 @@
-package Preparation.Specific.T.Programming.TopKFrequencyElement_347;
+package Preparation.Specific.T.Programming.Programming.TopKFrequencyElement_347;
 
 import java.util.ArrayList;
 import java.util.HashMap;

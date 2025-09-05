@@ -1,4 +1,4 @@
-package Preparation.Specific.T.Programming.PermutationsII_47;
+package Preparation.Specific.T.Programming.Programming.PermutationsII_47;
 
 import java.util.ArrayList;
 import java.util.HashSet;

@@ -1,4 +1,4 @@
-package Preparation.Specific.T.Programming.TopKFrequencyElement_347.LongestSubstringWithoutRepeatingCharacters_3;
+package Preparation.Specific.T.Programming.Programming.TopKFrequencyElement_347.LongestSubstringWithoutRepeatingCharacters_3;
 
 import java.util.HashMap;
 

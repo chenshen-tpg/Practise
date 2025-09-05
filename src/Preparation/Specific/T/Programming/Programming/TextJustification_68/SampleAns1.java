@@ -1,4 +1,4 @@
-package Preparation.Specific.T.Programming.TextJustification_68;
+package Preparation.Specific.T.Programming.Programming.TextJustification_68;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package Preparation.Specific.T.Programming.LongestConsecutiveSequence_128;
+package Preparation.Specific.T.Programming.Programming.LongestConsecutiveSequence_128;
 
 import java.util.Arrays;
 

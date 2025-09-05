@@ -1,4 +1,4 @@
-package Preparation.Specific.T.Programming.BrightestPostionOnStreet_2021;
+package Preparation.Specific.T.Programming.Programming.BrightestPostionOnStreet_2021;
 
 import java.util.Arrays;
 

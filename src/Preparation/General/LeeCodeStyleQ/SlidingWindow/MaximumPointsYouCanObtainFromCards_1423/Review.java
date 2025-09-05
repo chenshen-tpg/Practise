@@ -1,7 +1,7 @@
-package Preparation.General.LeeCodeStyleQ.MaximumPointsYouCanObtainFromCards_1423;
+package Preparation.General.LeeCodeStyleQ.SlidingWindow.MaximumPointsYouCanObtainFromCards_1423;
 
 
-public class SampleAns {
+public class Review {
 
     public static void main(String[] args) {
 

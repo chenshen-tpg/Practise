@@ -1,4 +1,4 @@
-package Preparation.Specific.T.Programming.SubarraySumEqualsK_560;
+package Preparation.Specific.T.Programming.Programming.SubarraySumEqualsK_560;
 
 import java.util.HashMap;
 

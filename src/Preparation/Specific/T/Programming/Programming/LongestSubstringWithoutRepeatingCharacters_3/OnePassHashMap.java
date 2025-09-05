@@ -1,4 +1,4 @@
-package Preparation.Specific.T.Programming.LongestSubstringWithoutRepeatingCharacters_3;
+package Preparation.Specific.T.Programming.Programming.LongestSubstringWithoutRepeatingCharacters_3;
 
 import java.util.HashMap;
 
