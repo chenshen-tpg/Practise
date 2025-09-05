@@ -1,11 +1,11 @@
-package Preparation.General.LeeCodeStyleQ.GraphGeneral;
+package Preparation.General.LeeCodeStyleQ.GraphGeneral.AdjacencyList;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Fundamental {
+public class ConnectedGraph {
     public static void main(String[] args) {
-        Fundamental solution = new Fundamental();
+        ConnectedGraph solution = new ConnectedGraph();
         solution.buildGraph(new int[][] {{0,1}, {1,2},{2,3},{3,0},{0,2} });
     }
 
