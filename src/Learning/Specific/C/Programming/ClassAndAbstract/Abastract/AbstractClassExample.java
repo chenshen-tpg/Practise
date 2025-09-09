@@ -1,0 +1,30 @@
+<<<<<<<< HEAD:src/Preparation/Specific/Canva/Programming/ClassAndAbstract/Abastract/AbstractClassExample.java
+package Preparation.Specific.Canva.Programming.ClassAndAbstract.Abastract;
+========
+package Learning.Specific.C.Programming.ClassAndAbstract.Abastract;
+>>>>>>>> origin/master:src/Learning/Specific/C/Programming/ClassAndAbstract/Abastract/AbstractClassExample.java
+
+
+    abstract class Animal {
+
+        public abstract void makeSound();
+        public void sleep() {
+            System.out.println("Zzz...");
+        }
+    }
+
+    class Dog extends Animal {
+        @Override
+        public void makeSound() {
+            System.out.println("Woof woof!");
+        }
+    }
+
+
+    public class AbstractClassExample {
+        public static void main(String[] args) {
+            Dog myDog = new Dog();
+            myDog.makeSound();
+            myDog.sleep();
+        }
+    }
