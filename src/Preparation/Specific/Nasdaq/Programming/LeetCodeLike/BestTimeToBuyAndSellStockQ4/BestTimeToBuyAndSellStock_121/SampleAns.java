@@ -1,4 +1,4 @@
-package Preparation.Specific.Nasdaq.Programming.LeetCodeLike.BestTimeToBuyAndSellStock_121;
+package Preparation.Specific.Nasdaq.Programming.LeetCodeLike.BestTimeToBuyAndSellStockQ4.BestTimeToBuyAndSellStock_121;
 
 public class SampleAns {
     public static void main(String[] args) {

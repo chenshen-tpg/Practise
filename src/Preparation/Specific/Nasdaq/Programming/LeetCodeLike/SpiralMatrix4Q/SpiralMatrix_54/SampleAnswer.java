@@ -1,4 +1,4 @@
-package Preparation.Specific.Nasdaq.Programming.LeetCodeLike.SpiralMatrix_54;
+package Preparation.Specific.Nasdaq.Programming.LeetCodeLike.SpiralMatrix4Q.SpiralMatrix_54;
 
 import java.util.ArrayList;
 import java.util.List;
