@@ -20,8 +20,12 @@ public class TEST {
             }
             dummy = dummy.next;
         }
-        if(list1 == null){dummy.next = list2;}
-        if(list2 == null){dummy.next = list1;}
+        if (list1 == null) {
+            dummy.next = list2;
+        }
+        if (list2 == null) {
+            dummy.next = list1;
+        }
         return head.next;
     }
 }
