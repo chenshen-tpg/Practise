@@ -39,12 +39,6 @@ WHERE visit_id NOT IN (SELECT visit_id FROM Transactions)
 GROUP BY customer_id
 
 
---197 Rising temperature
-SELECT w1.id
-FROM Weather w1
-         JOIN Weather w2
-              ON DATEDIFF(w1.recordDate, w2.recordDate) = 1
-WHERE w1.temperature > w2.temperature;
 
 --181 Employees Earning more than their manager
 

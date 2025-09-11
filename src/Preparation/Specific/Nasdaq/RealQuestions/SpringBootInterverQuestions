@@ -1,0 +1,60 @@
+Annotation
+
+meaning
+
+
+in front of class
+
+Bean
+Class
+
+class object extends
+
+
+Which of the following annotations is used to define a class as a Spring Boot component?
+@Component @Service @Repository
+
+How can you manage application-specific properties in a Spring Boot application?
+Using application.properties or application.yml.
+
+
+
+
+
+What is the purpose of the transient keyword in Java?
+To prevent a variable from being serialized
+
+
+What is the primary purpose of the @RestController annotation?
+To indicate that a controller handles RESTful requests and its methods should return data directly.
+
+
+What is the DispatcherServlet's role in a Spring MVC application?
+It is the central servlet that dispatches requests to the correct controller method.
+
+What is Spring Boot Actuator primarily used for?
+To provide production-ready features for monitoring and managing applications.
+
+How does a Spring Boot application typically handle externalized configuration (e.g., database URLs, port numbers)?
+By using files like application.properties or application.yml.
+
+What is the primary purpose of the @SpringBootApplication annotation?
+It's a convenience annotation that combines @Configuration, @EnableAutoConfiguration, and @ComponentScan.
+
+Which annotation is used to mark a class as a component to be managed by the Spring IoC container?
+ @Service
+ @Repository
+ @Component
+
+What is the difference between @Controller and @RestController?
+@RestController is a convenience annotation that combines @Controller and @ResponseBody.
+
+Which annotation is used to inject dependencies in Spring?
+@Inject
+@Resource
+@Autowired
+
+How can you resolve a dependency injection ambiguity when multiple beans of the same type exist?
+Using @Primary
+Using @Qualifier
+Using a combination of @Primary and @Qualifier
