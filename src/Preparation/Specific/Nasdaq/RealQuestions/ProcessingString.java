@@ -10,6 +10,18 @@ public class ProcessingString {
     // double quote followed by characters may contain commas or single quotes, a last double quote,
     public static void main(String[] args) {
 
+        ProcessingString ps = new ProcessingString();
+        String input1 = "apple,banana,carrot";
+        System.out.println("Input: " + input1);
+        System.out.println("Output: " + ps.processString(input1));
+
+        String input2 = "'apple,banana',carrot";
+        System.out.println("Input: " + input2);
+        System.out.println("Output: " + ps.processString(input2));
+
+        String input3 = "\"apple,'banana'\",carrot";
+        System.out.println("Input: " + input3);
+        System.out.println("Output: " + ps.processString(input3));
     }
     public List<String> processString(String input) {
         List<String> result = new ArrayList<>();

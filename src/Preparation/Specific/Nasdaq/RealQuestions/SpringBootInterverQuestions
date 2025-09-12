@@ -58,3 +58,19 @@ How can you resolve a dependency injection ambiguity when multiple beans of the 
 Using @Primary
 Using @Qualifier
 Using a combination of @Primary and @Qualifier
+
+What does the @RestController annotation combine in Spring MVC?
+@Controller and @ResponseBody
+
+ Which annotation is used to define a method that should be executed before the bean is destroyed?
+ @PreDestroy
+
+
+ What is the effect of using @ComponentScan(basePackages = "com.example")?
+ It scans the specified package and its sub-packages for Spring components
+
+ What does the @EnableAutoConfiguration annotation do in Spring Boot?
+ It tells Spring Boot to automatically configure beans based on classpath settings
+
+ Which annotation is used to define a bean method inside a configuration class?
+ @Bean
