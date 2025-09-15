@@ -1,4 +1,4 @@
-package Preparation.Specific.Nasdaq.RealQuestions;
+package Preparation.Specific.Nasdaq.RealQuestions.Review;
 
 public class sizeOnDisk {
     /***
@@ -13,7 +13,6 @@ public class sizeOnDisk {
     public static void main(String[] args) {
         int file = 1500;
         int disk = 512;
-
         System.out.println((file / disk) + 1);
     }
 }
