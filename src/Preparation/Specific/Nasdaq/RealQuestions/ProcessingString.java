@@ -11,17 +11,17 @@ public class ProcessingString {
     public static void main(String[] args) {
 
         ProcessingString ps = new ProcessingString();
-        String input1 = "apple,banana,carrot";
+//        String input1 = "apple,banana,carrot";
+//        System.out.println("Input: " + input1);
+//        System.out.println("Output: " + ps.processString(input1));
+
+        String input1 = "It's,a,cat";
         System.out.println("Input: " + input1);
         System.out.println("Output: " + ps.processString(input1));
 
-        String input2 = "'apple,banana',carrot";
-        System.out.println("Input: " + input2);
-        System.out.println("Output: " + ps.processString(input2));
-
-        String input3 = "\"apple,'banana'\",carrot";
-        System.out.println("Input: " + input3);
-        System.out.println("Output: " + ps.processString(input3));
+//        String input3 = "\"apple,'banana'\",carrot";
+//        System.out.println("Input: " + input3);
+//        System.out.println("Output: " + ps.processString(input3));
     }
     public List<String> processString(String input) {
         List<String> result = new ArrayList<>();
@@ -38,7 +38,7 @@ public class ProcessingString {
             } else if (currentChar == '"') {
                 int nextQuoteIndex = input.indexOf('"', i + 1);
                 value = input.substring(i + 1, nextQuoteIndex);
-                i = nextQuoteIndex + 1;
+                  i = nextQuoteIndex + 1;
             } else {
                 int nextCommaIndex = input.indexOf(',', i);
                 if (nextCommaIndex == -1) {
@@ -54,7 +54,6 @@ public class ProcessingString {
                 i++;
             }
         }
-
         return result;
     }
 }
