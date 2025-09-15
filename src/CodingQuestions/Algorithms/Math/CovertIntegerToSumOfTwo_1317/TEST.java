@@ -1,4 +1,4 @@
-package CodingQuestions.Math.CovertIntegerToSumOfTwo_1317;
+package CodingQuestions.Algorithms.Math.CovertIntegerToSumOfTwo_1317;
 
 public class TEST {
     public static void main(String[] args) {
