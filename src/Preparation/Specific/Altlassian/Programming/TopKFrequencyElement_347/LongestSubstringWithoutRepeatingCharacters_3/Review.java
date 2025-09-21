@@ -1,4 +1,4 @@
-package Preparation.Specific.Altlassian.Programming.Programming.TopKFrequencyElement_347.LongestSubstringWithoutRepeatingCharacters_3;
+package Preparation.Specific.Altlassian.Programming.TopKFrequencyElement_347.LongestSubstringWithoutRepeatingCharacters_3;
 
 import java.util.HashMap;
 

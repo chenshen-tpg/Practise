@@ -1,4 +1,4 @@
-package Preparation.Specific.Altlassian.Programming.Programming.TopKFrequencyElement_347;
+package Preparation.Specific.Altlassian.Programming.TopKFrequencyElement_347;
 
 import java.util.ArrayList;
 import java.util.HashMap;

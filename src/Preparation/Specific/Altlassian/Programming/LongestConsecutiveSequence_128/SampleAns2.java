@@ -1,4 +1,4 @@
-package Preparation.Specific.Altlassian.Programming.Programming.LongestConsecutiveSequence_128;
+package Preparation.Specific.Altlassian.Programming.LongestConsecutiveSequence_128;
 
 import java.util.HashSet;
 import java.util.Set;
