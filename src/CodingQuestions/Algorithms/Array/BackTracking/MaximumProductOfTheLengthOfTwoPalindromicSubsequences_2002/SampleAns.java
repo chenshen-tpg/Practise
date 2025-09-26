@@ -1,10 +1,10 @@
-package CodingQuestions.Algorithms.Array.BackTracking;
+package CodingQuestions.Algorithms.Array.BackTracking.MaximumProductOfTheLengthOfTwoPalindromicSubsequences_2002;
 
-public class MaximumProductOfTheLengthOfTwoPalindromicSubsequences_2002 {
+public class SampleAns {
     int res = 0;
 
     public static void main(String[] args) {
-        MaximumProductOfTheLengthOfTwoPalindromicSubsequences_2002 mp = new MaximumProductOfTheLengthOfTwoPalindromicSubsequences_2002();
+        SampleAns mp = new SampleAns();
         System.out.println(mp.maxProduct("leetcodecom"));
     }
     public int maxProduct(String s) {
