@@ -40,7 +40,6 @@ public class MaximumNumberofDistinctElementsAfterOperations_3397 {
                 ans.add(selectNum);
             }
         }
-
         return ans.size();
     }
 }

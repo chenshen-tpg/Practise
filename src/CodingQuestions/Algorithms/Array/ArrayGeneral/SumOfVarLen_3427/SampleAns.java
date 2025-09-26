@@ -1,6 +1,6 @@
-package CodingQuestions.Algorithms.Array.ArrayGeneral;
+package CodingQuestions.Algorithms.Array.ArrayGeneral.SumOfVarLen_3427;
 
-public class SumOfVariableLengthSubarray_3427 {
+public class SampleAns {
     public static void main(String[] args) {
         int [] nums = {2,3,1};
         int ans = 0;

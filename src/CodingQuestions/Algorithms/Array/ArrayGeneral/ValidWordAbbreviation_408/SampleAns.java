@@ -1,9 +1,9 @@
-package CodingQuestions.Algorithms.Array.ArrayGeneral;
+package CodingQuestions.Algorithms.Array.ArrayGeneral.ValidWordAbbreviation_408;
 
 
-public class ValiWordAbbreviation_408 {
+public class SampleAns {
     public static void main(String[] args) {
-        ValiWordAbbreviation_408 v = new ValiWordAbbreviation_408();
+        SampleAns v = new SampleAns();
         String word4 = "substitution";
         String abbr4 = "sub4u4";
         v.validWordAbbreviation(word4,abbr4);
