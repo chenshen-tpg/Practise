@@ -1,6 +1,6 @@
-package CodingQuestions.Algorithms.Array.ArrayGeneral;
+package CodingQuestions.Algorithms.Array.ArrayGeneral.JumpGame_55;
 
-public class JumpGameII_55 {
+public class SampleAns {
     public static void main(String[] args) {
         int[] nums1 = {2, 3, 1, 1, 4 , 1, 1 ,2, 1, 2};
         System.out.println(jump(nums1)); // Output: 2

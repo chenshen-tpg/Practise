@@ -1,4 +1,4 @@
-package CodingQuestions.Algorithms.Array.BackTracking;
+package CodingQuestions.Algorithms.OOP.WordSearchII_212;
 
 import java.util.ArrayList;
 import java.util.HashMap;
