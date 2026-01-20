@@ -3,7 +3,7 @@ package Preparation.General.RandomQuestions.SomeRandomQ.ParseString;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Goal {
+public class StringParse {
     /* Given an input String containing a sequence of values separated by commas (,), each value can be in one of the following formats:
     A sequence of characters without single quotes, double quotes, or commas (e.g. Hello).
     A value enclosed in single quotes ('). The content inside may include commas or double quotes. Remove the leading and trailing single quotes (e.g. 'Hi "TO" YOU' becomes Hi "TO" YOU).
