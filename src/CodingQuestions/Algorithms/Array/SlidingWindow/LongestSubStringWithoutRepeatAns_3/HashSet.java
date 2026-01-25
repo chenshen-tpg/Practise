@@ -1,14 +1,12 @@
 package CodingQuestions.Algorithms.Array.SlidingWindow.LongestSubStringWithoutRepeatAns_3;
 
-import java.util.HashSet;
-
-public class MyVersionHashSet {
+public class HashSet {
     public static void main(String[] args) {
 
     }
 
     public int lengthOfLongestSubstring(String s) {
-        HashSet<Character> hs = new HashSet();
+        java.util.HashSet<Character> hs = new java.util.HashSet();
         int start = 0;
         int ans = 0;
         for (char c : s.toCharArray()) {

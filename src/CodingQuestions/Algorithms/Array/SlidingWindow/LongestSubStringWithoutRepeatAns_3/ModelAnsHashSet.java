@@ -3,9 +3,9 @@ package CodingQuestions.Algorithms.Array.SlidingWindow.LongestSubStringWithoutRe
 import java.util.HashMap;
 
 
-public class SampleAns1 {
+public class ModelAnsHashSet {
     public static void main(String[] args) {
-        SampleAns1 solution = new SampleAns1();
+        ModelAnsHashSet solution = new ModelAnsHashSet();
         String s = "bbbbb";
         System.out.println(solution.method(s));
     }

@@ -1,5 +1,6 @@
 package CodingQuestions.Algorithms.Array.SlidingWindow.LongestSubStringWithoutRepeatAns_3;
 
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class HashMapVersion {
@@ -8,17 +9,21 @@ public class HashMapVersion {
     }
 
     public int lengthOfLongestSubstring(String s) {
-        int j = 0;
-        int len = 0;
-        HashMap<Character, Integer> map = new HashMap<>();
-        for (int i = 0; i < s.length(); i++) {
-            char ch = s.charAt(i);
-            if (map.containsKey(ch)) {
-                j = Math.max(j, map.get(ch) + 1);
+        int[] last = new int[128];
+        Arrays.fill(last, -1);
+        int left = 0, max = 0;
+        for (int right = 0; right < s.length(); right++) {
+            char c = s.charAt(right);
+            int prev = last[c];
+
+            if (prev >= left) {
+                left = prev + 1;
             }
-            len = Math.max(len, i - j + 1);
-            map.put(ch, i);
+
+            last[c] = right;
+            max = Math.max(max, right - left + 1);
         }
-        return len;
+
+        return max;
     }
 }
