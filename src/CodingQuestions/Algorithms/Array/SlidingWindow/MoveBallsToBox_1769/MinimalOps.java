@@ -1,6 +1,6 @@
-package CodingQuestions.Algorithms.Array.SlidingWindow;
+package CodingQuestions.Algorithms.Array.SlidingWindow.MoveBallsToBox_1769;
 
-public class MinimumNumberofOperationstoMoveAllBallstoEachBox_1769 {
+public class MinimalOps {
     public static void main(String[] args) {
         String boxes = "001011";
         // 11 => 2-0, 4-0, 5-0  11
