@@ -1,4 +1,4 @@
-package BookCollection.Algo4.Chat1;
+package Preparation.Chat1;
 
 import java.util.Scanner;
 

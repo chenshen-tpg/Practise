@@ -1,4 +1,4 @@
-package BookCollection.Algo4.Chat1;
+package Preparation.Chat1;
 
 public class Exerc3 {
     //printf() is used to format strings, numbers, etc.
