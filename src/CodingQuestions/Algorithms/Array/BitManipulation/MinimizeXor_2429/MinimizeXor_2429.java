@@ -1,4 +1,4 @@
-package CodingQuestions.Algorithms.Array.BitManipulation.MinimizeXor_2429_REVIEW;
+package CodingQuestions.Algorithms.Array.BitManipulation.MinimizeXor_2429;
 
 public class MinimizeXor_2429 {
     public static void main(String[] args) {

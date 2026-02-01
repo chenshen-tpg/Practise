@@ -1,10 +1,10 @@
-package CodingQuestions.Algorithms.LinkedList;
+package CodingQuestions.Algorithms.LinkedList.RemoveDuplicate_1836;
 
 import CodingQuestions.Lib.ListNode;
 
 import java.util.HashMap;
 
-public class RemoveDuplicatesFromAnUnsortedLinkedList_1836 {
+public class HashMapSolution {
 
     public static void main(String[] args) {
 

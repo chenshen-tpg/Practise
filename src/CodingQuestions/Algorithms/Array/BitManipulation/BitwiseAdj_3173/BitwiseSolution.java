@@ -1,6 +1,10 @@
-package CodingQuestions.Algorithms.Array.BitManipulation;
+package CodingQuestions.Algorithms.Array.BitManipulation.BitwiseAdj_3173;
 
-public class BitwiseOrOfAdjacentElements_3173 {
+public class BitwiseSolution {
+    /***
+     Given an array nums of length n, return an array answer of length n - 1
+     such that answer[i] = nums[i] | nums[i + 1] where | is the bitwise OR operation.
+     */
     public static void main(String[] args) {
         int [] nums = {1,3,7,15};
         int [] ans = new int [nums.length-1];
