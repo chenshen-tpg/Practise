@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-public class Review {
+public class BFS_2 {
     public static void main(String[] args) {
         TreeNode root = new TreeNode(3);
         TreeNode n1 = new TreeNode(9);
@@ -18,25 +18,25 @@ public class Review {
         root.right = n2;
         n2.left = n3;
         n2.right = n4;
-        Review review = new Review();
-        System.out.println(review.solution(root));
+        BFS_2 BFS2 = new BFS_2();
+        System.out.println(BFS2.solution(root));
     }
 
     public List<Double> solution(TreeNode root) {
-        List<Double> res = new ArrayList<>();
-        Queue<TreeNode> q = new LinkedList<>();
-        q.offer(root);
-        while (!q.isEmpty()) {
-            int size = q.size();
-            double tempVal = 0;
+        List<Double> ans = new ArrayList<>();
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        while (!queue.isEmpty()){
+            double sum = 0;
+            int size = queue.size();
             for (int i = 0; i < size; i++) {
-                TreeNode tempNode = q.poll();
-                tempVal += tempNode.val;
-                if (tempNode.left != null) q.offer(tempNode.left);
-                if (tempNode.right != null) q.offer(tempNode.right);
+                TreeNode node = queue.poll();
+                sum+= node.val;
+                if (node.left != null) queue.add(node.left);
+                if (node.right != null) queue.add(node.right);
             }
-            res.add(tempVal / size);
+            ans.add(sum / size);
         }
-        return res;
+        return ans;
      }
 }

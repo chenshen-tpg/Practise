@@ -3,6 +3,39 @@
   <component name="LeetcodeEditor">
     <option name="projectConfig">
       <map>
+        <entry key="/var/folders/pl/v21740gx3sl7vckzck2sst340000gp/T/leetcode/editor/en/[110]Balanced Binary Tree.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/var/folders/pl/v21740gx3sl7vckzck2sst340000gp/T/leetcode/editor/en/doc/content/[110]Balanced Binary Tree.md" />
+              <option name="frontendQuestionId" value="leetcode.com110" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="/var/folders/pl/v21740gx3sl7vckzck2sst340000gp/T/leetcode/editor/en/[110]Balanced Binary Tree.java" />
+              <option name="titleSlug" value="balanced-binary-tree" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/var/folders/pl/v21740gx3sl7vckzck2sst340000gp/T/leetcode/editor/en/[3719]Longest Balanced Subarray I.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/var/folders/pl/v21740gx3sl7vckzck2sst340000gp/T/leetcode/editor/en/doc/content/[3719]Longest Balanced Subarray I.md" />
+              <option name="frontendQuestionId" value="leetcode.com3719" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="/var/folders/pl/v21740gx3sl7vckzck2sst340000gp/T/leetcode/editor/en/[3719]Longest Balanced Subarray I.java" />
+              <option name="titleSlug" value="longest-balanced-subarray-i" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/var/folders/pl/v21740gx3sl7vckzck2sst340000gp/T/leetcode/editor/en/[637]Average of Levels in Binary Tree.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/var/folders/pl/v21740gx3sl7vckzck2sst340000gp/T/leetcode/editor/en/doc/content/[637]Average of Levels in Binary Tree.md" />
+              <option name="frontendQuestionId" value="leetcode.com637" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="/var/folders/pl/v21740gx3sl7vckzck2sst340000gp/T/leetcode/editor/en/[637]Average of Levels in Binary Tree.java" />
+              <option name="titleSlug" value="average-of-levels-in-binary-tree" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[1010]Pairs of Songs With Total Durations Divisible by 60.java">
           <value>
             <LeetcodeEditor>
@@ -347,10 +380,10 @@
         <entry key="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[637]Average of Levels in Binary Tree.java">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/doc/content/[637]Average of Levels in Binary Tree.md" />
+              <option name="contentPath" value="/var/folders/pl/v21740gx3sl7vckzck2sst340000gp/T/leetcode/editor/en/doc/content/[637]Average of Levels in Binary Tree.md" />
               <option name="frontendQuestionId" value="leetcode.com637" />
               <option name="host" value="leetcode.com" />
-              <option name="path" value="/var/folders/yt/kkwn4tpn2lxfrytjbjpydlpm0000gp/T/leetcode/editor/en/[637]Average of Levels in Binary Tree.java" />
+              <option name="path" value="/var/folders/pl/v21740gx3sl7vckzck2sst340000gp/T/leetcode/editor/en/[637]Average of Levels in Binary Tree.java" />
               <option name="titleSlug" value="average-of-levels-in-binary-tree" />
             </LeetcodeEditor>
           </value>
