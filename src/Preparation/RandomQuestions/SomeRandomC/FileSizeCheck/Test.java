@@ -1,4 +1,4 @@
-package Preparation.RandomQuestions.SomeRandomQ.FileSizeCheck;
+package Preparation.RandomQuestions.SomeRandomC.FileSizeCheck;
 
 public class Test {
     /*** The file size and the size on disk

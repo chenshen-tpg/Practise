@@ -1,4 +1,4 @@
-package Preparation.RandomQuestions.SomeRandomQ.Vowel;
+package Preparation.RandomQuestions.SomeRandomC.Vowel;
 
 public class Wrong {
     /***

@@ -1,4 +1,4 @@
-package Preparation.RandomQuestions.SomeRandomQ.StockAnlysis;
+package Preparation.RandomQuestions.SomeRandomC.StockAnlysis;
 
 public class TEST {
     /***

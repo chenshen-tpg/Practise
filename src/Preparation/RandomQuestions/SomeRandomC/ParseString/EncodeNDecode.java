@@ -1,4 +1,4 @@
-package Preparation.RandomQuestions.SomeRandomQ.ParseString;
+package Preparation.RandomQuestions.SomeRandomC.ParseString;
 
 import java.util.ArrayList;
 import java.util.Arrays;
