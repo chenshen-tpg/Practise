@@ -1,4 +1,4 @@
-package Preparation.RealQuestions;
+package Preparation.RealChallenges;
 
 public class VowelFinding {
     public static void main(String[] args) {

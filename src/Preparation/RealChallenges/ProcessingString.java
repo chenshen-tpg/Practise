@@ -1,4 +1,4 @@
-package Preparation.RealQuestions;
+package Preparation.RealChallenges;
 
 import java.util.ArrayList;
 import java.util.List;
